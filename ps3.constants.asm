@@ -525,92 +525,87 @@ hw_port_2_control =  $A1000B
 hw_expansion_control =  $A1000D
 
 ; RAM
-ram_start =  $FFFF0000
+; Make sure RAM address constants work in both 16-bit and 32-bit addressing modes
+ramaddr function x,-(-x)&$FFFFFFFF
 
-nem_code_table = $FFFFAA80
 
-treasure_chest_flags = $FFFFBCA0		; The offset of the items is the same as the index of the TreasureChestData table
+ram_start =  ramaddr($FFFF0000)
 
-event_flags =  $FFFFBF00
+nem_code_table = ramaddr($FFFFAA80)
 
-primary_obj_table = $FFFFC000
-char_sprite_manager = $FFFFC000	; parent object of the character sprites on the map/level screen
-money_owned =  $FFFFC040			; amount of money that you own at the moment
+treasure_chest_flags = ramaddr($FFFFBCA0)		; The offset of the items is the same as the index of the TreasureChestData table
 
-secondary_obj_table = $FFFFC300
-tertiary_obj_table = $FFFFC980
+event_flags =  ramaddr($FFFFBF00)
 
-char_stats =  $FFFFC080
+primary_obj_table = ramaddr($FFFFC000)
+char_sprite_manager = ramaddr($FFFFC000)	; parent object of the character sprites on the map/level screen
+money_owned =  ramaddr($FFFFC040)			; amount of money that you own at the moment
 
-joypad_held =  $FFFFD000		
-joypad_pressed =  $FFFFD001
+secondary_obj_table = ramaddr($FFFFC300)
+tertiary_obj_table = ramaddr($FFFFC980)
 
-object_counter = $FFFFD00B
+char_stats =  ramaddr($FFFFC080)
 
-vdp_reg1_values = $FFFFD00C		; by reg1 I mean the 2nd register of the VDP
+joypad_held =  ramaddr($FFFFD000)		
+joypad_pressed =  ramaddr($FFFFD001)
 
-game_screen_index =  $FFFFD012
-game_screen_routine = $FFFFD014
+object_counter = ramaddr($FFFFD00B)
 
-sprite_num = $FFFFD01A			; number of sprites whose index is multiple by 8 (so if there are 2 sprites, the value in this address is 16) 
-sprite_num_saved = $FFFFD01C
+vdp_reg1_values = ramaddr($FFFFD00C)		; by reg1 I mean the 2nd register of the VDP
 
-generation_index =  $FFFFD01E		; 0 = Rhys
-									; 1 = Ayn
-									; 2 = Nial
-									; 3 = Sean
-									; 4 = Crys
-									; 5 = Adan
-									; 6 = Aron
+game_screen_index =  ramaddr($FFFFD012)
+game_screen_routine = ramaddr($FFFFD014)
 
-map_id = $FFFFD022		; most of the values stored here are used for maps, but can also be transition screens, menus, etc.
-map_id_saved = $FFFFD024
+sprite_num = ramaddr($FFFFD01A)			; number of sprites whose index is multiple by 8 (so if there are 2 sprites, the value in this address is 16) 
+sprite_num_saved = ramaddr($FFFFD01C)
 
-party_members_num =  $FFFFD026		; current number of party members
+generation_index =  ramaddr($FFFFD01E)		; 0 = Rhys ; 1 = Ayn ; 2 = Nial ; 3 = Sean ; 4 = Crys ; 5 = Adan ; 6 = Aron
 
-rng_seed =  $FFFFD036
+map_id = ramaddr($FFFFD022)		; most of the values stored here are used for maps, but can also be transition screens, menus, etc.
+map_id_saved = ramaddr($FFFFD024)
 
-primary_obj_size = $FFFFD050
+party_members_num =  ramaddr($FFFFD026)		; current number of party members
 
-script_offset =  $FFFFD064
+rng_seed =  ramaddr($FFFFD036)
 
-shop_item_num = $FFFFD066		; number of items displayed at shops
+primary_obj_size = ramaddr($FFFFD050)
 
-battle_msg_timer_saved =  $FFFFD11C
-battle_msg_timer =  $FFFFD11D		; ;  determines how long text should be displayed before continuing
+script_offset =  ramaddr($FFFFD064)
 
-sound_queue = $FFFFD11E
-sound_queue_saved = $FFFFD11F
+shop_item_num = ramaddr($FFFFD066)		; number of items displayed at shops
 
-generation_index_saved =  $FFFFD136	; writes to this value when starting a new generation and then sets this value in the generation_index RAM location
+battle_msg_timer_saved =  ramaddr($FFFFD11C)
+battle_msg_timer =  ramaddr($FFFFD11D)		; determines how long text should be displayed before continuing
 
-wren_transform_index = $FFFFD138	; 0 = Aquaskimmer
-									; 2 = Submersible
-									; 4 = Aerojet
-									; 6 = Original form from Aquaskimmer
-									; 8 = Original form from Submersible
-									; $A = Original form from Aerojet
+sound_queue = ramaddr($FFFFD11E)
+sound_queue_saved = ramaddr($FFFFD11F)
+
+generation_index_saved =  ramaddr($FFFFD136)	; writes to this value when starting a new generation and then sets this value in the generation_index RAM location
+
+wren_transform_index = ramaddr($FFFFD138)	; 0 = Aquaskimmer ; 2 = Submersible ; 4 = Aerojet ; 6 = Original form from Aquaskimmer ; 8 = Original form from Submersible ; $A = Original form from Aerojet
 									
-x_scroll_value = $FFFFD200
-y_scroll_value = $FFFFD204
+x_scroll_value = ramaddr($FFFFD200)
+y_scroll_value = ramaddr($FFFFD204)
 
-game_general_routine =  $FFFFD284
+game_general_routine =  ramaddr($FFFFD284)
 
-obj_game_event = $FFFFD380
-game_event_pointer = $FFFFD384
+obj_game_event = ramaddr($FFFFD380)
+game_event_pointer = ramaddr($FFFFD384)
 
-demo_joypad_input = $FFFFD396
+demo_joypad_input = ramaddr($FFFFD396)
 
-sprite_table_buffer = $FFFFD400
+sprite_table_buffer = ramaddr($FFFFD400)
 
-char_name_saved =  $FFFFD480
+char_name_saved =  ramaddr($FFFFD480)
 
-palette_table_buffer = $FFFFDC00
+sprite_table_input = ramaddr($FFFFD800)
 
-char_inventory =  $FFFFDE80
+palette_table_buffer = ramaddr($FFFFDC00)
 
-ram_artnem_sega = $FFFFE400
+char_inventory =  ramaddr($FFFFDE80)
 
-system_stack =  $FFFFFE00
+ram_artnem_sega = ramaddr($FFFFE400)
 
-ram_end =  $FFFFFFFF
+system_stack =  ramaddr($FFFFFE00)
+
+ram_end =  ramaddr($FFFFFFFF)
