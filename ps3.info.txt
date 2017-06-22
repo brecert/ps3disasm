@@ -107,7 +107,7 @@ cave for Rhys, but later decided to scrap it.
 0 = Landen world map
 2 = Aridia world map
 4 = Aquatica world map (frozen)
-6 = Ayn Draconia world map
+6 = Draconia world map
 8 = Terminus world map
 A = Fridigia world map
 C = Elysium world map
@@ -181,7 +181,7 @@ B0 = Divisia dungeon
 B2 = Shusoran dungeon with Lena
 B4 = Lashute evil
 B6 = Laya Temple where you teleport to other worlds
-BA = Nial Aridia Laya's world
+BA = Aridia Laya's world
 C0 = Landen tech store
 C2 = Landen armor store
 C4 = Landen weapon store
