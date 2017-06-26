@@ -98,11 +98,11 @@ EC = Referenced in the MapUpdateDataOfs, but it's never affected in the code
 
 This is a list of indices for the maps and the index is saved at memory location $FFD022; I named it map_id.
 This index is used when accessing different look-up tables necessary for graphics, sprites, etc. Some tables this is used for are
-LevelNPCSpriteOffset, MapUpdateDataOfs, MapGraphicsOffset. Some of these don't make sense for some generations, but I included them
-because the MapUpdateDataOfs data references the generations that can use the map. For instance Azura is only accessible to Ayn and
-Sean (not controllable), however data referencing Adan and Aron generation is also present. Map 30 is never used because it's immediately
-overriden when playing as the other generation characters; it's implied that in Rhys generation game designers wanted to use the Landen-Aridia
-cave for Rhys, but later decided to scrap it.
+LevelNPCSpriteOffset, MapUpdateDataOfs, MapGraphicsOffset. 
+Some map IDs don't make sense for some generations, but I included them because the MapUpdateDataOfs data references the generations that can use the map. 
+For instance Azura is only accessible to Ayn and Sean (not controllable), however data referencing Adan and Aron generation is also present.
+Map 30 is never used because it's immediately overriden when playing as the other generation characters; it's implied that in Rhys generation game designers
+wanted to use the Landen-Aridia cave for Rhys, but later decided to scrap it.
 
 0 = Landen world map
 2 = Aridia world map
