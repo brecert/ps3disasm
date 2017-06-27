@@ -21,7 +21,8 @@ as well. Of course you can change the functionality and handling of these flags 
 A = Set after talking to the old man in Yaata
 B = Incremented after each ride on the old man's boat; if the value is even, you are on the shore near Yaata, odd on the other side
 C = Set when you talk to Lyle in the island cave
-D = Set when talking to a cyborg that says: "the one you seek abides..."; triggers Wren
+D = Set when talking to a cyborg that says: "the one you seek abides..."; it's supposed to trigger Wren probably,
+    but Wren will show up either way
 E = Set when talking to Wren
 F = Set after talking to Lyle in the Control Tower
 10 = Set when fixing the weather control system
