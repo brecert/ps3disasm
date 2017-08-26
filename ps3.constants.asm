@@ -51,6 +51,13 @@ CharID_LyleRyan_Mask =  1<<CharID_LyleRyan	; $20
 CharID_LenaSari_Mask =  1<<CharID_LenaSari	; $40
 CharID_LayaGwyn_Mask =  1<<CharID_LayaGwyn	; $80
 
+CharID_Heroes_Mask = CharID_RhysNial_Mask|CharID_AynSeanCrysAdanAron_Mask
+CharID_Humans_Mask = CharID_RhysNial_Mask|CharID_AynSeanCrysAdanAron_Mask|CharID_TheaKara_Mask|CharID_LyleRyan_Mask|CharID_LenaSari_Mask|CharID_LayaGwyn_Mask
+CharID_Cyborgs_Mask = CharID_Mieu_Mask|CharID_Wren_Mask
+CharID_NonTechUsers_Mask = CharID_RhysNial_Mask|CharID_LenaSari_Mask
+CharID_TechUsers_Mask = CharID_AynSeanCrysAdanAron_Mask|CharID_Mieu_Mask|CharID_Wren_Mask|CharID_TheaKara_Mask|CharID_LyleRyan_Mask|CharID_LayaGwyn_Mask
+CharID_All_Mask = CharID_RhysNial_Mask|CharID_AynSeanCrysAdanAron_Mask|CharID_Mieu_Mask|CharID_Wren_Mask|CharID_TheaKara_Mask|CharID_LyleRyan_Mask|CharID_LenaSari_Mask|CharID_LayaGwyn_Mask
+
 
 
 ; Game Screens
