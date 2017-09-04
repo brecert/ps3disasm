@@ -1,12 +1,12 @@
 	Event Flags
 
 This a list of flags which affect handling of certain objects, events, etc. I listed the ones used/referenced
-in the game; I also included that last ones because they are part of the map data, but they don't seem to be ever used.
+in the game; I also included that last ones because they are part of the scene data, but they don't seem to be ever used.
 Those that I didn't list are free spots and can be used however you want.
 These are offsets of memory location $FFBF00 (event_flags in the constants file) through $FFBFFF. Offset $00 is always set when the game
 starts running and the offset $FF is always cleared. For the script text handling, for example, this is necessary otherwise it won't work correctly.
 You can use the offsets below and tweak the game script by choosing what flag is set and run different dialogues accordingly. Check the small tutorial
-on the game script (find "Main Game Script Area" in the disassembly). The MapUpdateDataOfs data uses the event flag offsets as well, so check that out
+on the game script (find "Main Game Script Area" in the disassembly). The Scene_UpdateDataOffs data uses the event flag offsets as well, so check that out
 as well. Of course you can change the functionality and handling of these flags in the assembly code.
 	
 0 = Set at the start of the game
@@ -91,18 +91,18 @@ E7 = Set when the sage on Skyhaven says that Nei is the word of ultimate power (
 E8 = Set after defeating Rulakir
 E9 = Set when talking to Siren in Sage Isle (same as E5)
 EA = Set when opening the Dark Force treasure chest
-EB = Referenced in the MapUpdateDataOfs, but it's never affected in the code
-EC = Referenced in the MapUpdateDataOfs, but it's never affected in the code
+EB = Referenced in the Scene_UpdateDataOffs, but it's never affected in the code
+EC = Referenced in the Scene_UpdateDataOffs, but it's never affected in the code
 -------------------------------------------------------------------------------
 
-	Map indices
+	Scene indices
 
-This is a list of indices for the maps and the index is saved at memory location $FFD022; I named it map_id.
+This is a list of indices for the scenes and the index is saved at memory location $FFD022; I named it scene_id.
 This index is used when accessing different look-up tables necessary for graphics, sprites, etc. Some tables this is used for are
-LevelNPCSpriteOffset, MapUpdateDataOfs, MapGraphicsOffset. 
-Some map IDs don't make sense for some generations, but I included them because the MapUpdateDataOfs data references the generations that can use the map. 
+LevelNPCSpriteOffset, Scene_UpdateDataOffs, Scene_GraphicsOffset. 
+Some scene IDs don't make sense for some generations, but I included them because the Scene_UpdateDataOffs data references the generations that can use the scene. 
 For instance Azura is only accessible to Ayn and Sean (not controllable), however data referencing Adan and Aron generation is also present.
-Map 30 is never used because it's immediately overriden when playing as the other generation characters; it's implied that in Rhys generation game designers
+Scene 30 is never used because it's immediately overriden when playing as the other generation characters; it's implied that in Rhys generation game designers
 wanted to use the Landen-Aridia cave for Rhys, but later decided to scrap it.
 
 0 = Landen world map
