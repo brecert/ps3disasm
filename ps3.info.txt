@@ -9,7 +9,7 @@ You can use the offsets below and tweak the game script by choosing what flag is
 on the game script (find "Main Game Script Area" in the disassembly). The Scene_UpdateDataOffs data uses the event flag offsets as well, so check that out
 as well. Of course you can change the functionality and handling of these flags in the assembly code.
 	
-0 = Set at the start of the game
+0 = Set at the start of the game ; always set
 2 = Counter incremented whenever a new dialogue box opens for events/demos
 3 = Set immediately after dragon and Maia disappear
 4 = Set as soon as Rhys enters the Landen dungeon prison and the door is closed
@@ -91,8 +91,8 @@ E7 = Set when the sage on Skyhaven says that Nei is the word of ultimate power (
 E8 = Set after defeating Rulakir
 E9 = Set when talking to Siren in Sage Isle (same as E5)
 EA = Set when opening the Dark Force treasure chest
-EB = Referenced in the Scene_UpdateDataOffs, but it's never affected in the code
-EC = Referenced in the Scene_UpdateDataOffs, but it's never affected in the code
+EB = Referenced in the Scene_UpdateDataOffs, but it's never used in the code
+EC = Referenced in the Scene_UpdateDataOffs, but it's never used in the code
 -------------------------------------------------------------------------------
 
 	Scene indices
