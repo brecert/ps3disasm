@@ -999,6 +999,15 @@ EventFlag_RulakirDefeated = $E8
 EventFlag_SirenSageIsle2 = $E9
 EventFlag_DarkForce = $EA
 
+; Generations
+GenerationID_Rhys = 0
+GenerationID_Ayn = 1
+GenerationID_Nial = 2
+GenerationID_Sean = 3
+GenerationID_Crys = 4
+GenerationID_Adan = 5
+GenerationID_Aron = 6
+
 ; ---------------------------------------------------------------------------
 ; Controller Buttons
 ;
