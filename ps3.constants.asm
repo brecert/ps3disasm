@@ -1008,6 +1008,44 @@ GenerationID_Crys = 4
 GenerationID_Adan = 5
 GenerationID_Aron = 6
 
+; Music
+MusicID_Church = $81
+MusicID_Shusoran = $82
+MusicID_Title = $83
+MusicID_Shop = $84
+MusicID_Town = $85
+MusicID_Boat = $86
+MusicID_GameOver = $87
+MusicID_Victory = $89
+MusicID_Fortune = $8A
+MusicID_World5 = $8B	; party full
+MusicID_World4 = $8C
+MusicID_World3 = $8D
+MusicID_World2 = $8E
+MusicID_World1 = $8F
+MusicID_LayaWorld = $90
+MusicID_Wedding = $91
+MusicID_WorldDeadLeader = $92
+MusicID_Dungeon1 = $93	; caves
+MusicID_Dungeon2 = $94	; advanced
+MusicID_Castle = $95
+MusicID_BattleStart = $97
+MusicID_BattleLosing = $98
+MusicID_BattleWinning = $99
+MusicID_BattleNormal = $9A
+MusicID_Megido = $9B
+MusicID_Lashute = $9C
+MusicID_LayanTemple = $9D
+MusicID_Wren = $9E
+MusicID_RoyalWaltz = $9F
+MusicID_Anger = $A0
+MusicID_DarkForce = $A1
+MusicID_Skyhaven = $A2
+MusicID_Satellite = $A3
+MusicID_Ending1 = $A4	; (Crys & Aron)
+MusicID_Ending2 = $A5	; (Sean & Adan)
+MusicID_Credits = $A8
+
 ; ---------------------------------------------------------------------------
 ; Controller Buttons
 ;
