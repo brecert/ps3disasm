@@ -1046,6 +1046,41 @@ MusicID_Ending1 = $A4	; (Crys & Aron)
 MusicID_Ending2 = $A5	; (Sean & Adan)
 MusicID_Credits = $A8
 
+; SFX
+SFXID_Decision = $B0
+SFXID_Slicer = $B1
+SFXID_Staff = $B2
+SFXID_Claw = $B3
+SFXID_Sword = $B4
+SFXID_Shot = $B5
+SFXID_ChestOpen = $B7
+SFXID_Bow = $B8
+SFXID_PrisonDoor = $BB
+SFXID_Escapipe = $BC
+SFXID_Wave = $BE
+SFXID_Forsa = $BF
+SFXID_Foi = $C0
+SFXID_Tsu = $C1
+SFXID_Gra = $C2
+SFXID_Zan = $C3
+SFXID_Grantz = $C4
+SFXID_Megido = $C5
+SFXID_Ner = $C6
+SFXID_Needler = $C7
+SFXID_Laser = $C8
+SFXID_Res = $C9
+SFXID_Earthquake = $CB
+SFXID_LevelUp = $CC
+SFXID_Disabled = $CF
+SFXID_WrenTransform = $D3
+SFXID_Destruction = $D4
+SFXID_LashuteCollapse = $D5
+SFXID_Explosion = $D6
+SFXID_Worldship = $D7
+SFXID_Aquaskimmer = $DA
+SFXID_Submersible = $DB
+SFXID_Shuttle = $DD
+
 ; ---------------------------------------------------------------------------
 ; Controller Buttons
 ;
