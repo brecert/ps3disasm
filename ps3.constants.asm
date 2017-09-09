@@ -1178,6 +1178,11 @@ party_members_num =  ramaddr($FFFFD026)		; current number of party members
 
 rng_seed =  ramaddr($FFFFD036)
 
+scene_x_pos =  ramaddr($FFFFD04A)
+scene_y_pos =  ramaddr($FFFFD04C)
+screen_x_pos =  ramaddr($FFFFD04E)
+screen_y_pos =  ramaddr($FFFFD04F)
+
 primary_obj_size = ramaddr($FFFFD050)
 
 script_offset =  ramaddr($FFFFD064)
