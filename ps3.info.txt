@@ -95,9 +95,9 @@ EB = Referenced in the Scene_UpdateDataOffs, but it's never used in the code
 EC = Referenced in the Scene_UpdateDataOffs, but it's never used in the code
 -------------------------------------------------------------------------------
 
-	Scene indices
+	Scene indexes
 
-This is a list of indices for the scenes and the index is saved at memory location $FFD022; I named it scene_id.
+This is a list of indexes for the scenes and the index is saved at memory location $FFD022; I named it scene_id.
 This index is used when accessing different look-up tables necessary for graphics, sprites, etc. Some tables this is used for are
 LevelNPCSpriteOffset, Scene_UpdateDataOffs, Scene_GraphicsOffset. 
 Some scene IDs don't make sense for some generations, but I included them because the Scene_UpdateDataOffs data references the generations that can use the scene. 
@@ -515,7 +515,7 @@ FE = Yaata armor store 1F
 392 = Rhys marriage dialogue screen
 394 = Ayn dialogue screen with Rhys/Maia
 396 = Ayn dialogue with Lyle/Siren
-398 = Rhys dialogue screen
+398 = Nial dialogue screen with Rhys and Lena
 39A = Dialogue screen when talking to Lune
 39C = Screen when choosing to marry either Laya or Alair
 39E = Sean dialogue with Ayn/Thea

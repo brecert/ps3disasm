@@ -890,7 +890,7 @@ SceneID_NewGeneration = $38C
 SceneID_RhysMarriageDialogue = $392
 SceneID_AynDialogueRhysMaia = $394
 SceneID_AynDialogueLyleSiren = $396
-SceneID_RhysDialogue = $398
+SceneID_NialDialogueScreen = $398
 SceneID_LuneDialogue = $39A
 SceneID_LayaAlairChoice = $39C
 SceneID_SeanDialogueAynThea = $39E
@@ -1194,6 +1194,7 @@ battle_msg_timer =  ramaddr($FFFFD11D)		; determines how long text should be dis
 
 sound_queue = ramaddr($FFFFD11E)
 sound_queue_saved = ramaddr($FFFFD11F)
+sound_queue_saved_2 = ramaddr($FFFFD120)
 
 generation_index_saved =  ramaddr($FFFFD136)	; writes to this value when starting a new generation and then sets this value in the generation_index RAM location
 
