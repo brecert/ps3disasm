@@ -1,6 +1,6 @@
 ; ---------------------------------------------------------------------------
 ; Offsets
-; ---------------------------------------------------------------------------	
+; ---------------------------------------------------------------------------
 
 ; Statistics
 
@@ -22,7 +22,7 @@ tech_power_addr = $58
 
 ; ---------------------------------------------------------------------------
 ; Pointers and ID's
-; ---------------------------------------------------------------------------	
+; ---------------------------------------------------------------------------
 
 ; function to determine the id in a table
 ; ptr = address of pointer in the table
@@ -1129,7 +1129,7 @@ z80_ram_end =  $A02000	; end of non-reserved Z80 RAM
 z80_bus_request =  $A11100
 z80_reset =  $A11200
 
-security_addr =  $A14000 
+security_addr =  $A14000
 
 ; I/O area
 hw_version =  $A10001
@@ -1162,7 +1162,7 @@ tertiary_obj_table = ramaddr($FFFFC980)
 
 char_stats =  ramaddr($FFFFC080)
 
-joypad_held =  ramaddr($FFFFD000)		
+joypad_held =  ramaddr($FFFFD000)
 joypad_pressed =  ramaddr($FFFFD001)
 
 object_counter = ramaddr($FFFFD00B)
@@ -1172,7 +1172,7 @@ vdp_reg1_values = ramaddr($FFFFD00C)		; by reg1 I mean the 2nd register of the V
 game_screen_index =  ramaddr($FFFFD012)
 game_screen_routine = ramaddr($FFFFD014)
 
-sprite_num = ramaddr($FFFFD01A)			; number of sprites whose index is multiple by 8 (so if there are 2 sprites, the value in this address is 16) 
+sprite_num = ramaddr($FFFFD01A)			; number of sprites whose index is multiple by 8 (so if there are 2 sprites, the value in this address is 16)
 sprite_num_saved = ramaddr($FFFFD01C)
 
 generation_index =  ramaddr($FFFFD01E)		; 0 = Rhys ; 1 = Ayn ; 2 = Nial ; 3 = Sean ; 4 = Crys ; 5 = Adan ; 6 = Aron
@@ -1205,7 +1205,7 @@ sound_queue_saved_2 = ramaddr($FFFFD120)
 generation_index_saved =  ramaddr($FFFFD136)	; writes to this value when starting a new generation and then sets this value in the generation_index RAM location
 
 wren_transform_index = ramaddr($FFFFD138)	; 0 = Aquaskimmer ; 2 = Submersible ; 4 = Aerojet ; 6 = Original form from Aquaskimmer ; 8 = Original form from Submersible ; $A = Original form from Aerojet
-									
+
 x_scroll_value = ramaddr($FFFFD200)
 y_scroll_value = ramaddr($FFFFD204)
 
