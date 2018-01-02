@@ -19,6 +19,9 @@ luck = $52
 skill = $53
 exp_addr = $54
 tech_power_addr = $58
+attack_mod = $6C	; word ; affected by Fanbi
+defense_mod = $6E	; word ; affected by Shu
+speed_mod = $70	; byte ; affected by Ner
 
 ; ---------------------------------------------------------------------------
 ; Pointers and ID's
@@ -1195,6 +1198,10 @@ script_offset =  ramaddr($FFFFD064)
 
 shop_item_num = ramaddr($FFFFD066)		; number of items displayed at shops
 
+battle_char_list =  ramaddr($FFFFD09C)	; list of character stats addresses (Hero, Mieu and Wren)
+battle_char_list_2 =  ramaddr($FFFFD0A4)	; list of character stats addresses (4th and 5th characters)
+battle_turn_data =  ramaddr($FFFFD0AA)	; data holding fighter stats addresses and agility for the current turn
+
 battle_msg_timer_saved =  ramaddr($FFFFD11C)
 battle_msg_timer =  ramaddr($FFFFD11D)		; determines how long text should be displayed before continuing
 
@@ -1225,6 +1232,7 @@ sprite_table_input = ramaddr($FFFFD800)
 palette_table_buffer = ramaddr($FFFFDC00)
 
 char_inventory =  ramaddr($FFFFDE80)
+char_techs =  ramaddr($FFFFDF20)
 
 ram_artnem_sega = ramaddr($FFFFE400)
 
