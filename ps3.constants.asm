@@ -25,27 +25,25 @@ speed_mod = $70	; byte ; affected by Ner
 
 
 ; ---------------------------------------------------------------------------
-; Properties and constants applicable to all objects
+; Properties and constants for objects
 render_flags = 0	; byte
 subtype = 1			; byte
 routine = 2			; word
 update_addr = 4		; longword
 x_pos = 8			; word
 y_pos = $A			; word
+frame_counter = $C	; word
+facing_dir = $E		; byte	; 0 = up; 1 = right; 2 = down; left = 3
 mappings = $10		; longword
 art_tile = $14		; word
 sprite_type = $18	; word
 sprite_x_pos = $1A	; word
 sprite_y_pos = $1C	; word
+mapping_frame = $22	; word
 
 obj_size = $40
 next_obj = $40
 prev_obj = -$40
-; ---------------------------------------------------------------------------
-
-; ---------------------------------------------------------------------------
-; Properties and constants applicable to characters and NPCs
-facing_dir = $E	; byte	; 0 = up; 1 = right; 2 = down; left = 3
 ; ---------------------------------------------------------------------------
 
 ; ---------------------------------------------------------------------------
