@@ -1173,6 +1173,8 @@ ramaddr function x,-(-x)&$FFFFFFFF
 
 ram_start =  ramaddr($FFFF0000)
 
+collision_data =	ramaddr($FFFF0000)
+
 nem_code_table = ramaddr($FFFFAA80)
 
 treasure_chest_flags = ramaddr($FFFFBCA0)		; The offset of the items is the same as the index of the TreasureChestData table
@@ -1236,8 +1238,10 @@ generation_index_saved =  ramaddr($FFFFD136)	; writes to this value when startin
 
 wren_transform_index = ramaddr($FFFFD138)	; 0 = Aquaskimmer ; 2 = Submersible ; 4 = Aerojet ; 6 = Original form from Aquaskimmer ; 8 = Original form from Submersible ; $A = Original form from Aerojet
 
-x_scroll_value = ramaddr($FFFFD200)
-y_scroll_value = ramaddr($FFFFD204)
+camera_x_pos = ramaddr($FFFFD200)
+camera_x_pos_copy = ramaddr($FFFFD202)
+camera_y_pos = ramaddr($FFFFD204)
+camera_y_pos_copy = ramaddr($FFFFD206)
 
 game_general_routine =  ramaddr($FFFFD284)
 
