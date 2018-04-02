@@ -40,6 +40,7 @@ sprite_type = $18	; word
 sprite_x_pos = $1A	; word
 sprite_y_pos = $1C	; word
 mapping_frame = $22	; word
+script_offs = $26	; word
 
 obj_size = $40
 next_obj = $40
@@ -1182,7 +1183,7 @@ treasure_chest_flags = ramaddr($FFFFBCA0)		; The offset of the items is the same
 event_flags =  ramaddr($FFFFBF00)
 
 primary_obj_table = ramaddr($FFFFC000)
-char_sprite_manager = ramaddr($FFFFC000)	; parent object of the character sprites on scenes
+map_controls = ramaddr($FFFFC000)			; object that handles controls for the map such as input, random battle counter, demos... 
 money_owned =  ramaddr($FFFFC040)			; amount of money that you own at the moment
 
 secondary_obj_table = ramaddr($FFFFC300)
