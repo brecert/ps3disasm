@@ -1191,8 +1191,31 @@ tertiary_obj_table = ramaddr($FFFFC980)
 
 char_stats =  ramaddr($FFFFC080)
 
-joypad_held =  ramaddr($FFFFD000)
-joypad_pressed =  ramaddr($FFFFD001)
+joypad_1 = ramaddr($FFFFD000)
+joypad_held_1 =  ramaddr($FFFFD000)
+joypad_pressed_1 =  ramaddr($FFFFD001)
+joypad_2 = ramaddr($FFFFD002)
+joypad_held_2 =  ramaddr($FFFFD002)
+joypad_pressed_2 =  ramaddr($FFFFD003)
+
+global_status_flags = ramaddr($FFFFD004)	; bitfield;
+												;	bit 0 = if set, the game goes to the space screen
+												;	bit 1 = if set, random battles are enabled
+												;	bit 2 = if set, you cannot control the characters
+												;	bit 3 = set during screen fade-out; this will automatically move the characters during map transitions
+												;	bit 4 = seems to be unused
+												;	bit 5 = set when characters are moving
+												;	bit 6 = if clear, the game will move to the Game Over screen in battle
+												;	bit 7 = set during V-Blank
+global_status_flags_2 = ramaddr($FFFFD005)	; bitfield;
+												;	bit 0 = seems to be unused
+												;	bit 1 = if set, the game enters the battle screen
+												;	bit 2 = if set, the game goes into script mode
+												;	bit 3 = if set, the game enters the characters menu
+												;	bit 4 = if set, the game will load a new map
+												;	bit 5 = if set, the game will load the starting data (e.g. map and coordinates) for the current generation; seems to be unused
+												;	bit 6 = If set, CRAM is updated
+												;	bit 7 = if set, the Sprite table is updated
 
 object_counter = ramaddr($FFFFD00B)
 
