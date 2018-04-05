@@ -1211,11 +1211,20 @@ global_status_flags_2 = ramaddr($FFFFD005)	; bitfield;
 												;	bit 0 = seems to be unused
 												;	bit 1 = if set, the game enters the battle screen
 												;	bit 2 = if set, the game goes into script mode
-												;	bit 3 = if set, the game enters the characters menu
+												;	bit 3 = if set, the game will enter the characters menu
 												;	bit 4 = if set, the game will load a new map
 												;	bit 5 = if set, the game will load the starting data (e.g. map and coordinates) for the current generation; seems to be unused
 												;	bit 6 = If set, CRAM is updated
 												;	bit 7 = if set, the Sprite table is updated
+global_status_flags_3 = ramaddr($FFFFD006)	; bitfield;
+												;	bit 0 = if set, objects, sprites and events will not be processed
+												;	bit 1 = if set, the game enters the dialogue screen
+												;	bit 2 = if set, the Sprite table is cleared
+												;	bit 3 = set if the Z80 is stopped
+												;	bit 4 = if set, the game will enter the shop screen
+												;	bit 5 = set when the A button is pressed
+												;	bit 6 = set when data is being loaded in VRAM
+												;	bit 7 = seems to be unused
 
 object_counter = ramaddr($FFFFD00B)
 
