@@ -1172,9 +1172,13 @@ hw_expansion_control =  $A1000D
 ramaddr function x,-(-x)&$FFFFFFFF
 
 
-ram_start =  ramaddr($FFFF0000)
+ram_start = ramaddr($FFFF0000)
 
-collision_data =	ramaddr($FFFF0000)
+obj_collision_data = ramaddr($FFFF0000)	; defines collision areas according to each object position
+
+map_layout_fg = ramaddr($FFFF2000)
+map_layout_bg = ramaddr($FFFF3200)
+chunk_table = ramaddr($FFFF4400)	; 34 bytes per chunk; the first word holds collision data; the following 16 words are tile definitions
 
 nem_code_table = ramaddr($FFFFAA80)
 
