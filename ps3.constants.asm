@@ -1176,9 +1176,9 @@ ram_start = ramaddr($FFFF0000)
 
 obj_collision_data = ramaddr($FFFF0000)	; defines collision areas according to each object position
 
-map_layout_fg = ramaddr($FFFF2000)
-map_layout_bg = ramaddr($FFFF3200)
-chunk_table = ramaddr($FFFF4400)	; 34 bytes per chunk; the first word holds collision data; the following 16 words are tile definitions
+map_layout_fg = ramaddr($FFFF2000)	; layout for plane A
+map_layout_bg = ramaddr($FFFF3200)	; layout for plane B
+chunk_table = ramaddr($FFFF4400)	; 34 bytes per chunk; the first word holds collision data; the next 16 words are plane mappings definitions
 
 nem_code_table = ramaddr($FFFFAA80)
 
