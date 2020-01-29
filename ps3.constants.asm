@@ -1266,7 +1266,8 @@ scene_y_pos =  ramaddr($FFFFD04C)
 screen_x_pos =  ramaddr($FFFFD04E)
 screen_y_pos =  ramaddr($FFFFD04F)
 
-primary_obj_size = ramaddr($FFFFD050)
+char_stats_offsets = ramaddr($FFFFD050)
+char_stats_indexes = ramaddr($FFFFD05A)
 
 script_offset =  ramaddr($FFFFD064)
 
