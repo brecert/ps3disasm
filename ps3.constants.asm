@@ -1292,6 +1292,7 @@ camera_x_pos = ramaddr($FFFFD200)
 camera_x_pos_copy = ramaddr($FFFFD202)
 camera_y_pos = ramaddr($FFFFD204)
 camera_y_pos_copy = ramaddr($FFFFD206)
+camera_step_counter = ramaddr($FFFFD242)
 
 game_general_routine =  ramaddr($FFFFD284)
 script_flags = ramaddr($FFFFD286)	; bitfield; only bits 6 and 7 seem to be used; bit 6 = script running; bit 7 = auto scroll; for the endings, it enables the transmission text
