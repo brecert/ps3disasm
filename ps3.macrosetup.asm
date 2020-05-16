@@ -151,8 +151,14 @@ _cmp	macro
 _btst	macro
 		insn2op btst.ATTRIBUTE, ALLARGS
 	endm
-	
 
+_bset	macro
+		insn2op bset.ATTRIBUTE, ALLARGS
+	endm
+
+_bclr	macro
+		insn2op bclr.ATTRIBUTE, ALLARGS
+	endm
 
     if revision=0
 
@@ -165,6 +171,7 @@ subi_	macro
 adda_	macro
 		!addq.ATTRIBUTE ALLARGS
 	endm
+		
 
     else
 
@@ -177,5 +184,6 @@ subi_	macro
 adda_	macro
 		!adda.ATTRIBUTE ALLARGS
 	endm
+
 
     endif
