@@ -697,7 +697,7 @@ loc_26EA2:
 
 	even
 
-loc_26ED6:
+loc_26F9C:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$43, $44, $57, $48, $1F, $37, $45, $48, $1F, $31, $31, $44, $F4
@@ -745,7 +745,7 @@ loc_26F74:
 
 	even
 
-loc_26F9C:
+loc_26ED6:
 	dc.w	0
 	dc.b	$07, $00
 	dc.b	$5B, $3F, $3B, $49, $14, $85, $10, $8E, $7B, $43, $31, $32, $1F, $44, $4E, $33
@@ -784,7 +784,7 @@ loc_27006:
 
 	even
 
-loc_27036:
+
 	dc.w	loc_26200-Gamescript
 	dc.b	$16, $00
 	dc.b	$8E, $10, $6E, $34, $32, $39, $37, $1F, $F4
@@ -798,7 +798,7 @@ loc_27036:
 
 	even
 
-loc_2706C:
+
 	dc.w	loc_27096-Gamescript
 	dc.b	$07, $00
 	dc.b	$6F, $68, $94, $34, $32, $F4
@@ -812,7 +812,7 @@ loc_2706C:
 
 	even
 
-loc_27096:
+
 	dc.w	loc_270BE-Gamescript
 	dc.b	$16, $00
 	dc.b	$3F, $3F, $35, $66, $42, $31, $58, $F4
@@ -824,7 +824,7 @@ loc_27096:
 
 	even
 
-loc_270BE:
+
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -834,7 +834,7 @@ loc_270BE:
 
 	even
 
-loc_270F4:
+loc_27036:
 	dc.w	loc_27126-Gamescript
 	dc.b	$07, $00
 	dc.b	$33, $31, $54, $32, $6B, $8D, $6D, $6B, $48, $1F, $40, $35, $56, $F4
@@ -846,7 +846,7 @@ loc_270F4:
 
 	even
 
-loc_27126:
+loc_2706C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4F, $44, $4F, $45, $1F, $31, $37, $43, $14, $4F, $44, $43, $4E, $40, $1F, $8A
@@ -855,7 +855,7 @@ loc_27126:
 
 	even
 
-loc_27158:
+loc_27096:
 	dc.w	loc_2718A-Gamescript
 	dc.b	$07, $00
 	dc.b	$34, $59, $14, $4F, $42, $3B, $4E, $66, $3F, $5D, $F4
@@ -867,7 +867,7 @@ loc_27158:
 
 	even
 
-loc_2718A:
+loc_270BE:
 	dc.w	loc_261F8-Gamescript
 	dc.b	$16, $00
 	dc.b	$44, $5D, $F4
@@ -880,7 +880,7 @@ loc_2718A:
 
 	even
 
-loc_271BC:
+loc_270F4:
 	dc.w	loc_271EA-Gamescript
 	dc.b	$07, $00
 	dc.b	$6F, $68, $94, $34, $32, $F4
@@ -894,7 +894,7 @@ loc_271BC:
 
 	even
 
-loc_271EA:
+loc_27126:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$11, $52, $57, $48, $1F, $71, $82, $95, $68, $67, $12, $F4
@@ -907,7 +907,7 @@ loc_271EA:
 
 	even
 
-loc_27218:
+loc_27158:
 	dc.w	loc_2724A-Gamescript
 	dc.b	$07, $00
 	dc.b	$6F, $68, $94, $34, $32, $F4
@@ -921,7 +921,7 @@ loc_27218:
 
 	even
 
-loc_2724A:
+loc_2718A:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$F4
@@ -934,7 +934,7 @@ loc_2724A:
 
 	even
 
-loc_27270:
+loc_271BC:
 	dc.w	loc_261F8-Gamescript
 	dc.b	$16, $00
 	dc.b	$85, $10, $8E, $7B, $3A, $5D, $66, $42, $14, $6F, $68, $94, $34, $32, $F4
@@ -952,7 +952,7 @@ loc_27270:
 
 	even
 
-loc_272A0:
+loc_271EA:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$43, $44, $57, $48, $37, $45, $48, $14, $6F, $68, $94, $34, $32, $F4
@@ -964,7 +964,7 @@ loc_272A0:
 
 	even
 
-loc_272D2:
+loc_27218:
 	dc.w	loc_26200-Gamescript
 	dc.b	$16, $00
 	dc.b	$36, $34, $37, $5C, $44, $37, $3B, $42, $14, $F4
@@ -978,7 +978,7 @@ loc_272D2:
 
 	even
 
-loc_27330:
+loc_2724A:
 	dc.w	loc_27362-Gamescript
 	dc.b	$07, $00
 	dc.b	$33, $31, $54, $32, $6B, $8D, $6D, $6B, $48, $1F, $40, $35, $56, $F4
@@ -990,7 +990,7 @@ loc_27330:
 
 	even
 
-loc_27362:
+loc_27270:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$3A, $31, $36, $5D, $14, $F4
@@ -1009,7 +1009,7 @@ loc_27362:
 
 	even
 
-loc_27396:
+loc_272A0:
 	dc.w	loc_273BE-Gamescript
 	dc.b	$07, $00
 	dc.b	$6F, $68, $94, $34, $32, $F4
@@ -1023,7 +1023,7 @@ loc_27396:
 
 	even
 
-loc_273BE:
+loc_272D2:
 	dc.w	loc_261F8-Gamescript
 	dc.b	$16, $00
 	dc.b	$44, $5D, $F4
@@ -1040,7 +1040,7 @@ loc_273BE:
 
 	even
 
-loc_273E2:
+loc_27330:
 	dc.w	loc_2740A-Gamescript
 	dc.b	$07, $00
 	dc.b	$33, $31, $54, $32, $6B, $8D, $6D, $6B, $48, $1F, $40, $35, $56, $F4
@@ -1052,7 +1052,7 @@ loc_273E2:
 
 	even
 
-loc_2740A:
+loc_27362:
 	dc.w	loc_26200-Gamescript
 	dc.b	$16, $00
 	dc.b	$6B, $8D, $6D, $6B, $48, $1F, $3F, $4F, $49, $14, $3F, $43, $33, $1F, $3F, $3F
@@ -1063,7 +1063,7 @@ loc_2740A:
 
 	even
 
-loc_27430:
+loc_27396:
 	dc.w	loc_2750A-Gamescript
 	dc.b	$07, $00
 	dc.b	$39, $48, $1F, $8E, $10, $6E, $34, $32, $39, $37, $48, $1F, $F4
@@ -1075,7 +1075,7 @@ loc_27430:
 
 	even
 
-loc_2750A:
+loc_273BE:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$6F, $68, $94, $34, $32, $F4
@@ -1089,7 +1089,7 @@ loc_2750A:
 
 	even
 
-loc_2753C:
+loc_273E2:
 	dc.w	loc_2759C-Gamescript
 	dc.b	$07, $00
 	dc.b	$8E, $10, $6E, $48, $1F, $34, $3B, $5A, $45, $1F, $34, $35, $33, $57, $F4
@@ -1101,7 +1101,7 @@ loc_2753C:
 
 	even
 
-loc_2759C:
+loc_2740A:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$3B, $5A, $48, $1F, $52, $5D, $49, $14, $43, $F4
@@ -1112,7 +1112,7 @@ loc_2759C:
 
 	even
 
-loc_275FE:
+loc_27430:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$32, $56, $44, $31, $F4
@@ -1146,7 +1146,7 @@ loc_275FE:
 
 	even
 
-loc_2765E:
+loc_2750A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4F, $44, $43, $4E, $40, $1F, $8A, $10, $76, $43, $1F, $30, $44, $3F, $45, $F8
@@ -1157,7 +1157,7 @@ loc_2765E:
 
 	even
 
-loc_27694:
+loc_2753C:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$5B, $3F, $3B, $F4
@@ -1174,7 +1174,7 @@ loc_27694:
 
 	even
 
-loc_276C8:
+loc_2759C:
 	dc.w	loc_276F6-Gamescript
 	dc.b	$09, $00
 	dc.b	$5B, $3B, $52, $1F, $43, $3B, $F4
@@ -1188,7 +1188,7 @@ loc_276C8:
 
 	even
 
-loc_276F6:
+loc_275FE:
 	dc.w	loc_27720-Gamescript
 	dc.b	$16, $00
 	dc.b	$3A, $30, $3A, $30, $1F, $4B, $47, $45, $1F, $48, $57, $44, $3A, $59, $16, $F8
@@ -1208,7 +1208,7 @@ loc_276F6:
 
 	even
 
-loc_27720:
+loc_2765E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -1223,7 +1223,7 @@ loc_27720:
 
 	even
 
-loc_27784:
+loc_27694:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$02, $01, $01, $01, $47, $5D, $4E, $33, $1F, $6B, $8D, $6D, $6B, $3A, $4E, $F4
@@ -1236,7 +1236,7 @@ loc_27784:
 
 	even
 
-loc_277AE:
+loc_276C8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $48, $1F, $31, $40, $F4
@@ -1248,7 +1248,7 @@ loc_277AE:
 
 	even
 
-loc_277DA:
+loc_276F6:
 	dc.w	loc_26200-Gamescript
 	dc.b	$16, $00
 	dc.b	$3D, $35, $31, $45, $49, $14, $6B, $8D, $6D, $6B, $48, $1F, $31, $40, $F4
@@ -1268,7 +1268,7 @@ loc_277DA:
 
 	even
 
-loc_2783A:
+loc_27720:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -1282,7 +1282,7 @@ loc_2783A:
 
 	even
 
-loc_27894:
+loc_27784:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$32, $3B, $44, $5B, $59, $3F, $1F, $3D, $35, $31, $F4
@@ -1297,7 +1297,7 @@ loc_27894:
 
 	even
 
-loc_278F2:
+loc_277AE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $31, $F4
@@ -1308,7 +1308,7 @@ loc_278F2:
 
 	even
 
-loc_2791E:
+loc_277DA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3B, $4E, $48, $4E, $40, $1F, $81, $9B, $10, $8E, $43, $1F, $30, $44, $3F, $45
@@ -1320,7 +1320,7 @@ loc_2791E:
 
 	even
 
-loc_2794A:
+loc_2783A:
 	dc.w	loc_2797A-Gamescript
 	dc.b	$09, $08
 	dc.b	$4B, $47, $45, $1F, $48, $57, $3F, $31, $48, $F4
@@ -1339,7 +1339,7 @@ loc_2794A:
 
 	even
 
-loc_2797A:
+loc_27894:
 	dc.w	loc_261F8-Gamescript
 	dc.b	$16, $00
 	dc.b	$85, $10, $8E, $7B, $3A, $5D, $5C, $1F, $41, $59, $3F, $1F, $57, $64, $32, $F4
@@ -1356,7 +1356,7 @@ loc_2797A:
 
 	even
 
-loc_279B0:
+loc_278F2:
 	dc.w	loc_27A94-Gamescript
 	dc.b	$09, $00
 	dc.b	$4D, $37, $43, $32, $48, $1F, $52, $57, $48, $1F, $4F, $F4
@@ -1373,7 +1373,7 @@ loc_279B0:
 
 	even
 
-loc_27A94:
+loc_2791E:
 	dc.w	loc_261F8-Gamescript
 	dc.b	$16, $00
 	dc.b	$31, $4E, $F4
@@ -1386,7 +1386,7 @@ loc_27A94:
 
 	even
 
-loc_27AF6:
+loc_2794A:
 	dc.w	loc_27B2C-Gamescript
 	dc.b	$09, $00
 	dc.b	$8D, $68, $67, $52, $1F, $F4
@@ -1400,7 +1400,7 @@ loc_27AF6:
 
 	even
 
-loc_27B2C:
+loc_2797A:
 	dc.w	loc_261F8-Gamescript
 	dc.b	$16, $00
 	dc.b	$4E, $F4
@@ -1413,7 +1413,7 @@ loc_27B2C:
 
 	even
 
-loc_27B5A:
+loc_279B0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$57, $65, $32, $3B, $4E, $40, $1F, $8D, $68, $73, $8F, $43, $1F, $30, $44, $3F
@@ -1425,7 +1425,7 @@ loc_27B5A:
 
 	even
 
-loc_27BE0:
+loc_27A94:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$18, $3A, $F4
@@ -1445,7 +1445,7 @@ loc_27BE0:
 
 	even
 
-loc_27C14:
+loc_27AF6:
 	dc.w	loc_261F8-Gamescript
 	dc.b	$16, $00
 	dc.b	$4F, $44, $4F, $45, $49, $14, $35, $41, $42, $1F, $6B, $8D, $6D, $6B, $48, $1F
@@ -1462,7 +1462,7 @@ loc_27C14:
 
 	even
 
-loc_27C78:
+loc_27B2C:
 	dc.w	loc_27CAA-Gamescript
 	dc.b	$10, $00
 	dc.b	$32, $33, $43, $1F, $3A, $50, $3A, $F4
@@ -1473,7 +1473,7 @@ loc_27C78:
 
 	even
 
-loc_27CAA:
+loc_27B5A:
 	dc.w	loc_261F8-Gamescript
 	dc.b	$16, $00
 	dc.b	$32, $4F, $48, $1F, $50, $39, $32, $45, $49, $14, $30, $5D, $39, $37, $48, $1F
@@ -1487,7 +1487,7 @@ loc_27CAA:
 
 	even
 
-loc_27CAE:
+loc_27BE0:
 	dc.w	loc_27CB2-Gamescript
 	dc.b	$10, $00
 	dc.b	$39, $48, $37, $45, $45, $14, $43, $41, $F4
@@ -1503,7 +1503,7 @@ loc_27CAE:
 
 	even
 
-loc_27CB2:
+loc_27C14:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$39, $59, $F4
@@ -1515,7 +1515,7 @@ loc_27CB2:
 
 	even
 
-loc_27CE6:
+loc_27C78:
 	dc.w	loc_27D16-Gamescript
 	dc.b	$10, $00
 	dc.b	$5B, $3F, $3B, $49, $14, $39, $5D, $44, $45, $1F, $35, $5B, $31, $31, $48, $45
@@ -1532,7 +1532,7 @@ loc_27CE6:
 
 	even
 
-loc_27D16:
+loc_27CAA:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$F4
@@ -1545,7 +1545,7 @@ loc_27D16:
 
 	even
 
-loc_27DEC:
+loc_27CAE:
 	dc.w	loc_27E22-Gamescript
 	dc.b	$10, $00
 	dc.b	$F4
@@ -1562,7 +1562,7 @@ loc_27DEC:
 
 	even
 
-loc_27E22:
+loc_27CB2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$30, $3F, $3F, $35, $37, $42, $14, $31, $31, $36, $52, $40, $16
@@ -1570,7 +1570,7 @@ loc_27E22:
 
 	even
 
-loc_27E4E:
+loc_27CE6:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$92, $73, $90, $8D, $90, $76, $1F, $71, $F4
@@ -1581,7 +1581,7 @@ loc_27E4E:
 
 	even
 
-loc_27E7E:
+loc_27D16:
 	dc.w	loc_27EE2-Gamescript
 	dc.b	$10, $00
 	dc.b	$6D, $72, $9C, $69, $1F, $70, $94, $7A, $91, $10, $8F, $1F, $76, $92, $10, $80
@@ -1595,7 +1595,7 @@ loc_27E7E:
 
 	even
 
-loc_27EE2:
+loc_27DEC:
 	dc.w	loc_2B6C0-Gamescript
 	dc.b	$18, $00
 	dc.b	$68, $85, $6C, $8D, $1F, $02, $01, $01, $01, $7E, $94, $85, $6A, $14, $F8
@@ -1614,7 +1614,7 @@ loc_27EE2:
 
 	even
 
-loc_27F10:
+loc_27E22:
 	dc.w	loc_27F44-Gamescript
 	dc.b	$10, $00
 	dc.b	$82, $F4
@@ -1626,7 +1626,7 @@ loc_27F10:
 
 	even
 
-loc_27F44:
+loc_27E4E:
 	dc.w	loc_2B616-Gamescript
 	dc.b	$18, $00
 	dc.b	$6C, $78, $79, $1F, $11, $87, $8D, $71, $6D, $7F, $1F, $78, $6D, $12, $14, $11
@@ -1638,7 +1638,7 @@ loc_27F44:
 
 	even
 
-loc_27FA0:
+loc_27E7E:
 	dc.w	loc_27FD4-Gamescript
 	dc.b	$10, $0D
 	dc.b	$7B, $6C, $85, $7F, $1F, $72, $10, $90, $94, $80, $14, $7C, $72, $7F, $1F, $F4
@@ -1650,7 +1650,7 @@ loc_27FA0:
 
 	even
 
-loc_27FD4:
+loc_27EE2:
 	dc.w	loc_2B4F8-Gamescript
 	dc.b	$18, $00
 	dc.b	$82, $76, $78, $7F, $1F, $68, $72, $93, $1F, $F0
@@ -1662,7 +1662,7 @@ loc_27FD4:
 
 	even
 
-loc_28058:
+loc_27F10:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$71, $F4
@@ -1675,7 +1675,7 @@ loc_28058:
 
 	even
 
-loc_28088:
+loc_27F44:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$4F, $3F, $39, $43, $52, $44, $31, $1F, $35, $5B, $31, $31, $1F, $34, $5D, $44
@@ -1688,7 +1688,7 @@ loc_28088:
 
 	even
 
-loc_280BE:
+loc_27FA0:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$53, $41, $56, $48, $1F, $F4
@@ -1703,7 +1703,7 @@ loc_280BE:
 
 	even
 
-loc_280EC:
+loc_27FD4:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$39, $48, $1F, $67, $F4
@@ -1715,7 +1715,7 @@ loc_280EC:
 
 	even
 
-loc_28120:
+loc_28058:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$8D, $68, $67, $48, $1F, $3F, $4F, $49, $14, $89, $94, $73, $76, $10, $5C, $1F
@@ -1730,7 +1730,7 @@ loc_28120:
 
 	even
 
-loc_28158:
+loc_28088:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $48, $1F, $3F, $4F, $5C, $1F, $4F, $3F, $39, $43, $44, $31, $48
@@ -1741,7 +1741,7 @@ loc_28158:
 
 	even
 
-loc_28188:
+loc_280BE:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$5B, $59, $56, $49, $14, $8D, $68, $67, $48, $1F, $3F, $4F, $43, $1F, $3F, $3F
@@ -1754,7 +1754,7 @@ loc_28188:
 
 	even
 
-loc_281B8:
+loc_280EC:
 	dc.w	loc_261FC-Gamescript
 	dc.b	$16, $00
 	dc.b	$8D, $68, $67, $48, $3F, $4F, $F4
@@ -1765,7 +1765,7 @@ loc_281B8:
 
 	even
 
-loc_281BC:
+loc_28120:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$53, $41, $56, $48, $1F, $4E, $40, $45, $1F, $31, $66, $42, $52, $14, $8D, $68
@@ -1777,7 +1777,7 @@ loc_281BC:
 
 	even
 
-loc_28214:
+loc_28158:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$53, $41, $56, $48, $1F, $3B, $5A, $49, $14, $35, $3F, $31, $43, $F4
@@ -1791,7 +1791,7 @@ loc_28214:
 
 	even
 
-loc_28246:
+loc_28188:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$39, $48, $37, $45, $48, $1F, $3C, $F4
@@ -1803,7 +1803,7 @@ loc_28246:
 
 	even
 
-loc_28272:
+loc_281B8:
 	dc.w	loc_2829E-Gamescript
 	dc.b	$16, $00
 	dc.b	$8D, $68, $8F, $3A, $4E, $F4
@@ -1818,7 +1818,7 @@ loc_28272:
 
 	even
 
-loc_2829E:
+loc_281BC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $8F, $3A, $4E, $48, $1F, $34, $43, $52, $F4
@@ -1830,7 +1830,7 @@ loc_2829E:
 
 	even
 
-loc_282C8:
+
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$11, $41, $36, $48, $1F, $31, $3B, $12, $43, $1F, $8D, $68, $8F, $3A, $4E, $48
@@ -1847,7 +1847,7 @@ loc_282C8:
 
 	even
 
-loc_28356:
+loc_28214:
 	dc.w	loc_26296-Gamescript
 	dc.b	$16, $00
 	dc.b	$02, $01, $01, $01, $47, $5D, $4E, $33, $14, $30, $31, $48, $1F, $51, $F4
@@ -1859,7 +1859,7 @@ loc_28356:
 
 	even
 
-loc_2838C:
+loc_28246:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$8D, $68, $8F, $34, $32, $F4
@@ -1870,7 +1870,7 @@ loc_2838C:
 
 	even
 
-loc_283B4:
+loc_28272:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$47, $33, $16, $1F, $6B, $8D, $6D, $6B, $48, $1F, $3F, $4F, $49, $14, $8D, $68
@@ -1881,7 +1881,7 @@ loc_283B4:
 
 	even
 
-loc_283DA:
+loc_2829E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -1899,7 +1899,7 @@ loc_283DA:
 
 	even
 
-loc_2840A:
+loc_282C8:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$35, $41, $42, $14, $4A, $36, $3B, $34, $48, $1F, $43, $36, $45, $49, $14, $39
@@ -1916,7 +1916,7 @@ loc_2840A:
 
 	even
 
-loc_2840E:
+loc_28356:
 	dc.w	loc_26236-Gamescript
 	dc.b	$16, $00
 	dc.b	$8D, $68, $8F, $3A, $4E, $16, $F8
@@ -1926,7 +1926,7 @@ loc_2840E:
 
 	even
 
-loc_28412:
+loc_2838C:
 	dc.w	loc_26296-Gamescript
 	dc.b	$16, $00
 	dc.b	$38, $F4
@@ -1938,7 +1938,7 @@ loc_28412:
 
 	even
 
-loc_2843A:
+loc_283B4:
 	dc.w	loc_26204-Gamescript
 	dc.b	$16, $00
 	dc.b	$8D, $68, $8F, $3A, $4E, $16, $1F, $44, $F4
@@ -1949,7 +1949,7 @@ loc_2843A:
 
 	even
 
-loc_284EE:
+loc_283DA:
 	dc.w	loc_26296-Gamescript
 	dc.b	$16, $00
 	dc.b	$11, $41, $36, $48, $1F, $31, $3B, $12, $5C, $1F, $41, $35, $66, $42, $14, $32
@@ -1962,7 +1962,7 @@ loc_284EE:
 
 	even
 
-loc_28518:
+loc_2840A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$85, $10, $8E, $7B, $35, $14, $8E, $7B, $4A, $51, $35, $14, $36, $65, $32, $35
@@ -1978,7 +1978,7 @@ loc_28518:
 
 	even
 
-loc_285D8:
+loc_2840E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$85, $10, $8E, $7B, $4A, $51, $49, $14, $F4
@@ -1988,7 +1988,7 @@ loc_285D8:
 
 	even
 
-loc_28604:
+loc_28412:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$1F, $39, $59, $49, $1F, $36, $3B, $65, $32, $72, $73, $79, $87, $F4
@@ -1997,7 +1997,7 @@ loc_28604:
 
 	even
 
-loc_28634:
+loc_2843A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $90, $94, $49, $14, $36, $3B, $65, $32, $72, $73, $79, $87, $5C, $1F
@@ -2025,7 +2025,7 @@ loc_28634:
 
 	even
 
-loc_28664:
+loc_284EE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$1F, $39, $59, $49, $1F, $71, $79, $8D, $68, $7A, $1F, $72, $73, $79, $87, $F4
@@ -2034,7 +2034,7 @@ loc_28664:
 
 	even
 
-loc_28682:
+loc_28518:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $41, $36, $48, $1F, $31, $3B, $12, $1F, $43, $1F, $11, $41, $36, $48, $1F
@@ -2062,7 +2062,7 @@ loc_28682:
 
 	even
 
-loc_286B4:
+loc_285D8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$44, $35, $45, $1F, $49, $31, $58, $39, $43, $49, $1F, $F4
@@ -2071,7 +2071,7 @@ loc_286B4:
 
 	even
 
-loc_286CE:
+loc_28604:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $34, $32, $F4
@@ -2084,7 +2084,7 @@ loc_286CE:
 
 	even
 
-loc_28702:
+loc_28634:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$38, $66, $39, $5D, $3B, $36, $48, $1F, $F4
@@ -2097,7 +2097,7 @@ loc_28702:
 
 	even
 
-loc_28722:
+loc_28664:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $34, $32, $F4
@@ -2108,7 +2108,7 @@ loc_28722:
 
 	even
 
-loc_28734:
+loc_28682:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$36, $65, $32, $48, $1F, $85, $10, $8E, $7B, $3A, $5D, $49, $F8
@@ -2117,7 +2117,7 @@ loc_28734:
 
 	even
 
-loc_2875A:
+loc_286B4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$E8
@@ -2129,7 +2129,7 @@ loc_2875A:
 
 	even
 
-loc_287AA:
+loc_286CE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -2138,7 +2138,7 @@ loc_287AA:
 
 	even
 
-loc_287DE:
+loc_28702:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$E8
@@ -2150,7 +2150,7 @@ loc_287DE:
 
 	even
 
-loc_28892:
+loc_28722:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$E8
@@ -2160,7 +2160,7 @@ loc_28892:
 
 	even
 
-loc_28982:
+loc_28734:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $E8
@@ -2171,7 +2171,7 @@ loc_28982:
 
 	even
 
-loc_289D4:
+loc_2875A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -2186,7 +2186,7 @@ loc_289D4:
 
 	even
 
-loc_28A08:
+loc_287AA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $F0
@@ -2198,7 +2198,7 @@ loc_28A08:
 
 	even
 
-loc_28A3A:
+loc_287DE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $1F, $11, $5B, $3F, $3B, $49, $14, $85, $10, $8E, $7B, $48, $3F
@@ -2215,7 +2215,7 @@ loc_28A3A:
 
 	even
 
-loc_28B4C:
+loc_28892:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $37, $42, $14, $6F, $68, $94, $13, $71, $13, $8E, $10, $6E, $49, $14, $44
@@ -2248,7 +2248,7 @@ loc_28B4C:
 
 	even
 
-loc_28BF4:
+loc_28982:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $14, $6F, $68, $94, $34, $32, $16, $1F, $85, $10, $8E, $7B, $3A, $4E, $16
@@ -2268,7 +2268,7 @@ loc_28BF4:
 
 	even
 
-loc_28C7C:
+loc_289D4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$91, $F4
@@ -2288,7 +2288,7 @@ loc_28C7C:
 
 	even
 
-loc_28CF4:
+loc_28A08:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $9B, $10, $75, $8D, $94, $34, $32, $39, $37, $48, $1F, $8D, $68, $8F, $34
@@ -2300,7 +2300,7 @@ loc_28CF4:
 
 	even
 
-loc_28D2A:
+loc_28A3A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $1F, $11, $5B, $3F, $3B, $48, $1F, $50, $3C, $39, $1F, $67, $68
@@ -2332,7 +2332,7 @@ loc_28D2A:
 
 	even
 
-loc_28DE8:
+loc_28B4C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $94, $1F, $11, $67, $68, $94, $3A, $4E, $16, $1F, $67, $68, $94, $3A, $4E
@@ -2364,7 +2364,7 @@ loc_28DE8:
 
 	even
 
-loc_28E18:
+loc_28BF4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8E, $94, $1F, $11, $5B, $3F, $3B, $49, $1F, $8E, $7B, $48, $1F, $50, $3C, $51
@@ -2397,7 +2397,7 @@ loc_28E18:
 
 	even
 
-loc_28ED2:
+loc_28C7C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8E, $94, $1F, $11, $5B, $3F, $3B, $48, $1F, $4E, $38, $F4
@@ -2417,7 +2417,7 @@ loc_28ED2:
 
 	even
 
-loc_28F36:
+loc_28CF4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$57, $64, $32, $1F, $11, $34, $59, $48, $1F, $3D, $44, $35, $45, $1F, $48, $58
@@ -2429,7 +2429,7 @@ loc_28F36:
 
 	even
 
-loc_28F68:
+loc_28D2A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $8F, $1F, $11, $4F, $3F, $35, $15, $1F, $34, $59, $45, $49, $13, $13
@@ -2452,7 +2452,7 @@ loc_28F68:
 
 	even
 
-loc_28F9C:
+loc_28DE8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$36, $F4
@@ -2465,7 +2465,7 @@ loc_28F9C:
 
 	even
 
-loc_29084:
+loc_28E18:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $5D, $44, $43, $39, $5A, $45, $1F, $8D, $68, $67, $48, $1F, $3F, $4F, $F4
@@ -2492,7 +2492,7 @@ loc_29084:
 
 	even
 
-loc_291AE:
+loc_28ED2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $1F, $11, $F4
@@ -2516,7 +2516,7 @@ loc_291AE:
 
 	even
 
-loc_2923A:
+loc_28F36:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $90, $94, $1F, $11, $71, $79, $8D, $68, $7A, $45, $1F, $48, $57, $39
@@ -2525,7 +2525,7 @@ loc_2923A:
 
 	even
 
-loc_29298:
+loc_28F68:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $94, $1F, $11, $71, $79, $8D, $68, $7A, $13, $13, $13, $3E, $56, $45, $1F
@@ -2537,7 +2537,7 @@ loc_29298:
 
 	even
 
-loc_29356:
+loc_28F9C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$71, $68, $90, $94, $1F, $11, $4E, $F4
@@ -2585,7 +2585,7 @@ loc_29356:
 
 	even
 
-loc_2937E:
+loc_29084:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$71, $68, $90, $94, $1F, $11, $44, $F4
@@ -2621,7 +2621,7 @@ loc_2937E:
 
 	even
 
-loc_293DC:
+loc_291AE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3E, $3B, $42, $14, $F4
@@ -2635,7 +2635,7 @@ loc_293DC:
 
 	even
 
-loc_29468:
+loc_2923A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $1F, $11, $5B, $3F, $3B, $49, $14, $35, $41, $42, $48, $1F, $53
@@ -2650,7 +2650,7 @@ loc_29468:
 
 	even
 
-loc_29556:
+loc_29298:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $37, $42, $14, $6F, $68, $94, $13, $71, $13, $8E, $10, $6E, $49, $14, $3F
@@ -2681,7 +2681,7 @@ loc_29556:
 
 	even
 
-loc_295E4:
+loc_29356:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $52, $14, $52, $32, $3B, $30, $F4
@@ -2693,7 +2693,7 @@ loc_295E4:
 
 	even
 
-loc_29618:
+loc_2937E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $8E, $7B, $34, $32, $4A, $16, $1F, $71, $79, $8D, $34, $32, $39, $37, $45
@@ -2712,7 +2712,7 @@ loc_29618:
 
 	even
 
-loc_2964A:
+loc_293DC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $1F, $11, $5B, $3F, $3B, $48, $1F, $50, $3C, $39, $1F, $90, $68
@@ -2743,7 +2743,7 @@ loc_2964A:
 
 	even
 
-loc_296A2:
+loc_29468:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $68, $74, $1F, $11, $3F, $3C, $38, $42, $37, $59, $42, $1F, $30, $57, $F4
@@ -2773,7 +2773,7 @@ loc_296A2:
 
 	even
 
-loc_2971A:
+loc_29556:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -2805,7 +2805,7 @@ loc_2971A:
 
 	even
 
-loc_29748:
+loc_295E4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $1F, $11, $32, $40, $5B, $52, $51, $43, $49, $1F, $4F, $F4
@@ -2814,7 +2814,7 @@ loc_29748:
 
 	even
 
-loc_29778:
+loc_29618:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -2824,7 +2824,7 @@ loc_29778:
 
 	even
 
-loc_297D0:
+loc_2964A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $1F, $11, $39, $59, $35, $56, $49, $14, $8F, $10, $94, $39, $32
@@ -2839,7 +2839,7 @@ loc_297D0:
 	dc.b	$3F, $F4
 	dc.b	$35, $14, $EC
 	
-loc_29340:
+
 	dc.b	$1F, $3E, $39, $48, $1F, $34, $43, $39, $49, $14, $42, $36, $43, $49, $31, $33
 	dc.b	$14, $EC
 	dc.b	$1F, $36, $3B, $48, $1F, $4D, $39, $57, $5C, $1F, $32, $3B, $44, $66, $42, $31
@@ -2856,7 +2856,7 @@ loc_29340:
 
 	even
 
-loc_297FC:
+loc_296A2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -2890,7 +2890,7 @@ loc_297FC:
 
 	even
 
-loc_2982C:
+loc_2971A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $90, $94, $1F, $11, $40, $35, $3C, $31, $F4
@@ -2902,7 +2902,7 @@ loc_2982C:
 
 	even
 
-loc_298E8:
+loc_29748:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3A, $F4
@@ -2915,7 +2915,7 @@ loc_298E8:
 
 	even
 
-loc_299F8:
+loc_29778:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$90, $68, $94, $1F, $11, $F4
@@ -2939,7 +2939,7 @@ loc_299F8:
 
 	even
 
-loc_29A82:
+loc_297D0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $90, $94, $1F, $11, $71, $79, $8D, $68, $7A, $45, $1F, $48, $57, $39
@@ -2948,7 +2948,7 @@ loc_29A82:
 
 	even
 
-loc_29AAA:
+loc_297FC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $1F, $11, $71, $79, $8D, $68, $7A, $13, $13, $13, $3E, $56, $45
@@ -2960,7 +2960,7 @@ loc_29AAA:
 
 	even
 
-loc_29B0A:
+loc_2982C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $1F, $11, $39, $48, $1F, $50, $56, $3A, $36, $48, $1F, $41, $36
@@ -2998,7 +2998,7 @@ loc_29B0A:
 
 	even
 
-loc_29BFE:
+loc_298E8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $1F, $11, $13, $13, $13, $6B, $8D, $6D, $6B, $48, $1F, $3F, $4F
@@ -3045,7 +3045,7 @@ loc_29BFE:
 
 	even
 
-loc_29C5E:
+loc_299F8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $1F, $11, $90, $68, $94, $13, $71, $13, $8E, $10, $6E, $55, $16
@@ -3076,7 +3076,7 @@ loc_29C5E:
 
 	even
 
-loc_29D4C:
+loc_29A82:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $59, $56, $49, $14, $32, $3B, $44, $5B, $59, $3F, $1F, $8D, $68, $67, $3A
@@ -3089,7 +3089,7 @@ loc_29D4C:
 
 	even
 
-loc_29DAC:
+loc_29AAA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $1F, $11, $8D, $68, $8F, $48, $1F, $35, $5B, $57, $45, $1F, $5B
@@ -3101,7 +3101,7 @@ loc_29DAC:
 
 	even
 
-loc_29EF6:
+loc_29B0A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $37, $42, $14, $67, $68, $94, $13, $8F, $13, $72, $10, $8F, $49, $14, $8D
@@ -3130,7 +3130,7 @@ loc_29EF6:
 
 	even
 
-loc_29F4C:
+loc_29BFE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $1F, $11, $5B, $3F, $3B, $49, $14, $40, $40, $48, $1F, $49, $3F
@@ -3144,7 +3144,7 @@ loc_29F4C:
 
 	even
 
-loc_2A09E:
+loc_29C5E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $37, $42, $14, $67, $68, $94, $13, $8F, $13, $72, $10, $8F, $49, $14, $40
@@ -3179,7 +3179,7 @@ loc_2A09E:
 
 	even
 
-loc_2A0D0:
+loc_29D4C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$90, $68, $94, $1F, $11, $6B, $8D, $6D, $6B, $43, $1F, $8D, $68, $67, $48, $1F
@@ -3194,7 +3194,7 @@ loc_2A0D0:
 
 	even
 
-loc_2A194:
+loc_29DAC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $37, $42, $14, $90, $68, $94, $13, $71, $13, $8E, $10, $6E, $49, $14, $02
@@ -3237,7 +3237,7 @@ loc_2A194:
 
 	even
 
-loc_2A1F0:
+loc_29EF6:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$90, $68, $94, $1F, $11, $5B, $3F, $3B, $48, $1F, $41, $4E, $45, $1F, $44, $66
@@ -3248,7 +3248,7 @@ loc_2A1F0:
 
 	even
 
-loc_2A24E:
+loc_29F4C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$71, $79, $8D, $68, $7A, $1F, $11, $50, $56, $3A, $36, $48, $1F, $41, $36, $12
@@ -3285,7 +3285,7 @@ loc_2A24E:
 
 	even
 
-loc_2A278:
+loc_2A09E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $34, $32, $16, $F8
@@ -3296,7 +3296,7 @@ loc_2A278:
 
 	even
 
-loc_2A27C:
+loc_2A0D0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $1F, $11, $5B, $F4
@@ -3333,7 +3333,7 @@ loc_2A27C:
 
 	even
 
-loc_2A280:
+loc_2A194:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $94, $1F, $11, $5B, $3F, $3B, $49, $14, $67, $68, $94, $43, $43, $52, $45
@@ -3348,7 +3348,7 @@ loc_2A280:
 
 	even
 
-loc_2A32A:
+loc_2A1F0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$86, $9B, $10, $1F, $11, $3A, $F4
@@ -3364,7 +3364,7 @@ loc_2A32A:
 
 	even
 
-loc_2A3D6:
+loc_2A24E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $90, $94, $1F, $11, $72, $10, $94, $3A, $4E, $16, $1F, $49, $53, $37
@@ -3376,7 +3376,7 @@ loc_2A3D6:
 
 	even
 
-loc_2A404:
+loc_2A278:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$30, $59, $F4
@@ -3388,7 +3388,7 @@ loc_2A404:
 
 	even
 
-loc_2A494:
+loc_2A27C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$31, $66, $3F, $31, $1F, $F4
@@ -3399,7 +3399,7 @@ loc_2A494:
 
 	even
 
-loc_2A55A:
+loc_2A280:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $1F, $11, $5B, $3F, $3B, $48, $1F, $44, $4E, $33, $49, $1F, $8D
@@ -3437,7 +3437,7 @@ loc_2A55A:
 
 	even
 
-loc_2A5F0:
+loc_2A32A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $1F, $11, $5B, $3F, $3B, $48, $1F, $44, $4E, $33, $49, $1F, $8D
@@ -3473,7 +3473,7 @@ loc_2A5F0:
 
 	even
 
-loc_2A61C:
+loc_2A3D6:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $34, $32, $16, $F8
@@ -3484,7 +3484,7 @@ loc_2A61C:
 
 	even
 
-loc_2A642:
+loc_2A404:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $3A, $4E, $14, $34, $4A, $3A, $3B, $64, $32, $F4
@@ -3520,7 +3520,7 @@ loc_2A642:
 
 	even
 
-loc_2A66E:
+loc_2A494:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $1F, $11, $5B, $3F, $3B, $49, $14, $5B, $35, $31, $39, $5A, $1F
@@ -3554,7 +3554,7 @@ loc_2A66E:
 
 	even
 
-loc_2A6B8:
+loc_2A55A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $1F, $11, $82, $68, $94, $34, $45, $31, $3A, $4E, $16, $F8
@@ -3574,7 +3574,7 @@ loc_2A6B8:
 
 	even
 
-loc_2A86A:
+loc_2A5F0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$90, $68, $94, $3A, $4E, $16, $1F, $8F, $68, $74, $3A, $4E, $16, $1F, $8F, $10
@@ -3591,7 +3591,7 @@ loc_2A86A:
 
 	even
 
-loc_2A8CE:
+loc_2A61C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $59, $56, $43, $1F, $34, $44, $F4
@@ -3601,7 +3601,7 @@ loc_2A8CE:
 
 	even
 
-loc_2A924:
+loc_2A642:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4B, $14, $4B, $3F, $41, $48, $1F, $4B, $47, $F4
@@ -3610,7 +3610,7 @@ loc_2A924:
 
 	even
 
-loc_2A952:
+loc_2A66E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $7B, $1F, $11, $8F, $68, $94, $3A, $4E, $13, $1F, $5B, $3F, $3B, $3F, $40
@@ -3638,7 +3638,7 @@ loc_2A952:
 
 	even
 
-loc_2A9DC:
+loc_2A6B8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $49, $1F, $F0
@@ -3700,7 +3700,7 @@ loc_2A9DC:
 
 	even
 
-loc_2AA0E:
+loc_2A86A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $59, $5B, $59, $49, $14, $F4
@@ -3718,7 +3718,7 @@ loc_2AA0E:
 
 	even
 
-loc_2AA3A:
+loc_2A8CE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$47, $50, $59, $58, $1F, $4A, $51, $49, $14, $F4
@@ -3738,7 +3738,7 @@ loc_2AA3A:
 
 	even
 
-loc_2AA62:
+loc_2A924:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $3A, $4E, $49, $14, $02, $01, $01, $01, $47, $5D, $F4
@@ -3750,7 +3750,7 @@ loc_2AA62:
 
 	even
 
-loc_2AA88:
+loc_2A952:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3B, $5D, $F4
@@ -3767,7 +3767,7 @@ loc_2AA88:
 
 	even
 
-loc_2AAA6:
+loc_2A9DC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$90, $68, $94, $3A, $4E, $16, $EC
@@ -3777,7 +3777,7 @@ loc_2AAA6:
 
 	even
 
-loc_2AAAA:
+loc_2AA0E:
 	dc.w	loc_2AAD0-Gamescript
 	dc.b	$1B, $00
 	dc.b	$8E, $10, $6E, $48, $F4
@@ -3788,7 +3788,7 @@ loc_2AAAA:
 
 	even
 
-loc_2AAD0:
+loc_2AA3A:
 	dc.w	loc_2AB26-Gamescript
 	dc.b	$1C, $00
 	dc.b	$8E, $10, $6E, $48, $1F, $F4
@@ -3799,7 +3799,7 @@ loc_2AAD0:
 
 	even
 
-loc_2AB26:
+loc_2AA62:
 	dc.w	loc_2AB58-Gamescript
 	dc.b	$1D, $00
 	dc.b	$82, $68, $94, $3A, $4E, $43, $1F, $8D, $68, $67, $3A, $4E, $48, $1F, $34, $35
@@ -3810,7 +3810,7 @@ loc_2AB26:
 
 	even
 
-loc_2AB58:
+loc_2AA88:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $68, $94, $3A, $4E, $1F, $8E, $10, $6E, $48, $1F, $F4
@@ -3819,7 +3819,7 @@ loc_2AB58:
 
 	even
 
-loc_2AB84:
+loc_2AAA6:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3D, $5D, $3E, $32, $15, $F8
@@ -3837,7 +3837,7 @@ loc_2AB84:
 
 	even
 
-loc_2ABDE:
+loc_2AAAA:
 	dc.w	loc_2AC10-Gamescript
 	dc.b	$1B, $00
 	dc.b	$30, $34, $31, $1F, $41, $36, $F4
@@ -3853,7 +3853,7 @@ loc_2ABDE:
 
 	even
 
-loc_2AC10:
+loc_2AAD0:
 	dc.w	loc_2AC46-Gamescript
 	dc.b	$1C, $00
 	dc.b	$8F, $10, $94, $16, $1F, $8F, $10, $94, $13, $6F, $68, $13, $6A, $72, $8F, $16
@@ -3870,7 +3870,7 @@ loc_2AC10:
 
 	even
 
-loc_2AC46:
+loc_2AB26:
 	dc.w	loc_2AC7C-Gamescript
 	dc.b	$1D, $00
 	dc.b	$71, $79, $8D, $68, $7A, $48, $1F, $8F, $10, $94, $3A, $4E, $44, $56, $F8
@@ -3879,7 +3879,7 @@ loc_2AC46:
 
 	even
 
-loc_2AC7C:
+loc_2AB58:
 	dc.w	loc_2ACB0-Gamescript
 	dc.b	$1E, $00
 	dc.b	$31, $66, $3F, $31, $1F, $44, $45, $F4
@@ -3889,7 +3889,7 @@ loc_2AC7C:
 
 	even
 
-loc_2ACB0:
+loc_2AB84:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $4B, $3F, $F4
@@ -3904,7 +3904,7 @@ loc_2ACB0:
 
 	even
 
-loc_2ACE0:
+loc_2ABDE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $3A, $4E, $F4
@@ -3919,7 +3919,7 @@ loc_2ACE0:
 
 	even
 
-loc_2AD0C:
+loc_2AC10:
 	dc.w	loc_2AD3A-Gamescript
 	dc.b	$1B, $00
 	dc.b	$3A, $31, $36, $5D, $49, $14, $91, $F4
@@ -3933,7 +3933,7 @@ loc_2AD0C:
 
 	even
 
-loc_2AD3A:
+loc_2AC46:
 	dc.w	loc_2AD70-Gamescript
 	dc.b	$1C, $00
 	dc.b	$3A, $31, $36, $5D, $49, $14, $91, $F4
@@ -3947,7 +3947,7 @@ loc_2AD3A:
 
 	even
 
-loc_2AD70:
+loc_2AC7C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $48, $1F, $3F, $4F, $43, $1F, $6B, $8D, $6D, $6B, $48, $1F, $3F
@@ -3960,7 +3960,7 @@ loc_2AD70:
 
 	even
 
-loc_2AE2C:
+loc_2ACB0:
 	dc.w	loc_2AE5A-Gamescript
 	dc.b	$1B, $00
 	dc.b	$67, $68, $94, $3A, $4E, $F4
@@ -3972,7 +3972,7 @@ loc_2AE2C:
 
 	even
 
-loc_2AE5A:
+loc_2ACE0:
 	dc.w	loc_2AE88-Gamescript
 	dc.b	$1C, $00
 	dc.b	$71, $79, $8D, $68, $7A, $11, $30, $34, $31, $1F, $41, $36, $12, $48, $1F, $39
@@ -3985,7 +3985,7 @@ loc_2AE5A:
 
 	even
 
-loc_2AE88:
+loc_2AD0C:
 	dc.w	loc_2AEBA-Gamescript
 	dc.b	$1D, $00
 	dc.b	$30, $48, $1F, $F4
@@ -3996,7 +3996,7 @@ loc_2AE88:
 
 	even
 
-loc_2AEBA:
+loc_2AD3A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4D, $35, $48, $1F, $32, $40, $64, $32, $3D, $5D, $35, $56, $1F, $39, $32, $F4
@@ -4007,7 +4007,7 @@ loc_2AEBA:
 
 	even
 
-loc_2AEEC:
+loc_2AD70:
 	dc.w	loc_2AF22-Gamescript
 	dc.b	$1B, $00
 	dc.b	$8F, $10, $94, $49, $14, $02, $01, $01, $01, $47, $5D, $4E, $33, $45, $F8
@@ -4030,7 +4030,7 @@ loc_2AEEC:
 
 	even
 
-loc_2AF22:
+loc_2AE2C:
 	dc.w	loc_2AF58-Gamescript
 	dc.b	$1C, $00
 	dc.b	$45, $3B, $48, $1F, $4D, $32, $35, $56, $1F, $8D, $68, $67, $48, $1F, $3F, $4F
@@ -4041,7 +4041,7 @@ loc_2AF22:
 
 	even
 
-loc_2AF58:
+loc_2AE5A:
 	dc.w	loc_2AF8C-Gamescript
 	dc.b	$1D, $00
 	dc.b	$53, $66, $43, $1F, $8D, $68, $67, $48, $1F, $3F, $4F, $43, $1F, $6B, $8D, $6D
@@ -4053,7 +4053,7 @@ loc_2AF58:
 
 	even
 
-loc_2AF8C:
+loc_2AE88:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$31, $66, $3F, $31, $1F, $F4
@@ -4067,7 +4067,7 @@ loc_2AF8C:
 
 	even
 
-loc_2AFBE:
+loc_2AEBA:
 	dc.w	loc_2AFF4-Gamescript
 	dc.b	$1B, $00
 	dc.b	$45, $3B, $48, $1F, $4D, $32, $35, $56, $1F, $8D, $68, $67, $48, $1F, $3F, $4F
@@ -4079,7 +4079,7 @@ loc_2AFBE:
 
 	even
 
-loc_2AFF4:
+loc_2AEEC:
 	dc.w	loc_2B020-Gamescript
 	dc.b	$1C, $00
 	dc.b	$67, $68, $94, $34, $32, $43, $14, $8E, $94, $3A, $4E, $48, $1F, $31, $58, $35
@@ -4090,7 +4090,7 @@ loc_2AFF4:
 
 	even
 
-loc_2B020:
+loc_2AF22:
 	dc.w	loc_2B050-Gamescript
 	dc.b	$1D, $00
 	dc.b	$90, $68, $94, $34, $32, $43, $1F, $8D, $68, $67, $3A, $4E, $F4
@@ -4104,7 +4104,7 @@ loc_2B020:
 
 	even
 
-loc_2B050:
+loc_2AF58:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $68, $94, $3A, $4E, $16, $F8
@@ -4113,7 +4113,7 @@ loc_2B050:
 
 	even
 
-loc_2B080:
+loc_2AF8C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $4F, $44, $43, $4E, $40, $12, $8A, $10, $76, $48, $1F, $4B, $36, $5D, $45
@@ -4124,7 +4124,7 @@ loc_2B080:
 
 	even
 
-loc_2B0D4:
+loc_2AFBE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $43, $31, $32, $44, $4E, $33, $49, $14, $50, $35, $3B, $48, $1F
@@ -4137,7 +4137,7 @@ loc_2B0D4:
 
 	even
 
-loc_2B0FC:
+loc_2AFF4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $41, $42, $1F, $8D, $68, $67, $48, $1F, $4F, $F4
@@ -4155,7 +4155,7 @@ loc_2B0FC:
 
 	even
 
-loc_2B132:
+loc_2B020:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $4F, $44, $43, $4E, $40, $12, $8A, $10, $76, $45, $1F, $55, $32, $39, $3E
@@ -4163,7 +4163,7 @@ loc_2B132:
 
 	even
 
-loc_2B15E:
+loc_2B050:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$91, $F4
@@ -4175,7 +4175,7 @@ loc_2B15E:
 
 	even
 
-loc_2B18A:
+loc_2B080:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $48, $1F, $3F, $4F, $F4
@@ -4192,7 +4192,7 @@ loc_2B18A:
 
 	even
 
-loc_2B1EE:
+loc_2B0D4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $3B, $4E, $48, $1F, $50, $56, $12, $81, $9B, $10, $8E, $5C, $F8
@@ -4202,7 +4202,7 @@ loc_2B1EE:
 
 	even
 
-loc_2B250:
+loc_2B0FC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $13, $13, $13, $1F, $3E, $5D, $44, $49, $F4
@@ -4218,7 +4218,7 @@ loc_2B250:
 
 	even
 
-loc_2B27C:
+loc_2B132:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $49, $14, $6B, $8D, $6D, $6B, $F4
@@ -4229,7 +4229,7 @@ loc_2B27C:
 
 	even
 
-loc_2B2B0:
+loc_2B15E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $3B, $4E, $48, $1F, $50, $56, $12, $81, $9B, $10, $8E, $45, $1F, $55, $32
@@ -4240,7 +4240,7 @@ loc_2B2B0:
 
 	even
 
-loc_2B2E4:
+loc_2B18A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3D, $35, $31, $49, $1F, $37, $58, $66, $40, $4E, $66, $3F, $16, $F8
@@ -4255,7 +4255,7 @@ loc_2B2E4:
 
 	even
 
-loc_2B312:
+loc_2B1EE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3F, $31, $4C, $5D, $F4
@@ -4275,7 +4275,7 @@ loc_2B312:
 
 	even
 
-loc_2B346:
+loc_2B250:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$36, $4F, $48, $1F, $40, $40, $32, $33, $F4
@@ -4286,7 +4286,7 @@ loc_2B346:
 
 	even
 
-loc_2B3A2:
+loc_2B27C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $71, $79, $8D, $68, $7A, $12, $45, $1F, $32, $41, $57, $3C, $50, $48, $15
@@ -4298,7 +4298,7 @@ loc_2B3A2:
 
 	even
 
-loc_2B3D4:
+loc_2B2B0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$30, $44, $3F, $48, $1F, $34, $F4
@@ -4310,7 +4310,7 @@ loc_2B3D4:
 
 	even
 
-loc_2B408:
+loc_2B2E4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$50, $35, $3B, $1F, $32, $4F, $48, $1F, $50, $39, $32, $45, $49, $1F, $8D, $68
@@ -4324,7 +4324,7 @@ loc_2B408:
 
 	even
 
-loc_2B43A:
+loc_2B312:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$92, $73, $90, $8D, $90, $76, $1F, $91, $F4
@@ -4336,7 +4336,7 @@ loc_2B43A:
 
 	even
 
-loc_2B492:
+loc_2B346:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $77, $6C, $8D, $7F, $1F, $7A, $F0
@@ -4356,7 +4356,7 @@ loc_2B492:
 
 	even
 
-loc_2B4F8:
+loc_2B3A2:
 	dc.w	loc_2B55A-Gamescript
 	dc.b	$20, $00
 	dc.b	$70, $7F, $1F, $85, $77, $7F, $1F, $86, $7B, $86, $F4
@@ -4371,7 +4371,7 @@ loc_2B4F8:
 
 	even
 
-loc_2B55A:
+loc_2B3D4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$70, $7F, $1F, $85, $77, $7F, $1F, $86, $7B, $86, $F4
@@ -4386,7 +4386,7 @@ loc_2B55A:
 
 	even
 
-loc_2B58C:
+loc_2B408:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$71, $F4
@@ -4398,7 +4398,7 @@ loc_2B58C:
 
 	even
 
-loc_2B5EC:
+loc_2B43A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$81, $F4
@@ -4417,7 +4417,7 @@ loc_2B5EC:
 
 	even
 
-loc_2B616:
+loc_2B492:
 	dc.w	loc_2B648-Gamescript
 	dc.b	$20, $00
 	dc.b	$71, $F4
@@ -4435,7 +4435,7 @@ loc_2B616:
 
 	even
 
-loc_2B648:
+loc_2B4F8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$71, $F4
@@ -4453,7 +4453,7 @@ loc_2B648:
 
 	even
 
-loc_2B65E:
+loc_2B55A:
 	dc.w	loc_2B68C-Gamescript
 	dc.b	$24, $00
 	dc.b	$6B, $91, $6C, $7C, $89, $1F, $85, $F4
@@ -4465,7 +4465,7 @@ loc_2B65E:
 
 	even
 
-loc_2B68C:
+loc_2B58C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $7F, $1F, $76, $86, $7A, $1F, $6B, $89, $92, $90, $8F, $1F, $7B
@@ -4486,7 +4486,7 @@ loc_2B68C:
 
 	even
 
-loc_2B6C0:
+loc_2B5EC:
 	dc.w	loc_2B6EC-Gamescript
 	dc.b	$20, $00
 	dc.b	$92, $76, $72, $76, $77, $80, $14, $7B, $6C, $85, $F4
@@ -4498,7 +4498,7 @@ loc_2B6C0:
 
 	even
 
-loc_2B6EC:
+loc_2B616:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$92, $76, $72, $76, $77, $80, $14, $7B, $6C, $85, $F4
@@ -4510,7 +4510,7 @@ loc_2B6EC:
 
 	even
 
-loc_2B71A:
+loc_2B648:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $F4
@@ -4522,7 +4522,7 @@ loc_2B71A:
 
 	even
 
-loc_2B74E:
+loc_2B65E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $39, $44, $5D, $47, $5D, $52, $1F, $30, $56, $3E, $31, $44, $F4
@@ -4536,7 +4536,7 @@ loc_2B74E:
 
 	even
 
-loc_2B782:
+loc_2B68C:
 	dc.w	loc_2B7D8-Gamescript
 	dc.b	$23, $00
 	dc.b	$6F, $68, $94, $34, $32, $1F, $8D, $68, $8F, $34, $32, $43, $31, $33, $F4
@@ -4548,7 +4548,7 @@ loc_2B782:
 
 	even
 
-loc_2B7D8:
+loc_2B6C0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $8F, $43, $1F, $72, $9B, $10, $75, $8D, $94, $48, $1F, $4A, $43, $3F
@@ -4561,7 +4561,7 @@ loc_2B7D8:
 
 	even
 
-loc_2B804:
+loc_2B6EC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $11, $41, $58, $F4
@@ -4574,7 +4574,7 @@ loc_2B804:
 
 	even
 
-loc_2B832:
+loc_2B71A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$50, $35, $3B, $1F, $3A, $35, $33, $3F, $1F, $72, $10, $8F, $53, $1F, $72, $9B
@@ -4585,7 +4585,7 @@ loc_2B832:
 
 	even
 
-loc_2B866:
+loc_2B74E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4D, $48, $34, $48, $44, $35, $14, $3F, $3F, $35, $31, $41, $F4
@@ -4603,7 +4603,7 @@ loc_2B866:
 
 	even
 
-loc_2B8B8:
+loc_2B782:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $72, $9B, $10, $75, $8D, $94, $48, $1F, $37, $45, $49, $14, $57
@@ -4616,7 +4616,7 @@ loc_2B8B8:
 
 	even
 
-loc_2B8E8:
+loc_2B7D8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$33, $31, $33, $5D, $48, $1F, $4C, $31, $5B, $44, $3D, $35, $31, $13, $13, $13
@@ -4629,7 +4629,7 @@ loc_2B8E8:
 
 	even
 
-loc_2B91A:
+loc_2B804:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$31, $66, $3F, $31, $1F, $F4
@@ -4643,7 +4643,7 @@ loc_2B91A:
 
 	even
 
-loc_2B97C:
+loc_2B832:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $59, $3F, $40, $48, $1F, $32, $4E, $59, $3E, $F4
@@ -4655,7 +4655,7 @@ loc_2B97C:
 
 	even
 
-loc_2B9A8:
+loc_2B866:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4F, $44, $4F, $48, $1F, $8D, $68, $8F, $34, $32, $48, $1F, $72, $9B, $10, $75
@@ -4666,7 +4666,7 @@ loc_2B9A8:
 
 	even
 
-loc_2BA08:
+loc_2B8B8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3D, $51, $42, $1F, $35, $F4
@@ -4679,7 +4679,7 @@ loc_2BA08:
 
 	even
 
-loc_2BA34:
+loc_2B8E8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -4692,7 +4692,7 @@ loc_2BA34:
 
 	even
 
-loc_2BA62:
+loc_2B91A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $8F, $52, $1F, $72, $9B, $10, $75, $8D, $94, $52, $1F, $4D, $5A, $5D
@@ -4708,7 +4708,7 @@ loc_2BA62:
 
 	even
 
-loc_2BA94:
+loc_2B97C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $39, $49, $1F, $11, $40, $35, $56, $48, $1F, $3B, $5A, $12, $82, $91, $7A
@@ -4719,7 +4719,7 @@ loc_2BA94:
 
 	even
 
-loc_2BAC4:
+loc_2B9A8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $3B, $5A, $48, $1F, $40, $35, $35, $56, $1F, $71, $79, $8D, $68
@@ -4734,7 +4734,7 @@ loc_2BAC4:
 
 	even
 
-loc_2BAF8:
+loc_2BA08:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $3B, $5A, $49, $14, $43, $41, $F4
@@ -4752,7 +4752,7 @@ loc_2BAF8:
 
 	even
 
-loc_2BB5C:
+loc_2BA34:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $59, $56, $49, $1F, $6B, $8D, $6D, $6B, $48, $1F, $3F, $4F, $F4
@@ -4765,7 +4765,7 @@ loc_2BB5C:
 
 	even
 
-loc_2BBB4:
+loc_2BA62:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $71, $79, $8D, $68, $7A, $12, $15, $F8
@@ -4784,7 +4784,7 @@ loc_2BBB4:
 
 	even
 
-loc_2BBEA:
+loc_2BA94:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -4814,7 +4814,7 @@ loc_2BBEA:
 
 	even
 
-loc_2BC1E:
+loc_2BAC4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$44, $F4
@@ -4826,7 +4826,7 @@ loc_2BC1E:
 
 	even
 
-loc_2BC4E:
+loc_2BAF8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $3D, $35, $31, $48, $1F, $40, $35, $45, $49, $14, $39, $48, $1F
@@ -4844,7 +4844,7 @@ loc_2BC4E:
 
 	even
 
-loc_2BCD8:
+loc_2BB5C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $32, $40, $64, $32, $3D, $5D, $48, $1F, $49, $5D, $3F, $31, $F4
@@ -4860,7 +4860,7 @@ loc_2BCD8:
 
 	even
 
-loc_2BD0A:
+loc_2BBB4:
 	dc.w	loc_2BDC6-Gamescript
 	dc.b	$E7, $00
 	dc.b	$11, $3D, $31, $44, $58, $1F, $4F, $53, $39, $12, $8D, $72, $9B, $10, $7A, $F4
@@ -4871,7 +4871,7 @@ loc_2BD0A:
 
 	even
 
-loc_2BDC6:
+loc_2BBEA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $F4
@@ -4884,7 +4884,7 @@ loc_2BDC6:
 
 	even
 
-loc_2BDF8:
+loc_2BC1E:
 	dc.w	loc_2BE20-Gamescript
 	dc.b	$E7, $00
 	dc.b	$39, $48, $1F, $4F, $53, $39, $48, $1F, $34, $32, $3A, $4E, $49, $1F, $8F, $8D
@@ -4895,7 +4895,7 @@ loc_2BDF8:
 
 	even
 
-loc_2BE20:
+loc_2BC4E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $41, $42, $1F, $85, $10, $8E, $7B, $48, $1F, $36, $34, $37, $5C, $1F, $32
@@ -4919,7 +4919,7 @@ loc_2BE20:
 
 	even
 
-loc_2BE48:
+loc_2BCD8:
 	dc.w	loc_2BE76-Gamescript
 	dc.b	$E7, $00
 	dc.b	$8F, $8D, $6D, $8F, $3A, $4E, $49, $14, $30, $58, $1F, $4B, $3B, $F4
@@ -4931,7 +4931,7 @@ loc_2BE48:
 
 	even
 
-loc_2BE76:
+loc_2BD0A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3D, $5D, $3E, $32, $F4
@@ -4949,7 +4949,7 @@ loc_2BE76:
 
 	even
 
-loc_2BE9C:
+loc_2BDC6:
 	dc.w	loc_2BEFA-Gamescript
 	dc.b	$E7, $00
 	dc.b	$8F, $8D, $6D, $8F, $3A, $4E, $49, $1F, $02, $01, $01, $01, $47, $5D, $4E, $33
@@ -4962,7 +4962,7 @@ loc_2BE9C:
 
 	even
 
-loc_2BEFA:
+loc_2BDF8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $4E, $33, $49, $14, $5B, $59, $56, $48, $35, $4F, $1F, $11, $F4
@@ -4980,7 +4980,7 @@ loc_2BEFA:
 
 	even
 
-loc_2BF22:
+loc_2BE20:
 	dc.w	loc_2BFB0-Gamescript
 	dc.b	$E7, $00
 	dc.b	$8F, $8D, $6D, $8F, $3A, $4E, $49, $14, $F4
@@ -4990,7 +4990,7 @@ loc_2BF22:
 
 	even
 
-loc_2BFB0:
+loc_2BE48:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $59, $56, $48, $1F, $3F, $37, $56, $5D, $F4
@@ -5007,7 +5007,7 @@ loc_2BFB0:
 
 	even
 
-loc_2BFE2:
+loc_2BE76:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $8D, $6D, $8F, $1F, $11, $13, $13, $13, $44, $4F, $F4
@@ -5037,7 +5037,7 @@ loc_2BFE2:
 
 	even
 
-loc_2C042:
+loc_2BE9C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$41, $31, $45, $1F, $8D, $68, $67, $3A, $4E, $48, $1F, $40, $5C, $1F, $4A, $37
@@ -5050,7 +5050,7 @@ loc_2C042:
 
 	even
 
-loc_2C072:
+loc_2BEFA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$49, $53, $37, $1F, $85, $68, $73, $7A, $10, $6E, $F4
@@ -5064,7 +5064,7 @@ loc_2C072:
 
 	even
 
-loc_2C0A8:
+loc_2BF22:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$30, $44, $3F, $F4
@@ -5083,7 +5083,7 @@ loc_2C0A8:
 
 	even
 
-loc_2C0C0:
+loc_2BFB0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$85, $68, $73, $7A, $10, $6E, $49, $14, $8D, $68, $67, $3A, $4E, $43, $1F, $6B
@@ -5095,7 +5095,7 @@ loc_2C0C0:
 
 	even
 
-loc_2C124:
+loc_2BFE2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $48, $1F, $F0
@@ -5116,7 +5116,7 @@ loc_2C124:
 
 	even
 
-loc_2C17C:
+loc_2C042:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $39, $14, $11, $4A, $3E, $53, $35, $44, $1F, $50, $56, $1F, $82, $95, $69
@@ -5131,7 +5131,7 @@ loc_2C17C:
 
 	even
 
-loc_2C1AE:
+loc_2C072:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$59, $36, $3B, $48, $1F, $35, $3F, $57, $F4
@@ -5141,7 +5141,7 @@ loc_2C1AE:
 
 	even
 
-loc_2C266:
+loc_2C0A8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6B, $8D, $6D, $6B, $48, $3F, $4F, $48, $1F, $11, $3F, $37, $4F, $48, $1F, $50
@@ -5153,7 +5153,7 @@ loc_2C266:
 
 	even
 
-loc_2C292:
+loc_2C0C0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4A, $F4
@@ -5172,7 +5172,7 @@ loc_2C292:
 
 	even
 
-loc_2C2BE:
+loc_2C124:
 	dc.w	loc_2C2E4-Gamescript
 	dc.b	$28, $00
 	dc.b	$4F, $44, $4F, $48, $1F, $90, $94, $75, $8F, $48, $1F, $3B, $5A, $45, $14, $32
@@ -5189,7 +5189,7 @@ loc_2C2BE:
 
 	even
 
-loc_2C2E4:
+loc_2C17C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$31, $41, $35, $1F, $36, $66, $43, $14, $6E, $68, $73, $7A, $49, $F8
@@ -5199,7 +5199,7 @@ loc_2C2E4:
 
 	even
 
-loc_2C33E:
+loc_2C1AE:
 	dc.w	loc_2C36A-Gamescript
 	dc.b	$28, $25
 	dc.b	$F4
@@ -5248,7 +5248,7 @@ loc_2C33E:
 
 	even
 
-loc_2C36A:
+loc_2C266:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $14, $8D, $94, $3A, $5D, $13, $13, $1F, $31, $14, $31, $14, $31, $31, $1F
@@ -5263,7 +5263,7 @@ loc_2C36A:
 
 	even
 
-loc_2C3D0:
+loc_2C292:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6B, $8D, $6D, $6B, $48, $1F, $3F, $4F, $48, $1F, $11, $3F, $37, $4F, $48, $1F
@@ -5274,7 +5274,7 @@ loc_2C3D0:
 
 	even
 
-loc_2C3FA:
+loc_2C2BE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6B, $8D, $6D, $6B, $48, $1F, $3F, $4F, $48, $1F, $11, $3F, $37, $4F, $48, $1F
@@ -5284,7 +5284,7 @@ loc_2C3FA:
 
 	even
 
-loc_2C45A:
+loc_2C2E4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $3F, $3B, $49, $14, $39, $48, $50, $56, $48, $1F, $6E, $68, $73, $7A, $3E
@@ -5294,7 +5294,7 @@ loc_2C45A:
 
 	even
 
-loc_2C4DC:
+loc_2C33E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $3F, $3B, $49, $14, $39, $48, $50, $56, $48, $1F, $3E, $5D, $40, $65, $32
@@ -5312,7 +5312,7 @@ loc_2C4DC:
 
 	even
 
-loc_2C52E:
+loc_2C36A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$50, $35, $3B, $14, $5B, $3F, $3B, $F4
@@ -5341,7 +5341,7 @@ loc_2C52E:
 
 	even
 
-loc_2C61E:
+loc_2C3D0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $32, $3B, $44, $5B, $59, $3F, $1F, $F4
@@ -5352,7 +5352,7 @@ loc_2C61E:
 
 	even
 
-loc_2C76A:
+loc_2C3FA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $37, $45, $48, $1F, $52, $48, $49, $14, $F4
@@ -5369,7 +5369,7 @@ loc_2C76A:
 
 	even
 
-loc_2C7A0:
+loc_2C45A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $41, $42, $14, $39, $48, $1F, $F4
@@ -5389,7 +5389,7 @@ loc_2C7A0:
 
 	even
 
-loc_2C832:
+loc_2C4DC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$31, $4E, $53, $14, $35, $F4
@@ -5402,7 +5402,7 @@ loc_2C832:
 
 	even
 
-loc_2C864:
+loc_2C52E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $1F, $11, $5B, $3F, $3B, $49, $1F, $6A, $72, $8F, $38, $48, $1F
@@ -5434,7 +5434,7 @@ loc_2C864:
 
 	even
 
-loc_2C8F4:
+loc_2C61E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $68, $74, $1F, $11, $5B, $3F, $3B, $49, $14, $8F, $10, $94, $48, $1F, $31
@@ -5466,7 +5466,7 @@ loc_2C8F4:
 
 	even
 
-loc_2C952:
+loc_2C76A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3E, $39, $48, $1F, $8D, $68, $67, $3A, $4E, $48, $1F, $31, $52, $32, $43, $39
@@ -5477,7 +5477,7 @@ loc_2C952:
 
 	even
 
-loc_2C9B2:
+loc_2C7A0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$91, $F4
@@ -5505,7 +5505,7 @@ loc_2C9B2:
 
 	even
 
-loc_2CAC4:
+loc_2C832:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$71, $79, $8D, $68, $7A, $1F, $11, $50, $56, $3A, $36, $48, $1F, $41, $36, $12
@@ -5516,7 +5516,7 @@ loc_2CAC4:
 
 	even
 
-loc_2CB56:
+loc_2C864:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $1F, $11, $4B, $3F, $3F, $F4
@@ -5555,7 +5555,7 @@ loc_2CB56:
 
 	even
 
-loc_2CBE0:
+loc_2C8F4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $68, $74, $1F, $11, $50, $35, $3B, $14, $5B, $3F, $3B, $49, $F8
@@ -5572,7 +5572,7 @@ loc_2CBE0:
 
 	even
 
-loc_2CC14:
+loc_2C952:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $41, $42, $14, $5B, $3F, $3B, $F4
@@ -5610,7 +5610,7 @@ loc_2CC14:
 
 	even
 
-loc_2CC6E:
+loc_2C9B2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -5654,7 +5654,7 @@ loc_2CC6E:
 
 	even
 
-loc_2CCA2:
+loc_2CAC4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$90, $68, $94, $1F, $11, $31, $66, $3F, $31, $1F, $3B, $3F, $F4
@@ -5676,7 +5676,7 @@ loc_2CCA2:
 
 	even
 
-loc_2CCD0:
+loc_2CB56:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $1F, $11, $5B, $F4
@@ -5717,7 +5717,7 @@ loc_2CCD0:
 
 	even
 
-loc_2CD60:
+loc_2CBE0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $68, $74, $1F, $11, $5B, $3F, $3B, $48, $50, $3C, $39, $14, $8F, $68, $94
@@ -5735,8 +5735,8 @@ loc_2CD60:
 
 	even
 
-loc_2CD8A:
-	dc.w	loc_2EF74-Gamescript
+loc_2CC14:
+	dc.w	loc_2EEA4-Gamescript
 	dc.b	$94, $1F
 	dc.b	$11, $5B, $3F, $3B, $48, $1F, $50, $3C, $39, $1F, $8F, $68, $94, $55, $16, $F8
 	dc.b	$1F, $4F, $F4
@@ -5756,7 +5756,7 @@ loc_2CD8A:
 
 	even
 
-loc_2CDBC:
+loc_2CC6E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3E, $56, $43, $F4
@@ -5775,7 +5775,7 @@ loc_2CDBC:
 
 	even
 
-loc_2CDEE:
+loc_2CCA2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $7B, $3A, $4E, $53, $1F, $8F, $68, $94, $3A, $4E, $45, $1F, $44, $45, $35
@@ -5785,7 +5785,7 @@ loc_2CDEE:
 
 	even
 
-loc_2CE20:
+loc_2CCD0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $1F, $11, $5B, $3F, $3B, $49, $1F, $39, $48, $1F, $8E, $10, $6E
@@ -5803,7 +5803,7 @@ loc_2CE20:
 
 	even
 
-loc_2CE50:
+loc_2CD60:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8E, $7B, $1F, $11, $30, $F4
@@ -5815,7 +5815,7 @@ loc_2CE50:
 
 	even
 
-loc_2CF10:
+loc_2CD8A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $3F, $3B, $49, $1F, $71, $79, $8D, $39, $37, $48, $1F, $3B, $3B, $63, $F4
@@ -5827,7 +5827,7 @@ loc_2CF10:
 
 	even
 
-loc_2CF42:
+loc_2CDBC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $48, $1F, $3F, $4F, $48, $1F, $89, $94, $73, $76, $10, $F4
@@ -5839,7 +5839,7 @@ loc_2CF42:
 
 	even
 
-loc_2CF9E:
+loc_2CDEE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8E, $10, $6E, $48, $1F, $37, $45, $43, $1F, $71, $79, $8D, $48, $1F, $37, $45
@@ -5852,7 +5852,7 @@ loc_2CF9E:
 
 	even
 
-loc_2CFFE:
+loc_2CE20:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8E, $7B, $3A, $4E, $49, $1F, $34, $35, $5B, $31, $3E, $32, $13
@@ -5860,7 +5860,7 @@ loc_2CFFE:
 
 	even
 
-loc_2D05E:
+loc_2CE50:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8E, $94, $1F, $11, $3E, $32, $35, $13, $13, $13, $1F, $67, $68, $94, $49, $1F
@@ -5889,7 +5889,7 @@ loc_2D05E:
 
 	even
 
-loc_2D0BA:
+loc_2CF10:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$43, $44, $57, $48, $1F, $37, $45, $14, $71, $79, $8D, $5C, $1F, $4D, $5A, $F4
@@ -5902,7 +5902,7 @@ loc_2D0BA:
 
 	even
 
-loc_2D0EE:
+loc_2CF42:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $F4
@@ -5914,7 +5914,7 @@ loc_2D0EE:
 
 	even
 
-loc_2D11E:
+
 	dc.w	loc_2D14A-Gamescript
 	dc.b	$14, $3E
 	dc.b	$40, $56, $45, $1F, $F4
@@ -5925,7 +5925,7 @@ loc_2D11E:
 
 	even
 
-loc_2D14A:
+loc_2CF9E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $49, $14, $3A, $F4
@@ -5944,7 +5944,7 @@ loc_2D14A:
 
 	even
 
-loc_2D19A:
+loc_2CFFE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8E, $94, $F4
@@ -5959,7 +5959,7 @@ loc_2D19A:
 
 	even
 
-loc_2D1CE:
+loc_2D05E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $1F, $11, $5B, $F4
@@ -5977,7 +5977,7 @@ loc_2D1CE:
 
 	even
 
-loc_2D204:
+loc_2D0BA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8E, $94, $1F, $11, $5B, $3F, $3B, $48, $1F, $50, $3C, $39, $14, $7F, $68, $94
@@ -5999,7 +5999,7 @@ loc_2D204:
 
 	even
 
-loc_2D228:
+loc_2D0EE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -6011,7 +6011,7 @@ loc_2D228:
 
 	even
 
-loc_2D256:
+loc_2D11E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$45, $3B, $35, $56, $49, $14, $8F, $10, $94, $43, $35, $31, $32, $1F, $8D, $68
@@ -6023,7 +6023,7 @@ loc_2D256:
 
 	even
 
-loc_2D280:
+loc_2D14A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$90, $68, $94, $1F, $11, $5B, $F4
@@ -6045,7 +6045,7 @@ loc_2D280:
 
 	even
 
-loc_2D2E4:
+loc_2D19A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $1F, $11, $5B, $3F, $3B, $48, $1F, $82, $68, $94, $13, $13, $13
@@ -6060,7 +6060,7 @@ loc_2D2E4:
 
 	even
 
-loc_2D340:
+loc_2D1CE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $34, $32, $F4
@@ -6078,7 +6078,7 @@ loc_2D340:
 
 	even
 
-loc_2D374:
+loc_2D204:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$31, $66, $3F, $31, $14, $39, $48, $1F, $32, $40, $64, $32, $3D, $5D, $45, $F8
@@ -6089,7 +6089,7 @@ loc_2D374:
 
 	even
 
-loc_2D39E:
+loc_2D228:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4A, $65, $66, $43, $3B, $42, $1F, $8F, $10, $94, $3A, $4E, $44, $56, $F8
@@ -6103,7 +6103,7 @@ loc_2D39E:
 
 	even
 
-loc_2D3C4:
+loc_2D256:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $37, $45, $45, $49, $14, $34, $32, $F4
@@ -6115,7 +6115,7 @@ loc_2D3C4:
 
 	even
 
-loc_2D41E:
+loc_2D280:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $34, $14, $90, $68, $94, $3A, $4E, $16, $F8
@@ -6139,7 +6139,7 @@ loc_2D41E:
 
 	even
 
-loc_2D450:
+loc_2D2E4:
 	dc.w	loc_2D47C-Gamescript
 	dc.b	$23, $00
 	dc.b	$32, $5B, $3A, $45, $55, $58, $43, $14, $3E, $44, $3F, $48, $1F, $40, $40, $14
@@ -6164,7 +6164,7 @@ loc_2D450:
 
 	even
 
-loc_2D47C:
+loc_2D340:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3F, $31, $4C, $5D, $44, $39, $43, $45, $1F, $44, $66, $3F, $44, $13, $13, $13
@@ -6172,7 +6172,7 @@ loc_2D47C:
 
 	even
 
-loc_2D4AA:
+loc_2D374:
 	dc.w	loc_2D4C8-Gamescript
 	dc.b	$23, $00
 	dc.b	$31, $66, $3F, $31, $1F, $F4
@@ -6185,7 +6185,7 @@ loc_2D4AA:
 
 	even
 
-loc_2D4C8:
+loc_2D39E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $8F, $52, $1F, $72, $9B, $10, $75, $8D, $94, $52, $13, $13, $13, $F8
@@ -6195,7 +6195,7 @@ loc_2D4C8:
 
 	even
 
-loc_2D4FC:
+loc_2D3C4:
 	dc.w	loc_2D524-Gamescript
 	dc.b	$23, $00
 	dc.b	$39, $39, $1F, $F4
@@ -6207,7 +6207,7 @@ loc_2D4FC:
 
 	even
 
-loc_2D524:
+loc_2D41E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $8F, $53, $1F, $72, $9B, $10, $75, $8D, $94, $48, $1F, $3F, $4F, $F4
@@ -6219,7 +6219,7 @@ loc_2D524:
 
 	even
 
-loc_2D552:
+loc_2D450:
 	dc.w	loc_2D5AE-Gamescript
 	dc.b	$23, $00
 	dc.b	$F4
@@ -6232,7 +6232,7 @@ loc_2D552:
 
 	even
 
-loc_2D5AE:
+loc_2D47C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -6243,7 +6243,7 @@ loc_2D5AE:
 
 	even
 
-loc_2D5DC:
+loc_2D4AA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$55, $37, $F4
@@ -6253,7 +6253,7 @@ loc_2D5DC:
 
 	even
 
-loc_2D60E:
+loc_2D4C8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $43, $39, $5A, $1F, $4B, $3B, $F4
@@ -6264,7 +6264,7 @@ loc_2D60E:
 
 	even
 
-loc_2D640:
+loc_2D4FC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $F4
@@ -6281,7 +6281,7 @@ loc_2D640:
 
 	even
 
-loc_2D672:
+loc_2D524:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$91, $F4
@@ -6294,7 +6294,7 @@ loc_2D672:
 
 	even
 
-loc_2D6A6:
+loc_2D552:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $8F, $1F, $11, $67, $68, $94, $16, $1F, $34, $34, $36, $37, $44, $66
@@ -6316,7 +6316,7 @@ loc_2D6A6:
 
 	even
 
-loc_2D6CE:
+loc_2D5AE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $94, $1F, $11, $67, $68, $94, $3A, $4E, $49, $1F, $34, $5B, $3C, $59, $F4
@@ -6328,7 +6328,7 @@ loc_2D6CE:
 
 	even
 
-loc_2D6FE:
+loc_2D5DC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $8F, $3A, $4E, $49, $14, $3A, $36, $4D, $F4
@@ -6339,7 +6339,7 @@ loc_2D6FE:
 
 	even
 
-loc_2D732:
+loc_2D60E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $8F, $3A, $4E, $F4
@@ -6351,7 +6351,7 @@ loc_2D732:
 
 	even
 
-loc_2D78A:
+loc_2D640:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6B, $8D, $6D, $6B, $48, $1F, $3F, $4F, $44, $F4
@@ -6363,7 +6363,7 @@ loc_2D78A:
 
 	even
 
-loc_2D7BC:
+loc_2D672:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $8F, $3A, $4E, $49, $14, $91, $F4
@@ -6386,7 +6386,7 @@ loc_2D7BC:
 
 	even
 
-loc_2D7EE:
+loc_2D6A6:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $1F, $11, $71, $79, $8D, $68, $7A, $5C, $1F, $3A, $F4
@@ -6396,7 +6396,7 @@ loc_2D7EE:
 
 	even
 
-loc_2D848:
+loc_2D6CE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$85, $10, $8E, $7B, $1F, $11, $39, $48, $1F, $37, $45, $49, $14, $34, $3E, $56
@@ -6409,7 +6409,7 @@ loc_2D848:
 
 	even
 
-loc_2D8A4:
+loc_2D6FE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $6B, $8D, $6D, $6B, $48, $1F, $34, $36, $42, $12, $48, $3F, $51, $45, $14
@@ -6426,7 +6426,7 @@ loc_2D8A4:
 
 	even
 
-loc_2D926:
+loc_2D732:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $33, $31, $33, $5D, $48, $1F, $4C, $31, $5B, $48, $1F, $3D, $35, $31, $12
@@ -6446,7 +6446,7 @@ loc_2D926:
 
 	even
 
-loc_2D94C:
+loc_2D78A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $34, $32, $F4
@@ -6459,7 +6459,7 @@ loc_2D94C:
 
 	even
 
-loc_2D9D0:
+loc_2D7BC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3B, $5A, $48, $1F, $3E, $43, $49, $1F, $91, $F4
@@ -6474,7 +6474,7 @@ loc_2D9D0:
 
 	even
 
-loc_2DA02:
+loc_2D7EE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$55, $37, $36, $3F, $14, $6B, $8D, $6D, $6B, $48, $1F, $3F, $4F, $48, $1F, $40
@@ -6503,7 +6503,7 @@ loc_2DA02:
 
 	even
 
-loc_2DA34:
+loc_2D848:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$50, $35, $3B, $14, $5B, $3B, $F4
@@ -6518,7 +6518,7 @@ loc_2DA34:
 
 	even
 
-loc_2DABE:
+loc_2D8A4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$50, $35, $3B, $14, $5B, $3B, $F4
@@ -6539,7 +6539,7 @@ loc_2DABE:
 
 	even
 
-loc_2DAF2:
+loc_2D926:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $8D, $6D, $8F, $3A, $4E, $49, $14, $6B, $8D, $6D, $6B, $3A, $4E, $48, $1F
@@ -6562,7 +6562,7 @@ loc_2DAF2:
 
 	even
 
-loc_2DB1C:
+loc_2D94C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $F4
@@ -6582,7 +6582,7 @@ loc_2DB1C:
 
 	even
 
-loc_2DB48:
+loc_2D9D0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$50, $35, $3B, $14, $39, $48, $1F, $82, $91, $7A, $8D, $10, $94, $48, $1F, $3B
@@ -6612,7 +6612,7 @@ loc_2DB48:
 
 	even
 
-loc_2DB70:
+loc_2DA02:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $3D, $35, $31, $49, $14, $35, $41, $42, $1F, $11, $6A, $94, $F4
@@ -6624,7 +6624,7 @@ loc_2DB70:
 
 	even
 
-loc_2DBA4:
+loc_2DA34:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $F4
@@ -6647,7 +6647,7 @@ loc_2DBA4:
 
 	even
 
-loc_2DBD0:
+loc_2DABE:
 	dc.w	loc_2DBF8-Gamescript
 	dc.b	$49, $00
 	dc.b	$4A, $51, $F4
@@ -6662,7 +6662,7 @@ loc_2DBD0:
 
 	even
 
-loc_2DBF8:
+loc_2DAF2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $68, $74, $5C, $1F, $45, $F4
@@ -6678,7 +6678,7 @@ loc_2DBF8:
 
 	even
 
-loc_2DC28:
+loc_2DB1C:
 	dc.w	loc_2DC54-Gamescript
 	dc.b	$49, $00
 	dc.b	$55, $37, $1F, $39, $56, $59, $3F, $14, $6B, $8D, $6D, $6B, $48, $3F, $4F, $55
@@ -6691,7 +6691,7 @@ loc_2DC28:
 
 	even
 
-loc_2DC54:
+loc_2DB48:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $14, $8F, $10, $94, $F4
@@ -6702,8 +6702,8 @@ loc_2DC54:
 
 	even
 
-loc_2DC7A:
-	dc.w	loc_2DCE0-Gamescript
+loc_2DB70:
+	dc.w	loc_2DD10-Gamescript
 	dc.b	$49, $00
 	dc.b	$F4
 	dc.b	$4D, $5D, $53, $57, $1F, $30, $58, $31, $42, $31, $3F, $1F, $8F, $10, $94, $48
@@ -6716,7 +6716,7 @@ loc_2DC7A:
 
 	even
 
-loc_2DCE0:
+loc_2DBA4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $59, $49, $1F, $3B, $56, $44, $31, $16, $1F, $8F, $68, $74, $5C, $1F, $41
@@ -6728,7 +6728,7 @@ loc_2DCE0:
 
 	even
 
-loc_2DD10:
+loc_2DBD0:
 	dc.w	loc_2DDA0-Gamescript
 	dc.b	$49, $00
 	dc.b	$8F, $68, $74, $49, $14, $40, $35, $48, $1F, $5A, $32, $F4
@@ -6741,7 +6741,7 @@ loc_2DD10:
 
 	even
 
-loc_2DDA0:
+loc_2DBF8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $32, $3A, $4E, $49, $1F, $44, $45, $5C, $1F, $48, $5D, $F4
@@ -6754,7 +6754,7 @@ loc_2DDA0:
 
 	even
 
-loc_2DE32:
+loc_2DC28:
 	dc.w	loc_2DEEE-Gamescript
 	dc.b	$49, $00
 	dc.b	$11, $39, $5A, $3B, $42, $49, $1F, $31, $38, $44, $31, $12, $43, $31, $32, $1F
@@ -6767,7 +6767,7 @@ loc_2DE32:
 
 	even
 
-loc_2DEEE:
+loc_2DC54:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $39, $5A, $3B, $42, $49, $1F, $31, $38, $44, $31, $12, $43, $31, $32, $1F
@@ -6779,7 +6779,7 @@ loc_2DEEE:
 
 	even
 
-loc_2DF50:
+loc_2DC7A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $4E, $33, $3F, $40, $49, $1F, $36, $31, $3F, $35, $15, $1F, $30, $48, $1F
@@ -6797,7 +6797,7 @@ loc_2DF50:
 
 	even
 
-loc_2DFAA:
+loc_2DD10:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $34, $14, $3E, $59, $49, $F8
@@ -6828,7 +6828,7 @@ loc_2DFAA:
 
 	even
 
-loc_2DFDE:
+loc_2DDA0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $8D, $6D, $8F, $3A, $4E, $49, $14, $39, $48, $1F, $32, $40, $64, $32, $3D
@@ -6843,7 +6843,7 @@ loc_2DFDE:
 
 	even
 
-loc_2E004:
+loc_2DE32:
 	dc.w	loc_2E030-Gamescript
 	dc.b	$28, $00
 	dc.b	$8D, $68, $8F, $1F, $11, $67, $68, $94, $13, $13, $13, $57, $64, $32, $48, $1F
@@ -6881,7 +6881,7 @@ loc_2E004:
 
 	even
 
-loc_2E030:
+loc_2DEEE:
 	dc.w	loc_2E062-Gamescript
 	dc.b	$29, $00
 	dc.b	$8D, $68, $8F, $1F, $11, $67, $68, $94, $16, $1F, $35, $5D, $3B, $63, $48, $1F
@@ -6900,7 +6900,7 @@ loc_2E030:
 
 	even
 
-loc_2E062:
+loc_2DF50:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $8F, $1F, $11, $4A, $F4
@@ -6921,7 +6921,7 @@ loc_2E062:
 
 	even
 
-loc_2E094:
+loc_2DFAA:
 	dc.w	loc_2E0AA-Gamescript
 	dc.b	$28, $00
 	dc.b	$6F, $68, $94, $1F, $11, $67, $68, $94, $55, $16, $1F, $8D, $68, $8F, $48, $1F
@@ -6933,7 +6933,7 @@ loc_2E094:
 
 	even
 
-loc_2E0AA:
+loc_2DFDE:
 	dc.w	loc_2E0DE-Gamescript
 	dc.b	$29, $00
 	dc.b	$6F, $68, $94, $1F, $11, $55, $37, $53, $66, $3F, $14, $5B, $F4
@@ -6942,7 +6942,7 @@ loc_2E0AA:
 
 	even
 
-loc_2E0DE:
+loc_2E004:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $1F, $11, $71, $79, $8D, $68, $7A, $5C, $1F, $3A, $F4
@@ -6952,7 +6952,7 @@ loc_2E0DE:
 
 	even
 
-loc_2E10E:
+loc_2E030:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$85, $10, $8E, $7B, $1F, $11, $8D, $68, $8F, $49, $14, $52, $32, $13, $13, $13
@@ -6965,7 +6965,7 @@ loc_2E10E:
 
 	even
 
-loc_2E140:
+loc_2E062:
 	dc.w	loc_2E174-Gamescript
 	dc.b	$28, $00
 	dc.b	$F4
@@ -6978,7 +6978,7 @@ loc_2E140:
 
 	even
 
-loc_2E174:
+loc_2E094:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $34, $36, $37, $44, $66, $3F, $56, $14, $67, $68, $94, $3A, $4E, $4F, $3F
@@ -6988,7 +6988,7 @@ loc_2E174:
 
 	even
 
-loc_2E1AA:
+loc_2E0AA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $34, $32, $14, $8D, $68, $8F, $34, $32, $14, $85, $10, $8E, $7B
@@ -6998,7 +6998,7 @@ loc_2E1AA:
 
 	even
 
-loc_2E1D8:
+loc_2E0DE:
 	dc.w	loc_2E20A-Gamescript
 	dc.b	$28, $00
 	dc.b	$67, $68, $94, $34, $32, $F4
@@ -7010,7 +7010,7 @@ loc_2E1D8:
 
 	even
 
-loc_2E20A:
+loc_2E10E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$67, $68, $94, $34, $32, $F4
@@ -7024,7 +7024,7 @@ loc_2E20A:
 
 	even
 
-loc_2E240:
+loc_2E140:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $8F, $3A, $4E, $49, $14, $4B, $35, $31, $1F, $36, $F4
@@ -7037,7 +7037,7 @@ loc_2E240:
 
 	even
 
-loc_2E2A0:
+loc_2E174:
 	dc.w	loc_2E2CE-Gamescript
 	dc.b	$28, $00
 	dc.b	$91, $F4
@@ -7060,7 +7060,7 @@ loc_2E2A0:
 
 	even
 
-loc_2E2CE:
+loc_2E1AA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $8F, $3A, $4E, $45, $1F, $3F, $31, $3C, $58, $43, $1F, $34, $44, $F4
@@ -7071,7 +7071,7 @@ loc_2E2CE:
 
 	even
 
-loc_2E2FA:
+loc_2E1D8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -7084,7 +7084,7 @@ loc_2E2FA:
 
 	even
 
-loc_2E34C:
+loc_2E20A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6F, $68, $94, $3A, $4E, $45, $1F, $34, $41, $3F, $33, $47, $F4
@@ -7105,7 +7105,7 @@ loc_2E34C:
 
 	even
 
-loc_2E37E:
+loc_2E240:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$85, $10, $8E, $7B, $3A, $4E, $49, $14, $72, $10, $8F, $48, $1F, $3B, $5A, $F4
@@ -7125,7 +7125,7 @@ loc_2E37E:
 
 	even
 
-loc_2E40A:
+loc_2E2A0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $8F, $3A, $4E, $F4
@@ -7140,7 +7140,7 @@ loc_2E40A:
 
 	even
 
-loc_2E4A2:
+loc_2E2CE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $39, $49, $14, $8F, $10, $94, $45, $3F, $31, $3B, $42, $1F, $49, $5D, $56
@@ -7152,7 +7152,7 @@ loc_2E4A2:
 
 	even
 
-loc_2E4D0:
+loc_2E2FA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -7174,7 +7174,7 @@ loc_2E4D0:
 
 	even
 
-loc_2E4FE:
+loc_2E34C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6B, $8D, $6D, $6B, $F4
@@ -7187,7 +7187,7 @@ loc_2E4FE:
 
 	even
 
-loc_2E52A:
+loc_2E37E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $34, $F4
@@ -7219,7 +7219,7 @@ loc_2E52A:
 
 	even
 
-loc_2E590:
+loc_2E40A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6B, $8D, $6D, $6B, $49, $14, $11, $50, $56, $3A, $36, $48, $1F, $41, $36, $12
@@ -7235,7 +7235,7 @@ loc_2E590:
 
 	even
 
-loc_2E5C0:
+loc_2E4A2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $71, $85, $8C, $6A, $8F, $1F, $6E, $8D, $94, $6E, $90, $67, $7F, $1F, $72
@@ -7246,7 +7246,7 @@ loc_2E5C0:
 
 	even
 
-loc_2E622:
+loc_2E4D0:
 	dc.w	loc_2E64A-Gamescript
 	dc.b	$E6, $00
 	dc.b	$92, $76, $72, $6C, $8D, $1F, $F4
@@ -7259,7 +7259,7 @@ loc_2E622:
 
 	even
 
-loc_2E64A:
+loc_2E4FE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$89, $80, $8A, $14, $92, $76, $72, $7F, $1F, $F4
@@ -7270,7 +7270,7 @@ loc_2E64A:
 
 	even
 
-loc_2E6A2:
+loc_2E52A:
 	dc.w	loc_2E6D0-Gamescript
 	dc.b	$E6, $00
 	dc.b	$39, $48, $1F, $3D, $35, $31, $5C, $1F, $49, $51, $41, $3A, $3D, $55, $32, $43
@@ -7286,7 +7286,7 @@ loc_2E6A2:
 
 	even
 
-loc_2E6D0:
+loc_2E590:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$55, $37, $F4
@@ -7296,7 +7296,7 @@ loc_2E6D0:
 
 	even
 
-loc_2E758:
+loc_2E5C0:
 	dc.w	loc_2E788-Gamescript
 	dc.b	$E6, $00
 	dc.b	$3A, $31, $36, $65, $32, $48, $F4
@@ -7313,7 +7313,7 @@ loc_2E758:
 
 	even
 
-loc_2E788:
+loc_2E622:
 	dc.w	0
 	dc.b	$FF, $E7
 	dc.b	$39, $59, $F4
@@ -7333,7 +7333,7 @@ loc_2E788:
 
 	even
 
-loc_2E874:
+loc_2E64A:
 	dc.w	loc_2E8A0-Gamescript
 	dc.b	$E6, $00
 	dc.b	$43, $37, $F4
@@ -7351,7 +7351,7 @@ loc_2E874:
 
 	even
 
-loc_2E8A0:
+loc_2E6A2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $59, $56, $48, $1F, $53, $37, $51, $52, $1F, $34, $5B, $58, $55, $32, $F4
@@ -7360,7 +7360,7 @@ loc_2E8A0:
 
 	even
 
-loc_2E8D6:
+loc_2E6D0:
 	dc.w	loc_2E8FA-Gamescript
 	dc.b	$E6, $00
 	dc.b	$11, $F4
@@ -7383,7 +7383,7 @@ loc_2E8D6:
 
 	even
 
-loc_2E8FA:
+loc_2E758:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $7E, $68, $12, $43, $1F, $44, $F4
@@ -7397,7 +7397,7 @@ loc_2E8FA:
 
 	even
 
-loc_2E92A:
+loc_2E788:
 	dc.w	loc_2E95A-Gamescript
 	dc.b	$E6, $00
 	dc.b	$43, $37, $F4
@@ -7437,7 +7437,7 @@ loc_2E92A:
 
 	even
 
-loc_2E95A:
+loc_2E874:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $4E, $33, $48, $1F, $52, $41, $1F, $7E, $68, $72, $8E, $10, $F4
@@ -7450,7 +7450,7 @@ loc_2E95A:
 
 	even
 
-loc_2E98A:
+loc_2E8A0:
 	dc.w	loc_2E9BE-Gamescript
 	dc.b	$49, $00
 	dc.b	$11, $33, $31, $39, $32, $48, $1F, $F4
@@ -7462,7 +7462,7 @@ loc_2E98A:
 
 	even
 
-loc_2E9BE:
+loc_2E8D6:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$52, $32, $14, $11, $33, $31, $39, $32, $48, $1F, $F4
@@ -7474,7 +7474,7 @@ loc_2E9BE:
 
 	even
 
-loc_2EA1E:
+loc_2E8FA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $43, $31, $32, $48, $49, $14, $1F, $30, $48, $1F, $8F, $10, $94
@@ -7492,7 +7492,7 @@ loc_2EA1E:
 
 	even
 
-loc_2EA40:
+loc_2E92A:
 	dc.w	loc_2EA9C-Gamescript
 	dc.b	$49, $00
 	dc.b	$39, $39, $1F, $F4
@@ -7505,7 +7505,7 @@ loc_2EA40:
 
 	even
 
-loc_2EA9C:
+loc_2E95A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$30, $44, $3F, $35, $56, $1F, $8F, $68, $74, $3A, $4E, $43, $1F, $8F, $10, $94
@@ -7515,7 +7515,7 @@ loc_2EA9C:
 
 	even
 
-loc_2EACA:
+loc_2E98A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$49, $58, $35, $44, $58, $1F, $45, $3B, $48, $1F, $52, $57, $5C, $1F, $39, $33
@@ -7527,7 +7527,7 @@ loc_2EACA:
 
 	even
 
-loc_2EBAE:
+loc_2E9BE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$49, $5D, $56, $5D, $F4
@@ -7543,7 +7543,7 @@ loc_2EBAE:
 
 	even
 
-loc_2EBD4:
+loc_2EA1E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$11, $33, $31, $39, $32, $48, $1F, $F4
@@ -7554,7 +7554,7 @@ loc_2EBD4:
 
 	even
 
-loc_2EC08:
+loc_2EA40:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3B, $5A, $5C, $1F, $49, $3A, $5D, $F4
@@ -7573,7 +7573,7 @@ loc_2EC08:
 
 	even
 
-loc_2EC68:
+loc_2EA9C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $48, $1F, $4B, $47, $48, $1F, $3B, $5D, $5A, $5C, $1F, $36, $51, $42, $31
@@ -7591,7 +7591,7 @@ loc_2EC68:
 
 	even
 
-loc_2ECC0:
+loc_2EACA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$49, $58, $35, $1F, $45, $3B, $48, $1F, $F4
@@ -7615,7 +7615,7 @@ loc_2ECC0:
 
 	even
 
-loc_2ECF4:
+loc_2EBAE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$32, $3B, $44, $5B, $59, $3F, $1F, $F4
@@ -7628,7 +7628,7 @@ loc_2ECF4:
 
 	even
 
-loc_2ED56:
+loc_2EBD4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $10, $94, $48, $1F, $4D, $5D, $36, $65, $40, $49, $14, $71, $79, $8D, $68
@@ -7640,7 +7640,7 @@ loc_2ED56:
 
 	even
 
-loc_2ED84:
+loc_2EC08:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$71, $79, $8D, $68, $7A, $1F, $11, $50, $56, $3A, $36, $48, $1F, $41, $36, $12
@@ -7658,7 +7658,7 @@ loc_2ED84:
 
 	even
 
-loc_2EDE6:
+loc_2EC68:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $41, $42, $14, $4B, $3F, $41, $48, $1F, $71, $79, $8D, $68, $7A, $1F, $11
@@ -7673,7 +7673,7 @@ loc_2EDE6:
 
 	even
 
-loc_2EE1A:
+loc_2ECC0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $3F, $3B, $3F, $40, $48, $1F, $3D, $35, $31, $14, $1F, $11, $67, $8E, $71
@@ -7684,7 +7684,7 @@ loc_2EE1A:
 
 	even
 
-loc_2EEA4:
+loc_2ECF4:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -7707,7 +7707,7 @@ loc_2EEA4:
 
 	even
 
-loc_2EF0A:
+loc_2ED56:
 	dc.w	loc_2EF3E-Gamescript
 	dc.b	$1B, $00
 	dc.b	$71, $79, $8D, $68, $7A, $1F, $11, $30, $34, $48, $1F, $41, $36, $12, $F4
@@ -7718,11 +7718,11 @@ loc_2EF0A:
 
 	even
 
-loc_2EF3E:
-	dc.w	loc_2EF74-Gamescript
+loc_2ED84:
+	dc.w	loc_2EEA4-Gamescript
 	dc.b	$1C, $00
 
-loc_2EF74:
+loc_2EDE6:
 	dc.b	$71, $68, $90, $94, $F4
 	dc.b	$35, $14, $11, $67, $8E, $71, $04, $3D, $31, $12, $48, $1F, $36, $F4
 	dc.b	$43, $32, $5C, $1F, $35, $33, $42, $F8
@@ -7738,7 +7738,7 @@ loc_2EF74:
 
 	even
 
-loc_2EF6A:
+loc_2EE1A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$31, $4E, $48, $1F, $F4
@@ -7753,7 +7753,7 @@ loc_2EF6A:
 
 	even
 
-loc_2EFCC:
+
 	dc.w	loc_2EFF8-Gamescript
 	dc.b	$1D, $00
 	dc.b	$37, $56, $31, $1F, $30, $44, $45, $1F, $3C, $31, $39, $4E, $59, $58, $1F, $54
@@ -7764,7 +7764,7 @@ loc_2EFCC:
 
 	even
 
-loc_2EFF8:
+loc_2EEA4:
 	dc.w	loc_2F056-Gamescript
 	dc.b	$1B, $00
 	dc.b	$71, $79, $8D, $68, $7A, $1F, $11, $30, $34, $48, $1F, $41, $36, $12, $5C, $1F
@@ -7777,7 +7777,7 @@ loc_2EFF8:
 
 	even
 
-loc_2F056:
+loc_2EF0A:
 	dc.w	loc_2F0B4-Gamescript
 	dc.b	$1C, $00
 	dc.b	$39, $48, $4E, $4E, $F4
@@ -7789,7 +7789,7 @@ loc_2F056:
 
 	even
 
-loc_2F0B4:
+loc_2EF3E:
 	dc.w	loc_29356-Gamescript
 	dc.b	$64, $32
 	dc.b	$3D, $5D, $48, $1F, $F4
@@ -7800,7 +7800,7 @@ loc_2F0B4:
 
 	even
 
-loc_2F112:
+loc_2EF6A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$32, $40, $64, $32, $3D, $5D, $48, $1F, $F4
@@ -7811,7 +7811,7 @@ loc_2F112:
 
 	even
 
-loc_2F13E:
+
 	dc.w	loc_2F16E-Gamescript
 	dc.b	$1D, $00
 	dc.b	$3A, $66, $36, $48, $1F, $F4
@@ -7831,7 +7831,7 @@ loc_2F13E:
 
 	even
 
-loc_2F16E:
+loc_2EFCC:
 	dc.w	loc_2F19C-Gamescript
 	dc.b	$1B, $00
 	dc.b	$71, $79, $8D, $68, $7A, $1F, $11, $30, $34, $48, $1F, $41, $36, $12, $48, $F4
@@ -7843,7 +7843,7 @@ loc_2F16E:
 
 	even
 
-loc_2F19C:
+loc_2EFF8:
 	dc.w	loc_2F1CE-Gamescript
 	dc.b	$1C, $00
 	dc.b	$5B, $59, $56, $48, $1F, $36, $F4
@@ -7854,7 +7854,7 @@ loc_2F19C:
 
 	even
 
-loc_2F1CE:
+loc_2F056:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$36, $F4
@@ -7871,7 +7871,7 @@ loc_2F1CE:
 
 	even
 
-loc_2F1F4:
+loc_2F0B4:
 	dc.w	loc_2F252-Gamescript
 	dc.b	$1D, $00
 	dc.b	$36, $F4
@@ -7888,7 +7888,7 @@ loc_2F1F4:
 
 	even
 
-loc_2F252:
+loc_2F112:
 	dc.w	loc_2F282-Gamescript
 	dc.b	$1B, $00
 	dc.b	$44, $5D, $4E, $5D, $6D, $91, $1F, $49, $44, $59, $3F, $43, $39, $5A, $F4
@@ -7900,7 +7900,7 @@ loc_2F252:
 
 	even
 
-loc_2F282:
+loc_2F13E:
 	dc.w	loc_2F2B2-Gamescript
 	dc.b	$1C, $00
 	dc.b	$11, $67, $8E, $71, $04, $3D, $31, $12, $48, $1F, $3B, $5D, $5A, $48, $1F, $3A
@@ -7912,7 +7912,7 @@ loc_2F282:
 
 	even
 
-loc_2F2B2:
+loc_2F16E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4E, $30, $14, $F4
@@ -7925,7 +7925,7 @@ loc_2F2B2:
 
 	even
 
-loc_2F310:
+loc_2F19C:
 	dc.w	loc_2F364-Gamescript
 	dc.b	$1D, $00
 	dc.b	$F4
@@ -7938,7 +7938,7 @@ loc_2F310:
 
 	even
 
-loc_2F364:
+loc_2F1CE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $39, $49, $14, $4A, $43, $F4
@@ -7950,7 +7950,7 @@ loc_2F364:
 
 	even
 
-loc_2F394:
+loc_2F1F4:
 	dc.w	loc_2F3EA-Gamescript
 	dc.b	$E9, $00
 	dc.b	$4B, $32, $31, $5D, $3A, $59, $3F, $14, $11, $F4
@@ -7966,7 +7966,7 @@ loc_2F394:
 
 	even
 
-loc_2F3EA:
+loc_2F252:
 	dc.w	loc_2F41E-Gamescript
 	dc.b	$E6, $00
 	dc.b	$34, $4E, $33, $3F, $40, $48, $1F, $52, $41, $1F, $11, $F4
@@ -7979,7 +7979,7 @@ loc_2F3EA:
 
 	even
 
-loc_2F41E:
+loc_2F282:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$38, $F4
@@ -7991,7 +7991,7 @@ loc_2F41E:
 
 	even
 
-loc_2F44E:
+loc_2F2B2:
 	dc.w	loc_2F484-Gamescript
 	dc.b	$E9, $00
 	dc.b	$34, $5A, $35, $52, $48, $16, $F8
@@ -7999,7 +7999,7 @@ loc_2F44E:
 
 	even
 
-loc_2F484:
+loc_2F310:
 	dc.w	loc_2F4E0-Gamescript
 	dc.b	$E6, $00
 	dc.b	$3C, $F4
@@ -8013,7 +8013,7 @@ loc_2F484:
 
 	even
 
-loc_2F4E0:
+loc_2F364:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$6B, $8D, $6D, $6B, $48, $1F, $4B, $3F, $F4
@@ -8024,7 +8024,7 @@ loc_2F4E0:
 
 	even
 
-loc_2F506:
+loc_2F394:
 	dc.w	loc_2F568-Gamescript
 	dc.b	$E9, $00
 	dc.b	$35, $41, $42, $14, $39, $48, $1F, $4B, $32, $31, $5D, $5C, $1F, $43, $37, $1F
@@ -8041,7 +8041,7 @@ loc_2F506:
 
 	even
 
-loc_2F568:
+loc_2F3EA:
 	dc.w	loc_2F62A-Gamescript
 	dc.b	$E6, $00
 	dc.b	$4B, $32, $31, $5D, $5C, $1F, $43, $37, $43, $36, $F4
@@ -8050,7 +8050,7 @@ loc_2F568:
 
 	even
 
-loc_2F62A:
+loc_2F41E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3E, $48, $14, $11, $7E, $68, $12, $43, $1F, $44, $F4
@@ -8062,7 +8062,7 @@ loc_2F62A:
 
 	even
 
-loc_2F6EA:
+loc_2F44E:
 	dc.w	loc_2F700-Gamescript
 	dc.b	$E9, $00
 	dc.b	$52, $3B, $14, $39, $48, $1F, $4B, $32, $31, $5D, $5C, $1F, $43, $36, $14, $32
@@ -8080,7 +8080,7 @@ loc_2F6EA:
 
 	even
 
-loc_2F700:
+loc_2F484:
 	dc.w	loc_2F75A-Gamescript
 	dc.b	$E6, $E6
 	dc.b	$55, $37, $1F, $36, $38, $16, $1F, $31, $4E, $14, $4B, $32, $31, $5D, $5C, $1F
@@ -8108,7 +8108,7 @@ loc_2F700:
 
 	even
 
-loc_2F75A:
+loc_2F4E0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$39, $59, $F4
@@ -8119,7 +8119,7 @@ loc_2F75A:
 
 	even
 
-loc_2F7CC:
+loc_2F506:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$41, $36, $3A, $3A, $66, $3F, $1F, $6B, $8D, $6D, $6B, $48, $1F, $41, $58, $F4
@@ -8139,7 +8139,7 @@ loc_2F7CC:
 
 	even
 
-loc_2F85C:
+loc_2F568:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -8177,7 +8177,7 @@ loc_2F85C:
 
 	even
 
-loc_2F8D4:
+loc_2F62A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$71, $68, $90, $94, $1F, $11, $5B, $3F, $3B, $49, $14, $31, $4E, $35, $56, $1F
@@ -8213,7 +8213,7 @@ loc_2F8D4:
 
 	even
 
-loc_2F906:
+loc_2F6EA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$71, $68, $90, $94, $49, $1F, $39, $5B, $59, $42, $3B, $4E, $66, $3F, $13, $F8
@@ -8221,7 +8221,7 @@ loc_2F906:
 
 	even
 
-loc_2F938:
+loc_2F700:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$86, $9B, $10, $94, $1F, $11, $30, $30, $16, $1F, $30, $44, $3F, $49, $1F, $6B
@@ -8240,7 +8240,7 @@ loc_2F938:
 
 	even
 
-loc_2F96A:
+loc_2F75A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$86, $9B, $10, $94, $1F, $11, $30, $30, $16, $1F, $37, $5A, $31, $1F, $41, $58
@@ -8260,7 +8260,7 @@ loc_2F96A:
 
 	even
 
-loc_2F99A:
+loc_2F7CC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $8D, $6D, $8F, $1F, $11, $41, $31, $45, $1F, $39, $39, $4E, $F4
@@ -8289,7 +8289,7 @@ loc_2F99A:
 
 	even
 
-loc_2FA74:
+loc_2F85C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $8D, $6D, $8F, $1F, $11, $34, $4E, $33, $3F, $40, $49, $1F, $3E, $59, $4D
@@ -8318,15 +8318,19 @@ loc_2FA74:
 
 	even
 
-loc_2FB1A:
+
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
 	dc.b	$76, $10, $6E, $82, $95, $8F, $73, $F4
 	dc.b	$35, $1F, $30, $56, $5B, $59, $3F, $16, $F8
 	dc.b	$EC
-	dc.b	$00, $00, $00, $FF
-	dc.b	$00, $F4
+	dc.b	$00
+
+loc_2F8D4:
+	dc.w	0
+	dc.b	$FF, $00
+	dc.b	$F4
 	dc.b	$76, $10, $6E, $82, $95, $8F, $73, $1F, $11, $5B, $3F, $3B, $49, $1F, $F4
 	dc.b	$76, $10, $6E, $82, $95, $8F, $73, $16, $F8
 	dc.b	$1F, $4D, $5A, $F4
@@ -8336,7 +8340,7 @@ loc_2FB1A:
 
 	even
 
-loc_2FB98:
+loc_2F906:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$1F, $4A, $43, $F4
@@ -8349,7 +8353,7 @@ loc_2FB98:
 
 	even
 
-loc_2FC74:
+loc_2F938:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$1F, $5B, $3F, $3B, $F4
@@ -8363,7 +8367,7 @@ loc_2FC74:
 
 	even
 
-loc_2FCEA:
+loc_2F96A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$1F, $34, $4E, $33, $3F, $40, $52, $1F, $5B, $3F, $3B, $48, $1F, $32, $F4
@@ -8376,7 +8380,7 @@ loc_2FCEA:
 
 	even
 
-loc_2FD1A:
+loc_2F99A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -8401,7 +8405,7 @@ loc_2FD1A:
 
 	even
 
-loc_2FD46:
+loc_2FA74:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -8426,7 +8430,7 @@ loc_2FD46:
 
 	even
 
-loc_2FDA8:
+loc_2FB1A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -8459,7 +8463,7 @@ loc_2FDA8:
 
 	even
 
-loc_2FDEC:
+loc_2FB98:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -8493,7 +8497,7 @@ loc_2FDEC:
 
 	even
 
-loc_2FE62:
+loc_2FC74:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $7B, $1F, $11, $40, $40, $32, $33, $49, $14, $3C, $66, $35, $57, $1F, $40
@@ -8516,7 +8520,7 @@ loc_2FE62:
 
 	even
 
-loc_2FEBC:
+loc_2FCEA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4C, $31, $5B, $44, $1F, $8E, $10, $6E, $48, $1F, $3B, $5A, $48, $1F, $34, $34
@@ -8527,7 +8531,7 @@ loc_2FEBC:
 
 	even
 
-loc_2FF4C:
+loc_2FD1A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$36, $65, $F4
@@ -8538,7 +8542,7 @@ loc_2FF4C:
 
 	even
 
-loc_2FFAA:
+loc_2FD46:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$90, $68, $94, $34, $32, $1F, $11, $31, $4E, $48, $1F, $F4
@@ -8557,7 +8561,7 @@ loc_2FFAA:
 
 	even
 
-loc_2FFDA:
+loc_2FDA8:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8D, $68, $67, $1F, $11, $82, $68, $94, $34, $45, $31, $3A, $4E, $16, $F8
@@ -8578,7 +8582,7 @@ loc_2FFDA:
 
 	even
 
-loc_300C0:
+loc_2FDEC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $7B, $1F, $11, $44, $F4
@@ -8608,7 +8612,7 @@ loc_300C0:
 
 	even
 
-loc_30154:
+loc_2FE62:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$31, $4E, $48, $1F, $4D, $32, $F4
@@ -8626,7 +8630,7 @@ loc_30154:
 
 	even
 
-loc_301B2:
+loc_2FEBC:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$31, $F4
@@ -8652,7 +8656,7 @@ loc_301B2:
 
 	even
 
-loc_3023E:
+loc_2FF4C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$35, $41, $42, $14, $90, $68, $94, $3A, $4E, $43, $1F, $3F, $F4
@@ -8672,7 +8676,7 @@ loc_3023E:
 
 	even
 
-loc_302CA:
+loc_2FFAA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3A, $31, $3B, $65, $45, $1F, $49, $66, $F0
@@ -8688,7 +8692,7 @@ loc_302CA:
 
 	even
 
-loc_30330:
+loc_2FFDA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$34, $34, $16, $1F, $5B, $3F, $3B, $49, $14, $F4
@@ -8724,7 +8728,7 @@ loc_30330:
 
 	even
 
-loc_303C0:
+loc_300C0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$4B, $3F, $41, $48, $1F, $4B, $47, $F4
@@ -8755,7 +8759,7 @@ loc_303C0:
 
 	even
 
-loc_3044E:
+loc_30154:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$E8
@@ -8774,7 +8778,7 @@ loc_3044E:
 
 	even
 
-loc_304DA:
+loc_301B2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $90, $94, $1F, $11, $88, $F4
@@ -8797,7 +8801,7 @@ loc_304DA:
 
 	even
 
-loc_3052C:
+loc_3023E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$86, $9B, $10, $1F, $11, $52, $32, $1F, $39, $59, $31, $F4
@@ -8819,7 +8823,7 @@ loc_3052C:
 
 	even
 
-loc_305CE:
+loc_302CA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -8833,8 +8837,8 @@ loc_305CE:
 
 	even
 
-loc_305FE:
-	dc.w	loc_29340-Gamescript
+loc_30330:
+	dc.w	loc_29748-Gamescript
 	dc.b	$16, $1F
 	dc.b	$30, $56, $35, $F4
 	dc.b	$3B, $51, $1F, $68, $F4
@@ -8862,7 +8866,7 @@ loc_305FE:
 
 GameScript2:
 
-loc_30708:
+loc_303C0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$86, $9B, $10, $1F, $11, $3E, $56, $5C, $1F, $4F, $42, $16, $1F, $72, $10, $94
@@ -8889,7 +8893,7 @@ loc_30708:
 
 	even
 
-loc_30732:
+loc_3044E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$86, $9B, $10, $1F, $11, $3E, $56, $5C, $1F, $4F, $42, $16, $1F, $7F, $68, $94
@@ -8906,7 +8910,7 @@ loc_30732:
 
 	even
 
-loc_3075A:
+loc_304DA:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $7B, $1F, $11, $30, $53, $32, $37, $1F, $F0
@@ -8925,7 +8929,7 @@ loc_3075A:
 
 	even
 
-loc_30780:
+loc_3052C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$86, $9B, $10, $1F, $11, $3E, $56, $5C, $1F, $4F, $42, $16, $1F, $82, $68, $94
@@ -8954,7 +8958,7 @@ loc_30780:
 
 	even
 
-loc_307B0:
+loc_305CE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$86, $9B, $10, $1F, $11, $3E, $56, $5C, $1F, $4F, $42, $16, $1F, $8F, $68, $94
@@ -8969,7 +8973,7 @@ loc_307B0:
 
 	even
 
-loc_307D2:
+loc_305FE:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$8F, $7B, $1F, $11, $13, $13, $13, $13, $15, $13, $13, $13, $13, $5B, $3F, $3B
@@ -9008,7 +9012,7 @@ loc_307D2:
 
 	even
 
-loc_3085C:
+loc_30708:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $90, $94, $49, $14, $85, $8E, $94, $72, $10, $90, $94, $45, $4C, $5D
@@ -9017,7 +9021,7 @@ loc_3085C:
 
 	even
 
-loc_3094A:
+loc_30732:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $90, $94, $49, $14, $67, $6E, $67, $72, $10, $90, $94, $45, $1F, $4C
@@ -9026,7 +9030,7 @@ loc_3094A:
 
 	even
 
-loc_30A0A:
+loc_3075A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $90, $94, $49, $14, $73, $6C, $68, $72, $10, $90, $94, $45, $1F, $4C
@@ -9035,7 +9039,7 @@ loc_30A0A:
 
 	even
 
-loc_30A3E:
+loc_30780:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$72, $10, $90, $94, $49, $14, $4C, $5D, $3B, $5D, $5C, $1F, $43, $31, $3F, $16
@@ -9043,7 +9047,7 @@ loc_30A3E:
 
 	even
 
-loc_30A9E:
+loc_307B0:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$3F, $F4
@@ -9054,7 +9058,7 @@ loc_30A9E:
 
 	even
 
-loc_30BE6:
+loc_307D2:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$36, $37, $F4
@@ -9092,7 +9096,7 @@ loc_30BE6:
 
 	even
 
-loc_30B16:
+loc_3085C:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$36, $37, $F4
@@ -9119,7 +9123,7 @@ loc_30B16:
 
 	even
 
-loc_30BA6:
+loc_3094A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$36, $37, $F4
@@ -9144,7 +9148,7 @@ loc_30BA6:
 
 	even
 
-loc_30C26:
+loc_30A0A:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$36, $37, $F4
@@ -9173,7 +9177,7 @@ loc_30C26:
 
 	even
 
-loc_30CC4:
+loc_30A3E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$F4
@@ -9183,7 +9187,7 @@ loc_30CC4:
 
 	even
 
-loc_30CD8:
+loc_30A9E:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$36, $37, $F4
@@ -9217,7 +9221,7 @@ loc_30CD8:
 
 	even
 
-loc_30DAE:
+loc_30BE6:
 	dc.w	0
 	dc.b	$FF, $00
 	dc.b	$5B, $66, $F8
@@ -9238,7 +9242,6 @@ loc_30DAE:
 	dc.b	$FC
 
 	even
-
 
 loc_30C70:
 .e1:	dc.w	loc_30E70-.e1

@@ -171,7 +171,10 @@ subi_	macro
 adda_	macro
 		!addq.ATTRIBUTE ALLARGS
 	endm
-		
+
+align_	macro
+		even
+	endm	
 
     else
 
@@ -185,5 +188,8 @@ adda_	macro
 		!adda.ATTRIBUTE ALLARGS
 	endm
 
+align_	macro
+		align 2
+	endm	
 
     endif
