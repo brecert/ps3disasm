@@ -171,6 +171,50 @@ subi_	macro
 adda_	macro
 		!addq.ATTRIBUTE ALLARGS
 	endm
+	
+cadd	macro
+		!add.ATTRIBUTE ALLARGS
+	endm
+	
+csub	macro
+		!sub.ATTRIBUTE ALLARGS
+	endm
+	
+cor	macro
+		!or.ATTRIBUTE ALLARGS
+	endm
+	
+cand	macro
+		!and.ATTRIBUTE ALLARGS
+	endm
+	
+ccmp	macro
+		!cmp.ATTRIBUTE ALLARGS
+	endm
+	
+cbra	macro
+		!bra.w ALLARGS
+	endm
+	
+cbcc	macro
+		!bcc.w ALLARGS
+	endm
+	
+cbne	macro
+		!bne.w ALLARGS
+	endm
+
+cbsr	macro
+		!bsr.w ALLARGS
+	endm
+
+cbeq	macro
+		!beq.w ALLARGS
+	endm
+
+cbpl	macro
+		!bpl.w ALLARGS
+	endm
 
 align_	macro
 		even
@@ -186,6 +230,50 @@ subi_	macro
 	endm
 adda_	macro
 		!adda.ATTRIBUTE ALLARGS
+	endm
+	
+cadd	macro
+		!addi.ATTRIBUTE ALLARGS
+	endm
+	
+csub	macro
+		!subi.ATTRIBUTE ALLARGS
+	endm
+	
+cor	macro
+		!ori.ATTRIBUTE ALLARGS
+	endm
+	
+cand	macro
+		!andi.ATTRIBUTE ALLARGS
+	endm
+	
+ccmp	macro
+		!cmpi.ATTRIBUTE ALLARGS
+	endm
+	
+cbra	macro
+		!bra.s ALLARGS
+	endm
+	
+cbcc	macro
+		!bcc.s ALLARGS
+	endm
+	
+cbne	macro
+		!bne.s ALLARGS
+	endm
+	
+cbsr	macro
+		!bsr.s ALLARGS
+	endm
+
+cbeq	macro
+		!beq.s ALLARGS
+	endm
+
+cbpl	macro
+		!bpl.s ALLARGS
 	endm
 
 align_	macro

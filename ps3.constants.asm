@@ -1304,7 +1304,23 @@ demo_joypad_input = ramaddr($FFFFD396)
 
 sprite_table_buffer = ramaddr($FFFFD400)
 
+	if revision=0
+char_name_saved =  ramaddr($FFFFD3C0)
+misc_name_saved_1 =  ramaddr($FFFFD3C4)
+enemy_name_saved =  ramaddr($FFFFD3CC)
+misc_name_saved_2 =  ramaddr($FFFFD3E0)
+misc_name_saved_3 =  ramaddr($FFFFD3E4)
+misc_name_saved_4 =  ramaddr($FFFFD3E8)
+misc_name_saved_5 =  ramaddr($FFFFD3EC)
+	else
 char_name_saved =  ramaddr($FFFFD480)
+misc_name_saved_1 =  ramaddr($FFFFD484)
+enemy_name_saved =  ramaddr($FFFFD48C)
+misc_name_saved_2 =  ramaddr($FFFFD4A0)
+misc_name_saved_3 =  ramaddr($FFFFD4A4)
+misc_name_saved_4 =  ramaddr($FFFFD4A8)
+misc_name_saved_5 =  ramaddr($FFFFD4AC)
+	endif
 
 sprite_table_input = ramaddr($FFFFD800)
 
