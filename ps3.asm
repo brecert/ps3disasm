@@ -25,6 +25,8 @@
 bugfixes = 0			; if 1, include bug fixes
 enable_run = 0			; if 1, you can run while holding the B button
 revision = 1			; 0 = Japanese; 1 = English; 2 = Portuguese
+cross_patch = 0			; Set this to 1 to remove the red cross sign from the nurse's coat, just like
+						; the Virtual Console version
 
 
 	cpu 68000
@@ -12272,7 +12274,12 @@ SegaScreen_VDPRegs:
 	dc.w	$8230	; PNT A base: $C000
 	dc.w	$832C	; PNT W base: $B000
 	dc.w	$8407	; PNT B base: $E000
+; Fix: prevent potential garbage sprites on the SEGA logo
+	if bugfixes=1
+	dc.w	$8554	; Sprite attribute table base: $A800
+	else
 	dc.w	$8550	; Sprite attribute table base: $A000
+	endif
 	dc.w	$8600
 	dc.w	$8700	; Background palette/color: 0/0
 	dc.w	$8800
@@ -108336,7 +108343,13 @@ ArtComp_WeaponDealerPortrait:	binclude "scene/general/portraits/art/Weapon Deale
 ArtComp_ArmorerPortrait:	binclude "scene/general/portraits/art/Armorer.bin"
 	even
 
-ArtComp_NursePortrait:	binclude "scene/general/portraits/art/Nurse.bin"
+ArtComp_NursePortrait:
+	if cross_patch=1
+	binclude "scene/general/portraits/art/Nurse No Cross.bin"
+	else
+	binclude "scene/general/portraits/art/Nurse.bin"
+	endif
+	
 	even
 
 ArtComp_PriestPortrait:	binclude "scene/general/portraits/art/Priest.bin"
