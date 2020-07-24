@@ -7246,7 +7246,7 @@ loc_5206:
 	adda.w	d1, a1
 	move.l	a1, $10(a5)
 	add.w	d7, d0
-	bsr.w	loc_7C20
+	bsr.w	PlaneMapDecomp_Main
 	lea	$FFFF4000, a2
 	lea	loc_5550(pc), a0
 	btst	#0, ($FFFFD00A).w
@@ -10542,7 +10542,7 @@ SceneGraphicsLoadJmpTbl:
 	bra.w	SceneGraphics_LoadChunks	; $10
 	bra.w	SceneGraphics_LoadLayout	; $14
 	bra.w	SceneGraphics_CompressedToRAM	; $18
-	bra.w	loc_7BFE	; $1C
+	bra.w	SceneGraphics_DecompressPlaneMaps	; $1C
 	bra.w	SceneGraphics_PaletteByGeneration	; $20
 ; =================================================================
 
@@ -10939,7 +10939,7 @@ loc_7BF4:
 
 
 ; -----------------------------------------------------------------
-loc_7BFE:
+SceneGraphics_DecompressPlaneMaps:
 	movea.l	(a4)+, a0
 	move.l	(a4)+, d0
 	movea.l	d0, a1
@@ -10948,57 +10948,59 @@ loc_7BFE:
 	move.w	d0, d1
 	addi.w	#$100, d0
 	lsr.w	#5, d1
-	lea	loc_804E(pc), a2
+	lea	PlaneMapDecompArtTileTable(pc), a2
 	add.w	(a2,d1.w), d0
-	addi.w	#$8000, d0
-loc_7C20:
+	addi.w	#$8000, d0	; set priority
+
+PlaneMapDecomp_Main:
 	moveq	#0, d1
 	move.b	(a0)+, d1
-	bmi.s	loc_7C2C
-	bsr.w	loc_7C2E
-	bra.s	loc_7C20
-loc_7C2C:
+	bmi.s	+
+	bsr.w	PlaneMapDecomp_GoToJmpTbl
+	bra.s	PlaneMapDecomp_Main
++
 	rts
-loc_7C2E:
-	moveq	#7, d2
-	jmp	loc_7C34(pc,d1.w)
+
+PlaneMapDecomp_GoToJmpTbl:
+	moveq	#7, d2		; repetition
+	jmp	PlaneMapDecompTypeJmpTbl(pc,d1.w)
 ; -----------------------------------------------------------------
 
 
 ; =================================================================
-loc_7C34:
-	bra.w	loc_7CB4
-	bra.w	loc_7CC2
-	bra.w	loc_7CD0
-	bra.w	loc_7CDE
-	bra.w	loc_7CEE
-	bra.w	loc_7CFC
-	bra.w	loc_7D0C
-	bra.w	loc_7D1C
-	bra.w	loc_7D2E
-	bra.w	loc_7D42
-	bra.w	loc_7D56
-	bra.w	loc_7D6A
-	bra.w	loc_7D80
-	bra.w	loc_7D94
-	bra.w	loc_7DAA
-	bra.w	loc_7DC0
-	bra.w	loc_7DD8
-	bra.w	loc_7DEC
-	bra.w	loc_7E00
-	bra.w	loc_7E14
-	bra.w	loc_7E2A
-	bra.w	loc_7E3E
-	bra.w	loc_7E54
-	bra.w	loc_7E6A
-	bra.w	loc_7E82
-	bra.w	loc_7E9C
-	bra.w	loc_7EB6
-	bra.w	loc_7ED0
-	bra.w	loc_7EEC
-	bra.w	loc_7F06
-	bra.w	loc_7F22
-	bra.w	loc_7F3E
+PlaneMapDecompTypeJmpTbl:
+	bra.w	loc_7CB4	; 0 
+	bra.w	loc_7CC2	; 4
+	bra.w	loc_7CD0	; 8
+	bra.w	loc_7CDE	; $C
+	bra.w	loc_7CEE	; $10
+	bra.w	loc_7CFC	; $14
+	bra.w	loc_7D0C	; $18
+	bra.w	loc_7D1C	; $1C
+	bra.w	loc_7D2E	; $20
+	bra.w	loc_7D42	; $24
+	bra.w	loc_7D56	; $28
+	bra.w	loc_7D6A	; $2C
+	bra.w	loc_7D80	; $30
+	bra.w	loc_7D94	; $34
+	bra.w	loc_7DAA	; $38
+	bra.w	loc_7DC0	; $3C
+	bra.w	loc_7DD8	; $40
+	bra.w	loc_7DEC	; $44
+	bra.w	loc_7E00	; $48
+	bra.w	loc_7E14	; $4C
+	bra.w	loc_7E2A	; $50
+	bra.w	loc_7E3E	; $54
+	bra.w	loc_7E54	; $58
+	bra.w	loc_7E6A	; $5C
+	bra.w	loc_7E82	; $60
+	bra.w	loc_7E9C	; $64
+	bra.w	loc_7EB6	; $68
+	bra.w	loc_7ED0	; $6C
+	bra.w	loc_7EEC	; $70
+	bra.w	loc_7F06	; $74
+	bra.w	loc_7F22	; $78
+	bra.w	loc_7F3E	; $7C
 ; =================================================================
 
 
@@ -11463,7 +11465,7 @@ loc_8048:
 	rts
 
 ; ==========================================
-loc_804E:
+PlaneMapDecompArtTileTable:
 	dc.w	0
 	dc.w	$2000
 	dc.w	$2000
@@ -108597,7 +108599,10 @@ PlaneMap_WrenPortrait:
 	dc.w	$87F
 	dc.b	$2C ;0x0 (0x000AC101-0x000AC102, Entry count: 0x00000001) [Unknown data]
 	dc.w	$87F
-	dc.b	$34, $80, $00, $00, $00, $64, $83, $70, $01, $02, $03, $84, $11, $50, $85, $40
+	dc.b	$34, $80, $00, $00
+	
+
+	dc.b	$00, $64, $83, $70, $01, $02, $03, $84, $11, $50, $85, $40
 	dc.b	$10, $30, $00, $20, $12, $13, $86, $71, $21, $60, $31, $22, $87, $41, $88, $51 ;0x0 (0x000AC104-0x000AC13C, Entry count: 0x00000038) [Unknown data]
 	dc.b	$FF, $00, $00, $00, $1C, $19, $2A, $85, $3B, $14, $EC, $53, $B1, $4E, $C5, $58
 	dc.b	$DD, $58, $E6, $C5, $3B, $14, $EC, $53 ;0x20
