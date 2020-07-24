@@ -53612,7 +53612,7 @@ SceneGraphics_Skyhaven:
 SceneGraphics_LandenTechStore:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -53665,7 +53665,7 @@ SceneGraphics_LandenTechStore:
 SceneGraphics_ShusoranSupplyStore:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -53718,7 +53718,7 @@ SceneGraphics_ShusoranSupplyStore:
 SceneGraphics_LandenArmorStore:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -53771,7 +53771,7 @@ SceneGraphics_LandenArmorStore:
 SceneGraphics_YaataTechStore:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -53824,7 +53824,7 @@ SceneGraphics_YaataTechStore:
 SceneGraphics_LandenWeaponStore:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -53877,7 +53877,7 @@ SceneGraphics_LandenWeaponStore:
 SceneGraphics_LandenChurch:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -53930,7 +53930,7 @@ SceneGraphics_LandenChurch:
 SceneGraphics_HazatakTopLeftHouse:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -53983,7 +53983,7 @@ SceneGraphics_HazatakTopLeftHouse:
 SceneGraphics_TechnaArmorStore:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54036,7 +54036,7 @@ SceneGraphics_TechnaArmorStore:
 SceneGraphics_LandenSupplyStore:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54089,7 +54089,7 @@ SceneGraphics_LandenSupplyStore:
 SceneGraphics_AgoeTechStore:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54142,7 +54142,7 @@ SceneGraphics_AgoeTechStore:
 SceneGraphics_LandenFortuneTeller:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54195,7 +54195,7 @@ SceneGraphics_LandenFortuneTeller:
 SceneGraphics_LandenInn:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54248,7 +54248,7 @@ SceneGraphics_LandenInn:
 SceneGraphics_YaataArmorStore:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54301,7 +54301,7 @@ SceneGraphics_YaataArmorStore:
 SceneGraphics_LandenTopRightHouse:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54349,7 +54349,7 @@ SceneGraphics_LandenTopRightHouse:
 SceneGraphics_LandenTopRightHouse2:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54397,7 +54397,7 @@ SceneGraphics_LandenTopRightHouse2:
 SceneGraphics_YaataBottomLeftHouse:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54445,7 +54445,7 @@ SceneGraphics_YaataBottomLeftHouse:
 SceneGraphics_LandenHouse1F:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54493,7 +54493,7 @@ SceneGraphics_LandenHouse1F:
 SceneGraphics_Church1F:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54546,7 +54546,7 @@ SceneGraphics_Church1F:
 SceneGraphics_LandenSupplyStore1F:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -54594,7 +54594,7 @@ SceneGraphics_LandenSupplyStore1F:
 SceneGraphics_LandenInn1F:
 	dc.w	1
 	dc.w	$C
-	dc.l	ArtComp_Stores
+	dc.l	ArtComp_Houses
 	dc.l	$2000
 	
 	dc.w	$0DC8
@@ -80143,7 +80143,7 @@ loc_3FED6:
 
 	if revision=0
 	; JP font
-Art_Font:	binclude "general/art/uncompressed/Font Jap.bin"
+Art_Font:	binclude "general/font/Font uncompressed Jap.bin"
 Art_Font_End:
 
 	elseif revision=2
@@ -83502,7 +83502,7 @@ loc_47EAC:
 
 	align $1000
 
-ArtComp_LuneSprite:	binclude "scene/rebel_cave/art/Lune.bin"
+ArtComp_LuneSprite:	binclude "general/objects/art/Lune.bin"
 	even
 
 loc_481EC:
@@ -83559,7 +83559,7 @@ loc_481EC:
 	dc.b	$3C, $63, $B3, $34, $6E, $14, $E1, $BF, $04, $CA, $6B, $93, $C7, $44, $87, $D3
 	dc.b	$6C, $F7, $76, $71, $69, $00, $00, $00 ;0x320
 
-ArtComp_Spaceship:	binclude "scene/general/dungeons/art/Spaceship.bin"
+ArtComp_Spaceship:	binclude "general/objects/art/Shuttle.bin"
 	even
 
 	align $1000
@@ -87424,7 +87424,7 @@ loc_5F800:
 
 	align $1000
 
-ArtComp_GameStartBG2:	binclude "scene/game_start/art/Background Tiles 2.bin"
+ArtComp_GameStartBG2:	binclude "scene/game start/art/Background Tiles 2.bin"
 	even
 
 loc_60DDC:
@@ -87622,7 +87622,7 @@ loc_60DDC:
 	dc.w	$107F
 	dc.b	$00, $80 ;0x0 (0x00060F72-0x00060F74, Entry count: 0x00000002) [Unknown data]
 
-ArtComp_GameStartBG:	binclude "scene/game_start/art/Background Tiles.bin"
+ArtComp_GameStartBG:	binclude "scene/game start/art/Background Tiles.bin"
 	even
 
 loc_62388:
@@ -89235,7 +89235,7 @@ loc_65C54:
 	else
 	align $1000
 
-Art_Font:	binclude "general/art/uncompressed/Font.bin"
+Art_Font:	binclude "general/font/Font uncompressed.bin"
 Art_Font_End:
 
 
@@ -102402,191 +102402,191 @@ CharacterTargetChances:
 
 	align $8000
 
-ArtComp_OrakianNPCs:	binclude "scene/general/sprites/art/Orakian NPCs.bin"
+ArtComp_OrakianNPCs:	binclude "general/objects/art/Orakian NPCs.bin"
 	even
 
-ArtComp_LayanNPCs:	binclude "scene/general/sprites/art/Layan NPCs.bin"
+ArtComp_LayanNPCs:	binclude "general/objects/art/Layan NPCs.bin"
 	even
 
-ArtComp_CastleNPCs:	binclude "scene/general/sprites/art/Castle NPCs.bin"
+ArtComp_CastleNPCs:	binclude "general/objects/art/Castle NPCs.bin"
 	even
 
-ArtComp_AndroidNPCs:	binclude "scene/general/sprites/art/Android NPCs.bin"
+ArtComp_AndroidNPCs:	binclude "general/objects/art/Android NPCs.bin"
 
 loc_839F0:
 	dc.b	$00, $01, $82, $08, $17, $83, $06, $07, $16, $FF, $F2, $02, $7A, $0F, $4F, $AF
 	dc.b	$80, $19, $E1, $7C, $24, $2C, $B3, $CA, $C6, $39, $37, $B7, $3C, $05, $F4, $CF ;0x0 (0x000839F0-0x00092ABC, Entry count: 0x0000F0CC) [Unknown data]
 	dc.b	$A0, $13, $C8, $00
 
-ArtComp_Dryad:	binclude "scene/general/battle/art/Dryad.bin"
+ArtComp_Dryad:	binclude "scene/battle/art/Dryad.bin"
 	even
 
-ArtComp_Nayl:	binclude "scene/general/battle/art/Nayl.bin"
+ArtComp_Nayl:	binclude "scene/battle/art/Nayl.bin"
 	even
 
-ArtComp_Buzzgull:	binclude "scene/general/battle/art/Buzzgull.bin"
+ArtComp_Buzzgull:	binclude "scene/battle/art/Buzzgull.bin"
 
 
-ArtComp_Commsat:	binclude "scene/general/battle/art/Commsat.bin"
+ArtComp_Commsat:	binclude "scene/battle/art/Commsat.bin"
 	even
 
-ArtComp_Fire:	binclude "scene/general/battle/art/Fire.bin"
+ArtComp_Fire:	binclude "scene/battle/art/Fire.bin"
 	even
 
-ArtComp_Clump:	binclude "scene/general/battle/art/Clump.bin"
+ArtComp_Clump:	binclude "scene/battle/art/Clump.bin"
 	even
 
-ArtComp_Glop:	binclude "scene/general/battle/art/Glop.bin"
+ArtComp_Glop:	binclude "scene/battle/art/Glop.bin"
 
 
-ArtComp_Imp:	binclude "scene/general/battle/art/Imp.bin"
+ArtComp_Imp:	binclude "scene/battle/art/Imp.bin"
 	even
 
-ArtComp_Blink:	binclude "scene/general/battle/art/Blink.bin"
+ArtComp_Blink:	binclude "scene/battle/art/Blink.bin"
 
 
-ArtComp_Arachne:	binclude "scene/general/battle/art/Arachne.bin"
+ArtComp_Arachne:	binclude "scene/battle/art/Arachne.bin"
 	even
 
-ArtComp_Spinner:	binclude "scene/general/battle/art/Spinner.bin"
+ArtComp_Spinner:	binclude "scene/battle/art/Spinner.bin"
 	even
 
-ArtComp_Chirpbot:	binclude "scene/general/battle/art/Chirpbot.bin"
+ArtComp_Chirpbot:	binclude "scene/battle/art/Chirpbot.bin"
 	even
 
-ArtComp_Chirper:	binclude "scene/general/battle/art/Chirper.bin"
+ArtComp_Chirper:	binclude "scene/battle/art/Chirper.bin"
 	even
 
-ArtComp_Lizrd:	binclude "scene/general/battle/art/Lizard.bin"
+ArtComp_Lizrd:	binclude "scene/battle/art/Lizard.bin"
 	even
 
-ArtComp_Eindon:	binclude "scene/general/battle/art/Eindon.bin"
+ArtComp_Eindon:	binclude "scene/battle/art/Eindon.bin"
 	even
 
-ArtComp_Nova:	binclude "scene/general/battle/art/Nova.bin"
+ArtComp_Nova:	binclude "scene/battle/art/Nova.bin"
 	even
 
-ArtComp_Lazrbot:	binclude "scene/general/battle/art/Lazrbot.bin"
+ArtComp_Lazrbot:	binclude "scene/battle/art/Lazrbot.bin"
 	even
 
-ArtComp_Minimech:	binclude "scene/general/battle/art/Minimech.bin"
+ArtComp_Minimech:	binclude "scene/battle/art/Minimech.bin"
 
 
-ArtComp_Roboman:	binclude "scene/general/battle/art/Roboman.bin"
+ArtComp_Roboman:	binclude "scene/battle/art/Roboman.bin"
 	even
 
-ArtComp_Stix:	binclude "scene/general/battle/art/Stix.bin"
+ArtComp_Stix:	binclude "scene/battle/art/Stix.bin"
 	even
 
-ArtComp_Dire:	binclude "scene/general/battle/art/Dire.bin"
+ArtComp_Dire:	binclude "scene/battle/art/Dire.bin"
 	even
 
-ArtComp_Banshee:	binclude "scene/general/battle/art/Banshee.bin"
+ArtComp_Banshee:	binclude "scene/battle/art/Banshee.bin"
 	even
 
-ArtComp_Irisa:	binclude "scene/general/battle/art/Irisa.bin"
+ArtComp_Irisa:	binclude "scene/battle/art/Irisa.bin"
 	even
 
-ArtComp_Glowtoad:	binclude "scene/general/battle/art/Glowtoad.bin"
+ArtComp_Glowtoad:	binclude "scene/battle/art/Glowtoad.bin"
 	even
 
-ArtComp_Goatman:	binclude "scene/general/battle/art/Goatman.bin"
+ArtComp_Goatman:	binclude "scene/battle/art/Goatman.bin"
 	even
 
-ArtComp_Seeker:	binclude "scene/general/battle/art/Seeker.bin"
+ArtComp_Seeker:	binclude "scene/battle/art/Seeker.bin"
 	even
 
-ArtComp_Lobowing:	binclude "scene/general/battle/art/Lobowing.bin"
+ArtComp_Lobowing:	binclude "scene/battle/art/Lobowing.bin"
 	even
 
-ArtComp_Emir:	binclude "scene/general/battle/art/Emir.bin"
+ArtComp_Emir:	binclude "scene/battle/art/Emir.bin"
 	even
 
-ArtComp_Moos:	binclude "scene/general/battle/art/Moos.bin"
+ArtComp_Moos:	binclude "scene/battle/art/Moos.bin"
 	even
 
-ArtComp_Harpy:	binclude "scene/general/battle/art/Harpy.bin"
+ArtComp_Harpy:	binclude "scene/battle/art/Harpy.bin"
 	even
 
-ArtComp_Twistbot:	binclude "scene/general/battle/art/Twistbot.bin"
+ArtComp_Twistbot:	binclude "scene/battle/art/Twistbot.bin"
 	even
 
-ArtComp_Catwoman:	binclude "scene/general/battle/art/Catwoman.bin"
+ArtComp_Catwoman:	binclude "scene/battle/art/Catwoman.bin"
 	even
 
-ArtComp_Hopliz:	binclude "scene/general/battle/art/Hopliz.bin"
+ArtComp_Hopliz:	binclude "scene/battle/art/Hopliz.bin"
 	even
 
-ArtComp_Blueroot:	binclude "scene/general/battle/art/Blueroot.bin"
+ArtComp_Blueroot:	binclude "scene/battle/art/Blueroot.bin"
 	even
 
-ArtComp_Bushi:	binclude "scene/general/battle/art/Bushi.bin"
+ArtComp_Bushi:	binclude "scene/battle/art/Bushi.bin"
 	even
 
-ArtComp_Beastess:	binclude "scene/general/battle/art/Beastess.bin"
+ArtComp_Beastess:	binclude "scene/battle/art/Beastess.bin"
 	even
 
-ArtComp_Fatima:	binclude "scene/general/battle/art/Fatima.bin"
+ArtComp_Fatima:	binclude "scene/battle/art/Fatima.bin"
 	even
 
-ArtComp_Dogbot:	binclude "scene/general/battle/art/Dogbot.bin"
+ArtComp_Dogbot:	binclude "scene/battle/art/Dogbot.bin"
 	even
 
-ArtComp_Fatale:	binclude "scene/general/battle/art/Fatale.bin"
+ArtComp_Fatale:	binclude "scene/battle/art/Fatale.bin"
 	even
 
-ArtComp_Grinder:	binclude "scene/general/battle/art/Grinder.bin"
+ArtComp_Grinder:	binclude "scene/battle/art/Grinder.bin"
 	even
 
-ArtComp_Doomfly:	binclude "scene/general/battle/art/Doomfly.bin"
+ArtComp_Doomfly:	binclude "scene/battle/art/Doomfly.bin"
 	even
 
-ArtComp_Primus:	binclude "scene/general/battle/art/Primus.bin"
+ArtComp_Primus:	binclude "scene/battle/art/Primus.bin"
 	even
 
-ArtComp_Punisher:	binclude "scene/general/battle/art/Punisher.bin"
+ArtComp_Punisher:	binclude "scene/battle/art/Punisher.bin"
 	even
 
-ArtComp_Amazon:	binclude "scene/general/battle/art/Amazon.bin"
+ArtComp_Amazon:	binclude "scene/battle/art/Amazon.bin"
 	even
 
-ArtComp_Blotter:	binclude "scene/general/battle/art/Blotter.bin"
+ArtComp_Blotter:	binclude "scene/battle/art/Blotter.bin"
 	even
 
-ArtComp_Giant:	binclude "scene/general/battle/art/Giant.bin"
+ArtComp_Giant:	binclude "scene/battle/art/Giant.bin"
 	even
 
-ArtComp_Orb:	binclude "scene/general/battle/art/Orb.bin"
+ArtComp_Orb:	binclude "scene/battle/art/Orb.bin"
 	even
 
-ArtComp_Flopper:	binclude "scene/general/battle/art/Flopper.bin"
+ArtComp_Flopper:	binclude "scene/battle/art/Flopper.bin"
 	even
 
-ArtComp_Clops:	binclude "scene/general/battle/art/Clops.bin"
+ArtComp_Clops:	binclude "scene/battle/art/Clops.bin"
 	even
 
-ArtComp_Dragon:	binclude "scene/general/battle/art/Dragon.bin"
+ArtComp_Dragon:	binclude "scene/battle/art/Dragon.bin"
 	even
 
-ArtComp_Conjurer:	binclude "scene/general/battle/art/Conjurer.bin"
+ArtComp_Conjurer:	binclude "scene/battle/art/Conjurer.bin"
 	even
 
-ArtComp_Watcher:	binclude "scene/general/battle/art/Watcher.bin"
+ArtComp_Watcher:	binclude "scene/battle/art/Watcher.bin"
 	even
 
-ArtComp_Skeleton:	binclude "scene/general/battle/art/Skeleton.bin"
+ArtComp_Skeleton:	binclude "scene/battle/art/Skeleton.bin"
 	even
 
-ArtComp_Lasher:	binclude "scene/general/battle/art/Lasher.bin"
+ArtComp_Lasher:	binclude "scene/battle/art/Lasher.bin"
 	even
 
-ArtComp_Agribot:	binclude "scene/general/battle/art/Agribot.bin"
+ArtComp_Agribot:	binclude "scene/battle/art/Agribot.bin"
 	even
 
-ArtComp_Stickle:	binclude "scene/general/battle/art/Stickle.bin"
+ArtComp_Stickle:	binclude "scene/battle/art/Stickle.bin"
 	even
 
-ArtComp_Polebot:	binclude "scene/general/battle/art/Polebot.bin"
+ArtComp_Polebot:	binclude "scene/battle/art/Polebot.bin"
 	even
 
 loc_92ABC:
@@ -106431,25 +106431,25 @@ loc_94BA4:
 	dc.w	$5426
 	dc.b	$28, $02, $00, $21, $00, $20, $00, $80
 
-ArtComp_EnemyKingCille:	binclude "scene/general/battle/art/King Cille.bin"
+ArtComp_EnemyKingCille:	binclude "scene/battle/art/King Cille.bin"
 	even
 
-ArtComp_EnemyLyle:	binclude "scene/general/battle/art/Lyle.bin"
+ArtComp_EnemyLyle:	binclude "scene/battle/art/Lyle.bin"
 	even
 
-ArtComp_EnemyRulakir:	binclude "scene/general/battle/art/Rulakir.bin"
+ArtComp_EnemyRulakir:	binclude "scene/battle/art/Rulakir.bin"
 	even
 
-ArtComp_EnemySari:	binclude "scene/general/battle/art/Sari.bin"
+ArtComp_EnemySari:	binclude "scene/battle/art/Sari.bin"
 	even
 
-ArtComp_EnemyLune:	binclude "scene/general/battle/art/Lune.bin"
+ArtComp_EnemyLune:	binclude "scene/battle/art/Lune.bin"
 	even
 
-ArtComp_EnemyKara:	binclude "scene/general/battle/art/Kara.bin"
+ArtComp_EnemyKara:	binclude "scene/battle/art/Kara.bin"
 	even
 
-ArtComp_EnemySiren:	binclude "scene/general/battle/art/Siren.bin"
+ArtComp_EnemySiren:	binclude "scene/battle/art/Siren.bin"
 	even
 
 loc_96F1C:
@@ -107350,43 +107350,43 @@ loc_97BD8:
 	dc.b	$C0, $00, $2F, $87, $87, $87, $87, $87, $87, $87, $87, $87, $87, $87, $87, $87 ;0x200
 	dc.b	$87 ;0x220
 
-Art_RhysSprite:	binclude "scene/general/sprites/art/Rhys.bin"
+Art_RhysSprite:	binclude "general/objects/art/Rhys.bin"
 	even
 
-Art_LyleSprite:	binclude "scene/general/sprites/art/Lyle.bin"
+Art_LyleSprite:	binclude "general/objects/art/Lyle.bin"
 	even
 
-Art_WrenSprite:	binclude "scene/general/sprites/art/Wren.bin"
+Art_WrenSprite:	binclude "general/objects/art/Wren.bin"
 	even
 
-Art_MieuSprite:	binclude "scene/general/sprites/art/Mieu.bin"
+Art_MieuSprite:	binclude "general/objects/art/Mieu.bin"
 	even
 
-Art_LenaSprite:	binclude "scene/general/sprites/art/Lena.bin"
+Art_LenaSprite:	binclude "general/objects/art/Lena.bin"
 	even
 
-Art_SariSprite:	binclude "scene/general/sprites/art/Sari.bin"
+Art_SariSprite:	binclude "general/objects/art/Sari.bin"
 	even
 
-Art_TheaSprite:	binclude "scene/general/sprites/art/Thea.bin"
+Art_TheaSprite:	binclude "general/objects/art/Thea.bin"
 	even
 
-Art_LayaSprite:	binclude "scene/general/sprites/art/Laya.bin"
+Art_LayaSprite:	binclude "general/objects/art/Laya.bin"
 	even
 
-Art_RyanSprite:	binclude "scene/general/sprites/art/Ryan.bin"
+Art_RyanSprite:	binclude "general/objects/art/Ryan.bin"
 	even
 
-Art_AronSprite:	binclude "scene/general/sprites/art/Aron.bin"
+Art_AronSprite:	binclude "general/objects/art/Aron.bin"
 	even
 
-Art_PrincessKaraSprite:	binclude "scene/general/sprites/art/Princess Kara.bin"
+Art_PrincessKaraSprite:	binclude "general/objects/art/Princess Kara.bin"
 	even
 
-Art_WarriorKaraSprite:	binclude "scene/general/sprites/art/Warrior Kara.bin"
+Art_WarriorKaraSprite:	binclude "general/objects/art/Warrior Kara.bin"
 	even
 
-ArtComp_Worlds:	binclude "scene/general/worlds/art/World Tiles.bin"
+ArtComp_Worlds:	binclude "general/maps/art/World Tiles.bin"
 	even
 
 loc_9D768:
@@ -107620,7 +107620,7 @@ loc_9D768:
 	dc.b	$E1, $02, $E2, $02, $E3, $02, $E4, $02, $EA, $02, $EB, $02, $EC, $02, $ED ;0x8A0
 	dc.b	$FF ;0x0 (0x0009E597-0x0009E598, Entry count: 0x00000001) [Unknown data]
 
-ArtComp_Towns:	binclude "scene/general/towns/art/Town Tiles.bin"
+ArtComp_Towns:	binclude "general/maps/art/Town Tiles.bin"
 	even
 
 loc_9FA44:
@@ -107719,7 +107719,7 @@ loc_9FA44:
 	dc.b	$F9, $01, $F9, $01, $9C, $09, $FA, $01, $82, $01, $82, $01, $AA, $09, $A8, $01, $82, $01, $82 ;0x440
 	dc.b	$FF, $00, $00 ;0x0 (0x0009FF69-0x0009FF6C, Entry count: 0x00000003) [Unknown data]
 
-ArtComp_Castles:	binclude "scene/general/castles/art/Castle Tiles.bin"
+ArtComp_Castles:	binclude "general/maps/art/Castle Tiles.bin"
 	even
 
 loc_A1D78:
@@ -107808,7 +107808,7 @@ loc_A1D78:
 	dc.b	$00, $21, $00, $21, $00, $21, $00, $21, $00, $21, $00, $21, $00, $21, $00 ;0x4E0
 	dc.b	$FF, $00, $00 ;0x0 (0x000A22A1-0x000A22A4, Entry count: 0x00000003) [Unknown data]
 
-ArtComp_Tunnels:	binclude "scene/general/tunnels/art/Tunnel Tiles.bin"
+ArtComp_Tunnels:	binclude "general/maps/art/Tunnel Tiles.bin"
 	even
 
 loc_A351C:
@@ -107947,34 +107947,34 @@ loc_A351C:
 	dc.b	$21, $00, $21, $00 ;0x840
 	dc.b	$FF, $00, $00, $00 ;0x0 (0x000A3D60-0x000A3D64, Entry count: 0x00000004) [Unknown data]
 
-ArtComp_ItemShopkeeperPortrait:	binclude "scene/general/portraits/art/Item Shopkeeper.bin"
+ArtComp_ItemShopkeeperPortrait:	binclude "general/portraits/art/Item Shopkeeper.bin"
 	even
 
-ArtComp_WeaponDealerPortrait:	binclude "scene/general/portraits/art/Weapon Dealer.bin"
+ArtComp_WeaponDealerPortrait:	binclude "general/portraits/art/Weapon Dealer.bin"
 	even
 
-ArtComp_ArmorerPortrait:	binclude "scene/general/portraits/art/Armorer.bin"
+ArtComp_ArmorerPortrait:	binclude "general/portraits/art/Armorer.bin"
 	even
 
 ArtComp_NursePortrait:
 	if cross_patch=1
-	binclude "scene/general/portraits/art/Nurse no cross.bin"
+	binclude "general/portraits/art/Nurse no cross.bin"
 	else
-	binclude "scene/general/portraits/art/Nurse.bin"
+	binclude "general/portraits/art/Nurse.bin"
 	endif
 	
 	even
 
-ArtComp_PriestPortrait:	binclude "scene/general/portraits/art/Priest.bin"
+ArtComp_PriestPortrait:	binclude "general/portraits/art/Priest.bin"
 	even
 
-ArtComp_TechDistributorPortrait:	binclude "scene/general/portraits/art/Tech Distributor.bin"
+ArtComp_TechDistributorPortrait:	binclude "general/portraits/art/Tech Distributor.bin"
 	even
 
-ArtComp_FortuneTellerPortrait:	binclude "scene/general/portraits/art/Fortune Teller.bin"
+ArtComp_FortuneTellerPortrait:	binclude "general/portraits/art/Fortune Teller.bin"
 	even
 
-ArtComp_InnkeeperPortrait:	binclude "scene/general/portraits/art/Innkeeper.bin"
+ArtComp_InnkeeperPortrait:	binclude "general/portraits/art/Innkeeper.bin"
 		
 	dc.b	$FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
 	dc.b	$FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
@@ -108032,85 +108032,85 @@ ArtComp_InnkeeperPortrait:	binclude "scene/general/portraits/art/Innkeeper.bin"
 	dc.b	$FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF
 	dc.b	$FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF, $FF ;0x6C0
 
-ArtComp_AynPortrait:	binclude "scene/general/portraits/art/Ayn.bin"
+ArtComp_AynPortrait:	binclude "general/portraits/art/Ayn.bin"
 	even
 
-ArtComp_RyanPortrait:	binclude "scene/general/portraits/art/Ryan.bin"
+ArtComp_RyanPortrait:	binclude "general/portraits/art/Ryan.bin"
 	even
 
-ArtComp_AdanPortrait:	binclude "scene/general/portraits/art/Adan.bin"
+ArtComp_AdanPortrait:	binclude "general/portraits/art/Adan.bin"
 	even
 
-ArtComp_MaiaPortrait:	binclude "scene/general/portraits/art/Maia.bin"
+ArtComp_MaiaPortrait:	binclude "general/portraits/art/Maia.bin"
 	even
 
-ArtComp_OlderAynPortrait:	binclude "scene/general/portraits/art/Older Ayn.bin"
+ArtComp_OlderAynPortrait:	binclude "general/portraits/art/Older Ayn.bin"
 	even
 
-ArtComp_OlderRhysPortrait:	binclude "scene/general/portraits/art/Older Rhys.bin"
+ArtComp_OlderRhysPortrait:	binclude "general/portraits/art/Older Rhys.bin"
 	even
 
-ArtComp_OlderLylePortrait:	binclude "scene/general/portraits/art/Older Lyle.bin"
+ArtComp_OlderLylePortrait:	binclude "general/portraits/art/Older Lyle.bin"
 	even
 
-ArtComp_OlderNialPortrait:	binclude "scene/general/portraits/art/Older Nial.bin"
+ArtComp_OlderNialPortrait:	binclude "general/portraits/art/Older Nial.bin"
 	even
 
-ArtComp_RhysPortrait:	binclude "scene/general/portraits/art/Rhys.bin"
+ArtComp_RhysPortrait:	binclude "general/portraits/art/Rhys.bin"
 	even
 
-ArtComp_AronPortrait:	binclude "scene/general/portraits/art/Aron.bin"
+ArtComp_AronPortrait:	binclude "general/portraits/art/Aron.bin"
 	even
 
-ArtComp_MieuPortrait:	binclude "scene/general/portraits/art/Mieu.bin"
+ArtComp_MieuPortrait:	binclude "general/portraits/art/Mieu.bin"
 	even
 
-ArtComp_MiunPortrait:	binclude "scene/general/portraits/art/Miun.bin"
+ArtComp_MiunPortrait:	binclude "general/portraits/art/Miun.bin"
 	even
 
-ArtComp_CrysPortrait:	binclude "scene/general/portraits/art/Crys.bin"
+ArtComp_CrysPortrait:	binclude "general/portraits/art/Crys.bin"
 	even
 
-ArtComp_GwynPortrait:	binclude "scene/general/portraits/art/Gwyn.bin"
+ArtComp_GwynPortrait:	binclude "general/portraits/art/Gwyn.bin"
 	even
 
-ArtComp_LayaPortrait:	binclude "scene/general/portraits/art/Laya.bin"
+ArtComp_LayaPortrait:	binclude "general/portraits/art/Laya.bin"
 	even
 
-ArtComp_LylePortrait:	binclude "scene/general/portraits/art/Lyle.bin"
+ArtComp_LylePortrait:	binclude "general/portraits/art/Lyle.bin"
 	even
 
-ArtComp_TheaPortrait:	binclude "scene/general/portraits/art/Thea.bin"
+ArtComp_TheaPortrait:	binclude "general/portraits/art/Thea.bin"
 	even
 
-ArtComp_NialPortrait:	binclude "scene/general/portraits/art/Nial.bin"
+ArtComp_NialPortrait:	binclude "general/portraits/art/Nial.bin"
 	even
 
-ArtComp_SariPortrait:	binclude "scene/general/portraits/art/Sari.bin"
+ArtComp_SariPortrait:	binclude "general/portraits/art/Sari.bin"
 	even
 
-ArtComp_LenaPortrait:	binclude "scene/general/portraits/art/Lena.bin"
+ArtComp_LenaPortrait:	binclude "general/portraits/art/Lena.bin"
 	even
 
-ArtComp_LunePortrait:	binclude "scene/general/portraits/art/Lune.bin"
+ArtComp_LunePortrait:	binclude "general/portraits/art/Lune.bin"
 	even
 
-ArtComp_AlairPortrait:	binclude "scene/general/portraits/art/Alair.bin"
+ArtComp_AlairPortrait:	binclude "general/portraits/art/Alair.bin"
 	even
 
-ArtComp_WarriorKaraPortrait:	binclude "scene/general/portraits/art/Warrior Kara.bin"
+ArtComp_WarriorKaraPortrait:	binclude "general/portraits/art/Warrior Kara.bin"
 	even
 
-ArtComp_PrincessKaraPortrait:	binclude "scene/general/portraits/art/Princess Kara.bin"
+ArtComp_PrincessKaraPortrait:	binclude "general/portraits/art/Princess Kara.bin"
 	even
 
-ArtComp_SirenPortrait:	binclude "scene/general/portraits/art/Siren.bin"
+ArtComp_SirenPortrait:	binclude "general/portraits/art/Siren.bin"
 	even
 
-ArtComp_SeanPortrait:	binclude "scene/general/portraits/art/Sean.bin"
+ArtComp_SeanPortrait:	binclude "general/portraits/art/Sean.bin"
 	even
 
-ArtComp_WrenPortrait:	binclude "scene/general/portraits/art/Wren.bin"
+ArtComp_WrenPortrait:	binclude "general/portraits/art/Wren.bin"
 	even
 
 PlaneMap_AynPortrait:
@@ -108791,13 +108791,13 @@ loc_AD624:
 	dc.b	$80, $09, $81, $70, $82, $71, $FF, $00, $01, $40, $90, $44, $21, $10, $48, $14
 	dc.b	$00, $00, $00, $00 ;0x0 (0x000AD624-0x000AD638, Entry count: 0x00000014) [Unknown data]
 
-ArtComp_TreasureChest:	binclude "scene/general/dungeons/art/Treasure Chest.bin"
+ArtComp_TreasureChest:	binclude "general/objects/art/Treasure Chest.bin"
 	even
 
-ArtComp_Worlds2:	binclude "scene/general/worlds/art/World Tiles 2.bin"
+ArtComp_Worlds2:	binclude "general/maps/art/World Tiles 2.bin"
 	even
 
-ArtComp_WrenTransform:	binclude "scene/wren_transformation/art/Wren Tiles.bin"
+ArtComp_WrenTransform:	binclude "scene/wren transformation/art/Wren Tiles.bin"
 	even
 
 loc_B0698:
@@ -109119,7 +109119,7 @@ loc_B0698:
 	dc.b	$65, $90, $81, $B3, $BF, $31, $8C, $B2, $CB, $2E, $57, $DB, $2C, $B2, $CB, $2C ;0x2C00
 	dc.b	$B3, $00, $00, $00 ;0x2C20
 
-ArtComp_Dungeons:	binclude "scene/general/dungeons/art/Dungeon Tiles.bin"
+ArtComp_Dungeons:	binclude "general/maps/art/Dungeon Tiles.bin"
 	even
 
 loc_B1EF4:
@@ -109165,7 +109165,7 @@ loc_B1EF4:
 	dc.b	$3F, $01, $40, $01, $44, $01, $45, $01, $47, $01, $48, $01, $4B, $01, $4D ;0x260
 	dc.b	$FF ;0x0 (0x000B2173-0x000B2174, Entry count: 0x00000001) [Unknown data]
 
-ArtComp_Caves:	binclude "scene/general/caves/art/Cave Tiles.bin"
+ArtComp_Caves:	binclude "general/maps/art/Cave Tiles.bin"
 	even
 
 loc_B2B2C:
@@ -109507,7 +109507,7 @@ loc_B3814:
 	dc.b	$0E, $0E, $0E, $0E, $0E, $0E, $0E, $0E, $0E, $0E, $0E, $0E, $0E, $0E ;0x40
 	dc.b	$FF, $00, $00, $00 ;0x0 (0x000B39C0-0x000B39C4, Entry count: 0x00000004) [Unknown data]
 
-ArtComp_Stores:	binclude "scene/general/stores/art/Store Tiles.bin"
+ArtComp_Houses:	binclude "general/maps/art/House Tiles.bin"
 	even
 
 loc_B3D8C:
@@ -113168,7 +113168,7 @@ loc_BE1D4:
 	dc.b	$55, $55, $55, $55 ;0x240
 	dc.b	$FF, $00, $00, $00 ;0x0 (0x000BE530-0x000BE534, Entry count: 0x00000004) [Unknown data]
 
-ArtComp_CastleGate:	binclude "scene/general/castles/art/Gate.bin"
+ArtComp_CastleGate:	binclude "general/objects/art/Gate.bin"
 	even
 
 loc_BE754:
