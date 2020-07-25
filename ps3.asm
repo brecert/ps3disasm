@@ -10969,476 +10969,555 @@ PlaneMapDecomp_GoToJmpTbl:
 
 ; =================================================================
 PlaneMapDecompTypeJmpTbl:
-	bra.w	loc_7CB4	; 0 
-	bra.w	loc_7CC2	; 4
-	bra.w	loc_7CD0	; 8
-	bra.w	loc_7CDE	; $C
-	bra.w	loc_7CEE	; $10
-	bra.w	loc_7CFC	; $14
-	bra.w	loc_7D0C	; $18
-	bra.w	loc_7D1C	; $1C
-	bra.w	loc_7D2E	; $20
-	bra.w	loc_7D42	; $24
-	bra.w	loc_7D56	; $28
-	bra.w	loc_7D6A	; $2C
-	bra.w	loc_7D80	; $30
-	bra.w	loc_7D94	; $34
-	bra.w	loc_7DAA	; $38
-	bra.w	loc_7DC0	; $3C
-	bra.w	loc_7DD8	; $40
-	bra.w	loc_7DEC	; $44
-	bra.w	loc_7E00	; $48
-	bra.w	loc_7E14	; $4C
-	bra.w	loc_7E2A	; $50
-	bra.w	loc_7E3E	; $54
-	bra.w	loc_7E54	; $58
-	bra.w	loc_7E6A	; $5C
-	bra.w	loc_7E82	; $60
-	bra.w	loc_7E9C	; $64
-	bra.w	loc_7EB6	; $68
-	bra.w	loc_7ED0	; $6C
-	bra.w	loc_7EEC	; $70
-	bra.w	loc_7F06	; $74
-	bra.w	loc_7F22	; $78
-	bra.w	loc_7F3E	; $7C
+	bra.w	PlaneMapDecomp_Type0	; 0 
+	bra.w	PlaneMapDecomp_Type4	; 4
+	bra.w	PlaneMapDecomp_Type8	; 8
+	bra.w	PlaneMapDecomp_TypeC	; $C
+	bra.w	PlaneMapDecomp_Type10	; $10
+	bra.w	PlaneMapDecomp_Type14	; $14
+	bra.w	PlaneMapDecomp_Type18	; $18
+	bra.w	PlaneMapDecomp_Type1C	; $1C
+	bra.w	PlaneMapDecomp_Type20	; $20
+	bra.w	PlaneMapDecomp_Type24	; $24
+	bra.w	PlaneMapDecomp_Type28	; $28
+	bra.w	PlaneMapDecomp_Type2C	; $2C
+	bra.w	PlaneMapDecomp_Type30	; $30
+	bra.w	PlaneMapDecomp_Type34	; $34
+	bra.w	PlaneMapDecomp_Type38	; $38
+	bra.w	PlaneMapDecomp_Type3C	; $3C
+	bra.w	PlaneMapDecomp_Type40	; $40
+	bra.w	PlaneMapDecomp_Type44	; $44
+	bra.w	PlaneMapDecomp_Type48	; $48
+	bra.w	PlaneMapDecomp_Type4C	; $4C
+	bra.w	PlaneMapDecomp_Type50	; $50
+	bra.w	PlaneMapDecomp_Type54	; $54
+	bra.w	PlaneMapDecomp_Type58	; $58
+	bra.w	PlaneMapDecomp_Type5C	; $5C
+	bra.w	PlaneMapDecomp_Type60	; $60
+	bra.w	PlaneMapDecomp_Type64	; $64
+	bra.w	PlaneMapDecomp_Type68	; $68
+	bra.w	PlaneMapDecomp_Type6C	; $6C
+	bra.w	PlaneMapDecomp_Type70	; $70
+	bra.w	PlaneMapDecomp_Type74	; $74
+	bra.w	PlaneMapDecomp_Type78	; $78
+	bra.w	PlaneMapDecomp_Type7C	; $7C
 ; =================================================================
 
 
-
-loc_7CB4:
+; -----------------------------------------------------------------
+; write mappings as is
+; -----------------------------------------------------------------
+PlaneMapDecomp_Type0:
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
 	move.w	d1, (a1)+
-	dbf	d2, loc_7CB4
+	dbf	d2, PlaneMapDecomp_Type0
 	rts
-loc_7CC2:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_Type4:
 	move.b	(a0)+, d3
-loc_7CC4:
-	bsr.w	loc_7F78
+-
+	bsr.w	PlaneMapDecomp_DoDecrement
 	move.w	d1, (a1)+
-	dbf	d2, loc_7CC4
+	dbf	d2, -
 	rts
-loc_7CD0:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_Type8:
 	move.b	(a0)+, d4
-loc_7CD2:
-	bsr.w	loc_7F68
+-
+	bsr.w	PlaneMapDecomp_DoIncrement
 	move.w	d1, (a1)+
-	dbf	d2, loc_7CD2
+	dbf	d2, -
 	rts
-loc_7CDE:
-	move.b	(a0)+, d4
-	move.b	(a0)+, d3
-loc_7CE2:
-	bsr.w	loc_7FB8
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_TypeC:
+	move.b	(a0)+, d4	; increment
+	move.b	(a0)+, d3	; decrement
+-
+	bsr.w	PlaneMapDecomp_DoIncrDecr
 	move.w	d1, (a1)+
-	dbf	d2, loc_7CE2
+	dbf	d2, -
 	rts
-loc_7CEE:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_Type10:
 	move.b	(a0)+, d5
-loc_7CF0:
-	bsr.w	loc_7F5C
+-
+	bsr.w	PlaneMapDecomp_DoCopy
 	move.w	d1, (a1)+
-	dbf	d2, loc_7CF0
+	dbf	d2, -
 	rts
-loc_7CFC:
-	move.b	(a0)+, d5
-	move.b	(a0)+, d3
-loc_7D00:
-	bsr.w	loc_7FA0
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_Type14:
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d3	; decrement
+-
+	bsr.w	PlaneMapDecomp_DoDecrCopy
 	move.w	d1, (a1)+
-	dbf	d2, loc_7D00
+	dbf	d2, -
 	rts
-loc_7D0C:
-	move.b	(a0)+, d5
-	move.b	(a0)+, d4
-loc_7D10:
-	bsr.w	loc_7F88
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_Type18:
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d4	; increment
+-
+	bsr.w	PlaneMapDecomp_DoIncrCopy
 	move.w	d1, (a1)+
-	dbf	d2, loc_7D10
+	dbf	d2, -
 	rts
-loc_7D1C:
-	move.b	(a0)+, d5
-	move.b	(a0)+, d4
-	move.b	(a0)+, d3
-loc_7D22:
-	bsr.w	loc_7FD4
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_Type1C:
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d4	; increment
+	move.b	(a0)+, d3	; decrement
+-
+	bsr.w	PlaneMapDecomp_DoIncrDecrCopy
 	move.w	d1, (a1)+
-	dbf	d2, loc_7D22
+	dbf	d2, -
 	rts
-loc_7D2E:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_Type20:
 	move.b	(a0)+, d6
-loc_7D30:
+-
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
-	bsr.w	loc_8006
+	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7D30
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
 
-loc_7D42:
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_Type24:
 	move.b	(a0)+, d6
 	move.b	(a0)+, d3
-loc_7D46:
-	bsr.w	loc_7F78
-	bsr.w	loc_8006
+-
+	bsr.w	PlaneMapDecomp_DoDecrement
+	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7D46
+	dbf	d2, -
 	rts
-loc_7D56:
+; -----------------------------------------------------------------
+
+
+
+PlaneMapDecomp_Type28:
 	move.b	(a0)+, d6
 	move.b	(a0)+, d4
 loc_7D5A:
-	bsr.w	loc_7F68
-	bsr.w	loc_8006
+	bsr.w	PlaneMapDecomp_DoIncrement
+	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7D5A
 	rts
-loc_7D6A:
+PlaneMapDecomp_Type2C:
 	move.b	(a0)+, d6
 	move.b	(a0)+, d4
 	move.b	(a0)+, d3
 loc_7D70:
-	bsr.w	loc_7FB8
-	bsr.w	loc_8006
+	bsr.w	PlaneMapDecomp_DoIncrDecr
+	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7D70
 	rts
-loc_7D80:
+PlaneMapDecomp_Type30:
 	move.b	(a0)+, d6
 	move.b	(a0)+, d5
 loc_7D84:
-	bsr.w	loc_7F5C
-	bsr.w	loc_8006
+	bsr.w	PlaneMapDecomp_DoCopy
+	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7D84
 	rts
-loc_7D94:
+PlaneMapDecomp_Type34:
 	move.b	(a0)+, d6
 	move.b	(a0)+, d5
 	move.b	(a0)+, d3
 loc_7D9A:
-	bsr.w	loc_7FA0
-	bsr.w	loc_8006
+	bsr.w	PlaneMapDecomp_DoDecrCopy
+	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7D9A
 	rts
-loc_7DAA:
+PlaneMapDecomp_Type38:
 	move.b	(a0)+, d6
 	move.b	(a0)+, d5
 	move.b	(a0)+, d4
 loc_7DB0:
-	bsr.w	loc_7F88
-	bsr.w	loc_8006
+	bsr.w	PlaneMapDecomp_DoIncrCopy
+	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7DB0
 	rts
-loc_7DC0:
+PlaneMapDecomp_Type3C:
 	move.b	(a0)+, d6
 	move.b	(a0)+, d5
 	move.b	(a0)+, d4
 	move.b	(a0)+, d3
 loc_7DC8:
-	bsr.w	loc_7FD4
-	bsr.w	loc_8006
+	bsr.w	PlaneMapDecomp_DoIncrDecrCopy
+	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7DC8
 	rts
-loc_7DD8:
+PlaneMapDecomp_Type40:
 	move.b	(a0)+, d7
 loc_7DDA:
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7DDA
 	rts
-loc_7DEC:
+PlaneMapDecomp_Type44:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d3
 loc_7DF0:
-	bsr.w	loc_7F78
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoDecrement
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7DF0
 	rts
-loc_7E00:
+PlaneMapDecomp_Type48:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d4
 loc_7E04:
-	bsr.w	loc_7F68
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoIncrement
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7E04
 	rts
-loc_7E14:
+PlaneMapDecomp_Type4C:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d4
 	move.b	(a0)+, d3
 loc_7E1A:
-	bsr.w	loc_7FB8
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoIncrDecr
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7E1A
 	rts
-loc_7E2A:
+PlaneMapDecomp_Type50:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d5
 loc_7E2E:
-	bsr.w	loc_7F5C
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoCopy
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7E2E
 	rts
-loc_7E3E:
+PlaneMapDecomp_Type54:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d5
 	move.b	(a0)+, d3
 loc_7E44:
-	bsr.w	loc_7FA0
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoDecrCopy
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7E44
 	rts
-loc_7E54:
+PlaneMapDecomp_Type58:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d5
 	move.b	(a0)+, d4
 loc_7E5A:
-	bsr.w	loc_7F88
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoIncrCopy
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 loc_7E64:
 	dbf	d2, loc_7E5A
 loc_7E68:
 	rts
-loc_7E6A:
+PlaneMapDecomp_Type5C:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d5
 	move.b	(a0)+, d4
 	move.b	(a0)+, d3
 loc_7E72:
-	bsr.w	loc_7FD4
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoIncrDecrCopy
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7E72
 	rts
-loc_7E82:
+PlaneMapDecomp_Type60:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d6
 loc_7E86:
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
-	bsr.w	loc_8006
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoVertFlip
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7E86
 	rts
-loc_7E9C:
+PlaneMapDecomp_Type64:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d6
 	move.b	(a0)+, d3
 loc_7EA2:
-	bsr.w	loc_7F78
-	bsr.w	loc_8006
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoDecrement
+	bsr.w	PlaneMapDecomp_DoVertFlip
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7EA2
 	rts
-loc_7EB6:
+PlaneMapDecomp_Type68:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d6
 	move.b	(a0)+, d4
 loc_7EBC:
-	bsr.w	loc_7F68
-	bsr.w	loc_8006
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoIncrement
+	bsr.w	PlaneMapDecomp_DoVertFlip
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7EBC
 	rts
-loc_7ED0:
+PlaneMapDecomp_Type6C:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d6
 	move.b	(a0)+, d4
 	move.b	(a0)+, d3
 loc_7ED8:
-	bsr.w	loc_7FB8
-	bsr.w	loc_8006
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoIncrDecr
+	bsr.w	PlaneMapDecomp_DoVertFlip
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7ED8
 	rts
-loc_7EEC:
+PlaneMapDecomp_Type70:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d6
 	move.b	(a0)+, d5
 loc_7EF2:
-	bsr.w	loc_7F5C
-	bsr.w	loc_8006
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoCopy
+	bsr.w	PlaneMapDecomp_DoVertFlip
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7EF2
 	rts
-loc_7F06:
+PlaneMapDecomp_Type74:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d6
 	move.b	(a0)+, d5
 	move.b	(a0)+, d3
 loc_7F0E:
-	bsr.w	loc_7FA0
-	bsr.w	loc_8006
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoDecrCopy
+	bsr.w	PlaneMapDecomp_DoVertFlip
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7F0E
 	rts
-loc_7F22:
+PlaneMapDecomp_Type78:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d6
 	move.b	(a0)+, d5
 	move.b	(a0)+, d4
 loc_7F2A:
-	bsr.w	loc_7F88
-	bsr.w	loc_8006
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoIncrCopy
+	bsr.w	PlaneMapDecomp_DoVertFlip
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7F2A
 	rts
-loc_7F3E:
+PlaneMapDecomp_Type7C:
 	move.b	(a0)+, d7
 	move.b	(a0)+, d6
 	move.b	(a0)+, d5
 	move.b	(a0)+, d4
 	move.b	(a0)+, d3
 loc_7F48:
-	bsr.w	loc_7FD4
-	bsr.w	loc_8006
-	bsr.w	loc_7FF6
+	bsr.w	PlaneMapDecomp_DoIncrDecrCopy
+	bsr.w	PlaneMapDecomp_DoVertFlip
+	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
 	dbf	d2, loc_7F48
 	rts
-loc_7F5C:
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_DoCopy:
 	add.b	d5, d5
-	bcs.s	loc_7F66
+	bcs.s	+
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
-loc_7F66:
++
 	rts
-loc_7F68:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_DoIncrement:
 	add.b	d4, d4
-	bcc.s	loc_7F70
+	bcc.s	+
 	addq.w	#1, d1
-	bra.s	loc_7F76
-loc_7F70:
+	bra.s	++
++
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
-loc_7F76:
++
 	rts
-loc_7F78:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_DoDecrement:
 	add.b	d3, d3
-	bcc.s	loc_7F80
+	bcc.s	+
 	subq.w	#1, d1
-	bra.s	loc_7F86
-loc_7F80:
+	bra.s	++
++
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
-loc_7F86:
++
 	rts
-loc_7F88:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_DoIncrCopy:
 	add.b	d5, d5
-	bcs.s	loc_7F9C
+	bcs.s	.nextincr
 	add.b	d4, d4
-	bcc.s	loc_7F94
+	bcc.s	.getval
 	addq.w	#1, d1
-	bra.s	loc_7F9A
-loc_7F94:
+	bra.s	.return
+.getval:
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
-loc_7F9A:
+.return:
 	rts
-loc_7F9C:
+.nextincr:
 	add.b	d4, d4
 	rts
-loc_7FA0:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_DoDecrCopy:
 	add.b	d5, d5
-	bcs.s	loc_7FB4
+	bcs.s	.nextdecr
 	add.b	d3, d3
-	bcc.s	loc_7FAC
+	bcc.s	.getval
 	subq.w	#1, d1
-	bra.s	loc_7FB2
-loc_7FAC:
+	bra.s	.return
+.getval:
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
-loc_7FB2:
+.return:
 	rts
-loc_7FB4:
+.nextdecr:
 	add.b	d3, d3
 	rts
-loc_7FB8:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_DoIncrDecr:
 	add.b	d4, d4
-	bcc.s	loc_7FC0
+	bcc.s	.chkdecr
 	addq.w	#1, d1
-	bra.s	loc_7FD0
-loc_7FC0:
+	bra.s	.nextdecr
+.chkdecr:
 	add.b	d3, d3
-	bcc.s	loc_7FC8
+	bcc.s	.getval
 	subq.w	#1, d1
-	bra.s	loc_7FCE
-loc_7FC8:
+	bra.s	.return
+.getval:
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
-loc_7FCE:
+.return:
 	rts
-loc_7FD0:
+.nextdecr:
 	add.b	d3, d3
 	rts
-loc_7FD4:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_DoIncrDecrCopy:
 	add.b	d5, d5
-	bcs.s	loc_7FF0
+	bcs.s	.nextincr
 	add.b	d4, d4
-	bcc.s	loc_7FE0
+	bcc.s	.chkdecr
 	addq.w	#1, d1
-	bra.s	loc_7FF2
-loc_7FE0:
+	bra.s	.nextdecr
+.chkdecr:
 	add.b	d3, d3
-	bcc.s	loc_7FE8
+	bcc.s	.getval
 	subq.w	#1, d1
-	bra.s	loc_7FF4
-loc_7FE8:
+	bra.s	.return
+.getval:
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
 	rts
-loc_7FF0:
+.nextincr:
 	add.b	d4, d4
-loc_7FF2:
+.nextdecr:
 	add.b	d3, d3
-loc_7FF4:
+.return:
 	rts
-loc_7FF6:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_DoHorizFlip:
 	add.b	d7, d7
-	bcc.s	loc_8000
+	bcc.s	+
 	bset	#$B, d1
 	rts
-loc_8000:
++
 	bclr	#$B, d1
 	rts
-loc_8006:
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
+PlaneMapDecomp_DoVertFlip:
 	add.b	d6, d6
-	bcc.s	loc_8010
+	bcc.s	+
 	bset	#$C, d1
 	rts
-loc_8010:
++
 	bclr	#$C, d1
 	rts
+; -----------------------------------------------------------------
+
+
 
 UpdateSceneID:
 	lea	(Scene_UpdateSceneOffs).l, a0
