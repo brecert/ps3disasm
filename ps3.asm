@@ -11115,8 +11115,8 @@ PlaneMapDecomp_Type20:
 
 ; -----------------------------------------------------------------
 PlaneMapDecomp_Type24:
-	move.b	(a0)+, d6
-	move.b	(a0)+, d3
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d3	; decrement
 -
 	bsr.w	PlaneMapDecomp_DoDecrement
 	bsr.w	PlaneMapDecomp_DoVertFlip
@@ -11126,240 +11126,323 @@ PlaneMapDecomp_Type24:
 ; -----------------------------------------------------------------
 
 
-
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type28:
-	move.b	(a0)+, d6
-	move.b	(a0)+, d4
-loc_7D5A:
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d4	; increment
+-
 	bsr.w	PlaneMapDecomp_DoIncrement
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7D5A
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type2C:
-	move.b	(a0)+, d6
-	move.b	(a0)+, d4
-	move.b	(a0)+, d3
-loc_7D70:
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d4	; increment
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoIncrDecr
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7D70
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type30:
-	move.b	(a0)+, d6
-	move.b	(a0)+, d5
-loc_7D84:
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d5	; copy
+-
 	bsr.w	PlaneMapDecomp_DoCopy
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7D84
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type34:
-	move.b	(a0)+, d6
-	move.b	(a0)+, d5
-	move.b	(a0)+, d3
-loc_7D9A:
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoDecrCopy
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7D9A
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type38:
-	move.b	(a0)+, d6
-	move.b	(a0)+, d5
-	move.b	(a0)+, d4
-loc_7DB0:
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d4	; increment
+-
 	bsr.w	PlaneMapDecomp_DoIncrCopy
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7DB0
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type3C:
-	move.b	(a0)+, d6
-	move.b	(a0)+, d5
-	move.b	(a0)+, d4
-	move.b	(a0)+, d3
-loc_7DC8:
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d4	; increment
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoIncrDecrCopy
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7DC8
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type40:
-	move.b	(a0)+, d7
-loc_7DDA:
+	move.b	(a0)+, d7	; Horizontal flip
+-
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7DDA
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type44:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d3
-loc_7DF0:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoDecrement
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7DF0
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type48:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d4
-loc_7E04:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d4	; increment
+-
 	bsr.w	PlaneMapDecomp_DoIncrement
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7E04
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type4C:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d4
-	move.b	(a0)+, d3
-loc_7E1A:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d4	; increment
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoIncrDecr
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7E1A
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type50:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d5
-loc_7E2E:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d5	; copy
+-
 	bsr.w	PlaneMapDecomp_DoCopy
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7E2E
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type54:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d5
-	move.b	(a0)+, d3
-loc_7E44:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoDecrCopy
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7E44
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type58:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d5
-	move.b	(a0)+, d4
-loc_7E5A:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d4	; increment
+-
 	bsr.w	PlaneMapDecomp_DoIncrCopy
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-loc_7E64:
-	dbf	d2, loc_7E5A
-loc_7E68:
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type5C:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d5
-	move.b	(a0)+, d4
-	move.b	(a0)+, d3
-loc_7E72:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d4	; increment
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoIncrDecrCopy
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7E72
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type60:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d6
-loc_7E86:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d6	; vertical flip
+-
 	moveq	#0, d1
 	move.b	(a0)+, d1
 	add.w	d0, d1
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7E86
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type64:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d6
-	move.b	(a0)+, d3
-loc_7EA2:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoDecrement
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7EA2
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type68:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d6
-	move.b	(a0)+, d4
-loc_7EBC:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d4	; increment
+-
 	bsr.w	PlaneMapDecomp_DoIncrement
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7EBC
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type6C:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d6
-	move.b	(a0)+, d4
-	move.b	(a0)+, d3
-loc_7ED8:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d4	; increment
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoIncrDecr
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7ED8
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type70:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d6
-	move.b	(a0)+, d5
-loc_7EF2:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d5	; copy
+-
 	bsr.w	PlaneMapDecomp_DoCopy
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7EF2
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type74:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d6
-	move.b	(a0)+, d5
-	move.b	(a0)+, d3
-loc_7F0E:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoDecrCopy
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7F0E
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type78:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d6
-	move.b	(a0)+, d5
-	move.b	(a0)+, d4
-loc_7F2A:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d4	; increment
+-
 	bsr.w	PlaneMapDecomp_DoIncrCopy
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7F2A
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
+
+
+; -----------------------------------------------------------------
 PlaneMapDecomp_Type7C:
-	move.b	(a0)+, d7
-	move.b	(a0)+, d6
-	move.b	(a0)+, d5
-	move.b	(a0)+, d4
-	move.b	(a0)+, d3
-loc_7F48:
+	move.b	(a0)+, d7	; Horizontal flip
+	move.b	(a0)+, d6	; vertical flip
+	move.b	(a0)+, d5	; copy
+	move.b	(a0)+, d4	; increment
+	move.b	(a0)+, d3	; decrement
+-
 	bsr.w	PlaneMapDecomp_DoIncrDecrCopy
 	bsr.w	PlaneMapDecomp_DoVertFlip
 	bsr.w	PlaneMapDecomp_DoHorizFlip
 	move.w	d1, (a1)+
-	dbf	d2, loc_7F48
+	dbf	d2, -
 	rts
+; -----------------------------------------------------------------
 
 
 ; -----------------------------------------------------------------
