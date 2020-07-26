@@ -108277,491 +108277,86 @@ ArtComp_SeanPortrait:	binclude "general/portraits/art/Sean.bin"
 ArtComp_WrenPortrait:	binclude "general/portraits/art/Wren.bin"
 	even
 
-PlaneMap_AynPortrait:
-	dc.w	$1801
-	dc.b	$7C, $01, $01 ;0x0 (0x000ABD32-0x000ABD35, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87E
-	dc.w	$701	;Predicted (Code target predicted at 0x8335)
-	dc.w	$83E
-	dc.b	$01, $0E, $01 ;0x0 (0x000ABD3B-0x000ABD3E, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $14, $01 ;0x0 (0x000ABD40-0x000ABD43, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1840
-	dc.w	$1E01	;Predicted (Code target predicted at 0x9A35)
-	dc.w	$1A01	;Predicted (Code target predicted at 0x9635)
-	dc.w	$87E
-	dc.w	$1F01	;Predicted (Code target predicted at 0x9B35)
-	dc.w	$87F
-	dc.b	$26 ;0x0 (0x000ABD4F-0x000ABD50, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$2E80	;Predicted (Code target predicted at 0xAAB4)
-PlaneMap_RyanPortrait:
-	dc.w	$1801
-	dc.b	$7C, $01, $01 ;0x0 (0x000ABD56-0x000ABD59, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $07, $01 ;0x0 (0x000ABD5B-0x000ABD5E, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0D, $01 ;0x0 (0x000ABD60-0x000ABD63, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $13, $01 ;0x0 (0x000ABD65-0x000ABD68, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $19, $01 ;0x0 (0x000ABD6A-0x000ABD6D, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$11F	;Predicted (Code target predicted at 0x7D53)
-	dc.w	$87F
-	dc.b	$26 ;0x0 (0x000ABD73-0x000ABD74, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$2E80	;Predicted (Code target predicted at 0xAAB4)
-PlaneMap_AdanPortrait:
-	dc.w	$1841
-	dc.b	$3C, $01, $01 ;0x0 (0x000ABD7A-0x000ABD7D, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $06, $01 ;0x0 (0x000ABD7F-0x000ABD82, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0C, $01 ;0x0 (0x000ABD84-0x000ABD87, Entry count: 0x00000003) [Unknown data]
-	dc.w	$4802
-	dc.b	$3C, $01, $12, $12, $01 ;0x0 (0x000ABD89-0x000ABD8E, Entry count: 0x00000005) [Unknown data]
-	dc.w	$4802
-	dc.b	$3C, $01, $17, $17, $01 ;0x0 (0x000ABD90-0x000ABD95, Entry count: 0x00000005) [Unknown data]
-	dc.w	$5804
-	dc.w	$4118	;Predicted (Code target predicted at 0xBD4C)
-	dc.w	$11C	;Predicted (Code target predicted at 0x7D50)
-	dc.w	$1C01	;Predicted (Code target predicted at 0x9835)
-	dc.w	$4C07
-	dc.w	$7803	;Predicted (Code target predicted at 0xF437)
-	dc.w	$1F21	;Predicted (Code target predicted at 0x9B55)
-	dc.w	$87F
-	dc.b	$24, $80, $00 ;0x0 (0x000ABDA5-0x000ABDA8, Entry count: 0x00000003) [Unknown data]
-PlaneMap_MaiaPortrait:
-	dc.w	$1801
-	dc.b	$7C, $01, $01 ;0x0 (0x000ABDAA-0x000ABDAD, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87E
-	dc.w	$701	;Predicted (Code target predicted at 0x8335)
-	dc.w	$87E
-	dc.w	$E01	;Predicted (Code target predicted at 0x8A35)
-	dc.w	$83E
-	dc.b	$01, $15, $01 ;0x0 (0x000ABDB7-0x000ABDBA, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$11B	;Predicted (Code target predicted at 0x7D4F)
-	dc.w	$87F
-	dc.b	$22 ;0x0 (0x000ABDC0-0x000ABDC1, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$2A ;0x0 (0x000ABDC3-0x000ABDC4, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$3280	;Predicted (Code target predicted at 0xAEB4)
-PlaneMap_OlderAynPortrait:
-	dc.w	$1801
-	dc.b	$7C, $01, $01 ;0x0 (0x000ABDCA-0x000ABDCD, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87E
-	dc.w	$701	;Predicted (Code target predicted at 0x8335)
-	dc.w	$83E
-	dc.b	$01, $0E, $01 ;0x0 (0x000ABDD3-0x000ABDD6, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $14, $01 ;0x0 (0x000ABDD8-0x000ABDDB, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1840
-	dc.w	$1E01	;Predicted (Code target predicted at 0x9A35)
-	dc.w	$1A01	;Predicted (Code target predicted at 0x9635)
-	dc.w	$87E
-	dc.w	$1F01	;Predicted (Code target predicted at 0x9B35)
-	dc.w	$87F
-	dc.b	$26 ;0x0 (0x000ABDE7-0x000ABDE8, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$2E80	;Predicted (Code target predicted at 0xAAB4)
-PlaneMap_OlderRhysPortrait:
-	dc.w	$1840
-	dc.b	$3E, $01, $01 ;0x0 (0x000ABDEE-0x000ABDF1, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1840
-	dc.b	$1F, $01, $07 ;0x0 (0x000ABDF3-0x000ABDF6, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1840
-	dc.b	$1F, $01, $0D ;0x0 (0x000ABDF8-0x000ABDFB, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1840
-	dc.w	$1E01	;Predicted (Code target predicted at 0x9A35)
-	dc.w	$1301	;Predicted (Code target predicted at 0x8F35)
-	dc.w	$1840
-	dc.w	$1E01	;Predicted (Code target predicted at 0x9A35)
-	dc.w	$1801	;Predicted (Code target predicted at 0x9435)
-	dc.w	$1801
-	dc.b	$7C, $1D, $01 ;0x0 (0x000ABE09-0x000ABE0C, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87F
-	dc.b	$23 ;0x0 (0x000ABE0E-0x000ABE0F, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$2B, $80, $00 ;0x0 (0x000ABE11-0x000ABE14, Entry count: 0x00000003) [Unknown data]
-PlaneMap_OlderLylePortrait:
-	dc.w	$1801
-	dc.b	$7C, $01, $01 ;0x0 (0x000ABE16-0x000ABE19, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87E
-	dc.w	$701	;Predicted (Code target predicted at 0x8335)
-	dc.w	$87E
-	dc.w	$E01	;Predicted (Code target predicted at 0x8A35)
-	dc.w	$83E
-	dc.b	$01, $15, $01 ;0x0 (0x000ABE23-0x000ABE26, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $1B, $01 ;0x0 (0x000ABE28-0x000ABE2B, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $21, $01 ;0x0 (0x000ABE2D-0x000ABE30, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87F
-	dc.b	$27 ;0x0 (0x000ABE32-0x000ABE33, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$2F, $80, $00 ;0x0 (0x000ABE35-0x000ABE38, Entry count: 0x00000003) [Unknown data]
-PlaneMap_OlderNialPortrait:
-	dc.w	$87E
-	dc.w	$101	;Predicted (Code target predicted at 0x7D35)
-	dc.w	$83E
-	dc.b	$01, $08, $01 ;0x0 (0x000ABE3E-0x000ABE41, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0E, $01 ;0x0 (0x000ABE43-0x000ABE46, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $14, $01 ;0x0 (0x000ABE48-0x000ABE4B, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1840
-	dc.w	$1E01	;Predicted (Code target predicted at 0x9A35)
-	dc.w	$1A01	;Predicted (Code target predicted at 0x9635)
-	dc.w	$87F
-	dc.b	$1F ;0x0 (0x000ABE53-0x000ABE54, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$27 ;0x0 (0x000ABE56-0x000ABE57, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$2F, $80, $00 ;0x0 (0x000ABE59-0x000ABE5C, Entry count: 0x00000003) [Unknown data]
-PlaneMap_RhysPortrait:
-	dc.w	$1840
-	dc.b	$3E, $01, $01 ;0x0 (0x000ABE5E-0x000ABE61, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$107	;Predicted (Code target predicted at 0x7D3B)
-	dc.w	$83F
-	dc.w	$10E	;Predicted (Code target predicted at 0x7D42)
-	dc.w	$83E
-	dc.b	$01, $15, $01 ;0x0 (0x000ABE6B-0x000ABE6E, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $1B, $01 ;0x0 (0x000ABE70-0x000ABE73, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1801
-	dc.b	$7C, $21, $01 ;0x0 (0x000ABE75-0x000ABE78, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87F
-	dc.b	$27 ;0x0 (0x000ABE7A-0x000ABE7B, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$2F, $80, $00 ;0x0 (0x000ABE7D-0x000ABE80, Entry count: 0x00000003) [Unknown data]
-PlaneMap_AronPortrait:
-	dc.w	$87E
-	dc.w	$101	;Predicted (Code target predicted at 0x7D35)
-	dc.w	$83E
-	dc.b	$01, $08, $01 ;0x0 (0x000ABE86-0x000ABE89, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0E, $01 ;0x0 (0x000ABE8B-0x000ABE8E, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1840
-	dc.w	$1E01	;Predicted (Code target predicted at 0x9A35)
-	dc.w	$1401	;Predicted (Code target predicted at 0x9035)
-	dc.w	$1840
-	dc.b	$1F, $01, $19 ;0x0 (0x000ABE96-0x000ABE99, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$11F	;Predicted (Code target predicted at 0x7D53)
-	dc.w	$87F
-	dc.b	$26 ;0x0 (0x000ABE9F-0x000ABEA0, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$2E80	;Predicted (Code target predicted at 0xAAB4)
-PlaneMap_MieuPortrait:
-	dc.w	$87E
-	dc.w	$101	;Predicted (Code target predicted at 0x7D35)
-	dc.w	$83E
-	dc.b	$01, $08, $01 ;0x0 (0x000ABEAA-0x000ABEAD, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0E, $01 ;0x0 (0x000ABEAF-0x000ABEB2, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $14, $01 ;0x0 (0x000ABEB4-0x000ABEB7, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $1A, $01 ;0x0 (0x000ABEB9-0x000ABEBC, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.b	$01, $20 ;0x0 (0x000ABEBE-0x000ABEC0, Entry count: 0x00000002) [Unknown data]
-	dc.w	$83F
-	dc.b	$01, $27 ;0x0 (0x000ABEC2-0x000ABEC4, Entry count: 0x00000002) [Unknown data]
-	dc.w	$87F
-	dc.b	$2E, $80 ;0x0 (0x000ABEC6-0x000ABEC8, Entry count: 0x00000002) [Unknown data]
-PlaneMap_MiunPortrait:
-	dc.w	$87E
-	dc.b	$01, $01 ;0x0 (0x000ABECA-0x000ABECC, Entry count: 0x00000002) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $08, $01 ;0x0 (0x000ABECE-0x000ABED1, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0E, $01 ;0x0 (0x000ABED3-0x000ABED6, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $14, $01 ;0x0 (0x000ABED8-0x000ABEDB, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $1A, $01 ;0x0 (0x000ABEDD-0x000ABEE0, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.b	$01, $20 ;0x0 (0x000ABEE2-0x000ABEE4, Entry count: 0x00000002) [Unknown data]
-	dc.w	$83F
-	dc.b	$01, $27 ;0x0 (0x000ABEE6-0x000ABEE8, Entry count: 0x00000002) [Unknown data]
-	dc.w	$87F
-	dc.b	$2E, $80 ;0x0 (0x000ABEEA-0x000ABEEC, Entry count: 0x00000002) [Unknown data]
-PlaneMap_CrysPortrait:
-	dc.w	$1801
-	dc.b	$7C, $01, $01 ;0x0 (0x000ABEEE-0x000ABEF1, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87E
-	dc.w	$701	;Predicted (Code target predicted at 0x8335)
-	dc.w	$87E
-	dc.w	$E01	;Predicted (Code target predicted at 0x8A35)
-	dc.w	$1801
-	dc.b	$7C, $15, $01 ;0x0 (0x000ABEFB-0x000ABEFE, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1801
-	dc.b	$7C, $1B, $01 ;0x0 (0x000ABF00-0x000ABF03, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$121	;Predicted (Code target predicted at 0x7D55)
-	dc.w	$87F
-	dc.b	$28 ;0x0 (0x000ABF09-0x000ABF0A, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$3080	;Predicted (Code target predicted at 0xACB4)
-	dc.w	$00
-PlaneMap_GwynPortrait:
-	dc.w	$1841
-	dc.b	$3C, $01, $01 ;0x0 (0x000ABF12-0x000ABF15, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $06, $01 ;0x0 (0x000ABF17-0x000ABF1A, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0C, $01 ;0x0 (0x000ABF1C-0x000ABF1F, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $12, $01 ;0x0 (0x000ABF21-0x000ABF24, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $18, $01 ;0x0 (0x000ABF26-0x000ABF29, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $1E, $01 ;0x0 (0x000ABF2B-0x000ABF2E, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$124	;Predicted (Code target predicted at 0x7D58)
-	dc.w	$87F
-	dc.w	$2B80	;Predicted (Code target predicted at 0xA7B4)
-	dc.w	$00
-PlaneMap_LayaPortrait:
-	dc.w	$87E
-	dc.w	$101	;Predicted (Code target predicted at 0x7D35)
-	dc.w	$83E
-	dc.b	$01, $08, $01 ;0x0 (0x000ABF3E-0x000ABF41, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0E, $01 ;0x0 (0x000ABF43-0x000ABF46, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$114	;Predicted (Code target predicted at 0x7D48)
-	dc.w	$83F
-	dc.w	$11B	;Predicted (Code target predicted at 0x7D4F)
-	dc.w	$87F
-	dc.b	$22 ;0x0 (0x000ABF50-0x000ABF51, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$2A ;0x0 (0x000ABF53-0x000ABF54, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$3280	;Predicted (Code target predicted at 0xAEB4)
-PlaneMap_LylePortrait:
-	dc.w	$1801
-	dc.b	$7C, $01, $01 ;0x0 (0x000ABF5A-0x000ABF5D, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87E
-	dc.w	$701	;Predicted (Code target predicted at 0x8335)
-	dc.w	$87E
-	dc.w	$E01	;Predicted (Code target predicted at 0x8A35)
-	dc.w	$83E
-	dc.b	$01, $15, $01 ;0x0 (0x000ABF67-0x000ABF6A, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $1B, $01 ;0x0 (0x000ABF6C-0x000ABF6F, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$121	;Predicted (Code target predicted at 0x7D55)
-	dc.w	$87F
-	dc.b	$28 ;0x0 (0x000ABF75-0x000ABF76, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$3080	;Predicted (Code target predicted at 0xACB4)
-	dc.w	$00
-PlaneMap_TheaPortrait:
-	dc.w	$1841
-	dc.b	$3C, $01, $01 ;0x0 (0x000ABF7E-0x000ABF81, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $06, $01 ;0x0 (0x000ABF83-0x000ABF86, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0C, $01 ;0x0 (0x000ABF88-0x000ABF8B, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $12, $01 ;0x0 (0x000ABF8D-0x000ABF90, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $18, $01 ;0x0 (0x000ABF92-0x000ABF95, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $1E, $01 ;0x0 (0x000ABF97-0x000ABF9A, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87F
-	dc.b	$24 ;0x0 (0x000ABF9C-0x000ABF9D, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$2C, $80, $00 ;0x0 (0x000ABF9F-0x000ABFA2, Entry count: 0x00000003) [Unknown data]
-	dc.w	$00
-PlaneMap_NialPortrait:
-	dc.w	$87E
-	dc.w	$101	;Predicted (Code target predicted at 0x7D35)
-	dc.w	$83E
-	dc.b	$01, $08, $01 ;0x0 (0x000ABFAA-0x000ABFAD, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$10E	;Predicted (Code target predicted at 0x7D42)
-	dc.w	$83E
-	dc.b	$01, $15, $01 ;0x0 (0x000ABFB3-0x000ABFB6, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1840
-	dc.w	$1E01	;Predicted (Code target predicted at 0x9A35)
-	dc.w	$1B01	;Predicted (Code target predicted at 0x9735)
-	dc.w	$87F
-	dc.b	$20 ;0x0 (0x000ABFBE-0x000ABFBF, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$28 ;0x0 (0x000ABFC1-0x000ABFC2, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$3080	;Predicted (Code target predicted at 0xACB4)
-	dc.w	$00
-PlaneMap_SariPortrait:
-	dc.w	$1840
-	dc.w	$3F01	;Predicted (Code target predicted at 0xBB35)
-	dc.w	$83F
-	dc.w	$108	;Predicted (Code target predicted at 0x7D3C)
-	dc.w	$83F
-	dc.w	$10F	;Predicted (Code target predicted at 0x7D43)
-	dc.w	$83F
-	dc.w	$116	;Predicted (Code target predicted at 0x7D4A)
-	dc.w	$1840
-	dc.w	$1E01	;Predicted (Code target predicted at 0x9A35)
-	dc.w	$1D01	;Predicted (Code target predicted at 0x9935)
-	dc.w	$87F
-	dc.b	$22 ;0x0 (0x000ABFE0-0x000ABFE1, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$2A ;0x0 (0x000ABFE3-0x000ABFE4, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$3280	;Predicted (Code target predicted at 0xAEB4)
-PlaneMap_LenaPortrait:
-	dc.w	$87E
-	dc.w	$101	;Predicted (Code target predicted at 0x7D35)
-	dc.w	$83E
-	dc.b	$01, $08, $01 ;0x0 (0x000ABFEE-0x000ABFF1, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0E, $01 ;0x0 (0x000ABFF3-0x000ABFF6, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $14, $01 ;0x0 (0x000ABFF8-0x000ABFFB, Entry count: 0x00000003) [Unknown data]
-	dc.w	$1840
-	dc.w	$1E01	;Predicted (Code target predicted at 0x9A35)
-	dc.w	$1A01	;Predicted (Code target predicted at 0x9635)
-	dc.w	$1840
-	dc.w	$1E01	;Predicted (Code target predicted at 0x9A35)
-	dc.w	$1F01	;Predicted (Code target predicted at 0x9B35)
-	dc.w	$1840
-	dc.b	$1F, $01, $24 ;0x0 (0x000AC009-0x000AC00C, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$12A	;Predicted (Code target predicted at 0x7D5E)
-	dc.w	$8000	;Predicted (Code target predicted at 0xFFFFFC34)
-	dc.w	$00
-PlaneMap_LunePortrait:
-	dc.w	$87E
-	dc.w	$101	;Predicted (Code target predicted at 0x7D35)
-	dc.w	$83E
-	dc.b	$01, $08, $01 ;0x0 (0x000AC01A-0x000AC01D, Entry count: 0x00000003) [Unknown data]
-	dc.w	$4880
-	dc.b	$3F, $07, $0E ;0x0 (0x000AC01F-0x000AC022, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87F
-	dc.b	$15 ;0x0 (0x000AC024-0x000AC025, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$1D ;0x0 (0x000AC027-0x000AC028, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$25 ;0x0 (0x000AC02A-0x000AC02B, Entry count: 0x00000001) [Unknown data]
-	dc.w	$4801
-	dc.b	$7E, $2D, $2D ;0x0 (0x000AC02D-0x000AC030, Entry count: 0x00000003) [Unknown data]
-	dc.w	$4801
-	dc.w	$7E34	;Predicted (Code target predicted at 0xFA68)
-	dc.w	$3480	;Predicted (Code target predicted at 0xB0B4)
-	dc.w	$00
-PlaneMap_AlairPortrait:
-	dc.w	$87E
-	dc.w	$101	;Predicted (Code target predicted at 0x7D35)
-	dc.w	$83E
-	dc.b	$01, $08, $01 ;0x0 (0x000AC03E-0x000AC041, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0E, $01 ;0x0 (0x000AC043-0x000AC046, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $14, $01 ;0x0 (0x000AC048-0x000AC04B, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $1A, $01 ;0x0 (0x000AC04D-0x000AC050, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87E
-	dc.w	$2001	;Predicted (Code target predicted at 0x9C35)
-	dc.w	$87F
-	dc.b	$27 ;0x0 (0x000AC056-0x000AC057, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$2F, $80, $00 ;0x0 (0x000AC059-0x000AC05C, Entry count: 0x00000003) [Unknown data]
-PlaneMap_WarriorKaraPortrait:
-	dc.w	$1841
-	dc.b	$3C, $01, $01 ;0x0 (0x000AC05E-0x000AC061, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $06, $01 ;0x0 (0x000AC063-0x000AC066, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $0C, $01 ;0x0 (0x000AC068-0x000AC06B, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $12, $01 ;0x0 (0x000AC06D-0x000AC070, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.w	$118	;Predicted (Code target predicted at 0x7D4C)
-	dc.w	$87F
-	dc.b	$1F ;0x0 (0x000AC076-0x000AC077, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$27 ;0x0 (0x000AC079-0x000AC07A, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$2F80	;Predicted (Code target predicted at 0xABB4)
-	dc.w	$00
-PlaneMap_PrincessKaraPortrait:
-	dc.w	$1801
-	dc.b	$7C, $01, $01 ;0x0 (0x000AC082-0x000AC085, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87E
-	dc.w	$701	;Predicted (Code target predicted at 0x8335)
-	dc.w	$87E
-	dc.w	$E01	;Predicted (Code target predicted at 0x8A35)
-	dc.w	$1801
-	dc.b	$7C, $15, $01 ;0x0 (0x000AC08F-0x000AC092, Entry count: 0x00000003) [Unknown data]
-	dc.w	$4880
-	dc.w	$3E0D	;Predicted (Code target predicted at 0xBA41)
-	dc.w	$1B01	;Predicted (Code target predicted at 0x9735)
-	dc.w	$87E
-	dc.w	$2101	;Predicted (Code target predicted at 0x9D35)
-	dc.w	$87F
-	dc.b	$28 ;0x0 (0x000AC09E-0x000AC09F, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$30, $80, $00 ;0x0 (0x000AC0A1-0x000AC0A4, Entry count: 0x00000003) [Unknown data]
-PlaneMap_SirenPortrait:
-	dc.w	$87E
-	dc.w	$101	;Predicted (Code target predicted at 0x7D35)
-	dc.w	$87F
-	dc.b	$08 ;0x0 (0x000AC0AA-0x000AC0AB, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$10 ;0x0 (0x000AC0AD-0x000AC0AE, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87E
-	dc.w	$1801	;Predicted (Code target predicted at 0x9435)
-	dc.w	$83E
-	dc.b	$01, $1F, $01 ;0x0 (0x000AC0B4-0x000AC0B7, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87E
-	dc.w	$2501	;Predicted (Code target predicted at 0xA135)
-	dc.w	$87F
-	dc.b	$2C ;0x0 (0x000AC0BD-0x000AC0BE, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.w	$3480	;Predicted (Code target predicted at 0xB0B4)
-	dc.w	$00
-PlaneMap_SeanPortrait:
-	dc.w	$1840
-	dc.b	$3E, $01, $01 ;0x0 (0x000AC0C6-0x000AC0C9, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83E
-	dc.b	$01, $07, $01 ;0x0 (0x000AC0CB-0x000AC0CE, Entry count: 0x00000003) [Unknown data]
-	dc.w	$83F
-	dc.b	$01, $0D ;0x0 (0x000AC0D0-0x000AC0D2, Entry count: 0x00000002) [Unknown data]
-	dc.w	$83F
-	dc.b	$01, $14 ;0x0 (0x000AC0D4-0x000AC0D6, Entry count: 0x00000002) [Unknown data]
-	dc.w	$83F
-	dc.b	$01, $1B ;0x0 (0x000AC0D8-0x000AC0DA, Entry count: 0x00000002) [Unknown data]
-	dc.w	$83F
-	dc.b	$01, $22 ;0x0 (0x000AC0DC-0x000AC0DE, Entry count: 0x00000002) [Unknown data]
-	dc.w	$87F
-	dc.b	$29 ;0x0 (0x000AC0E0-0x000AC0E1, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$31, $80, $00 ;0x0 (0x000AC0E3-0x000AC0E6, Entry count: 0x00000003) [Unknown data]
-	dc.w	$00
-PlaneMap_WrenPortrait:
-	dc.w	$87E
-	dc.w	$101	;Predicted (Code target predicted at 0x7D35)
-	dc.w	$87F
-	dc.b	$08 ;0x0 (0x000AC0EE-0x000AC0EF, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$10 ;0x0 (0x000AC0F1-0x000AC0F2, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87E
-	dc.w	$1801	;Predicted (Code target predicted at 0x9435)
-	dc.w	$83E
-	dc.b	$01, $1F, $01 ;0x0 (0x000AC0F8-0x000AC0FB, Entry count: 0x00000003) [Unknown data]
-	dc.w	$87E
-	dc.w	$2501	;Predicted (Code target predicted at 0xA135)
-	dc.w	$87F
-	dc.b	$2C ;0x0 (0x000AC101-0x000AC102, Entry count: 0x00000001) [Unknown data]
-	dc.w	$87F
-	dc.b	$34, $80, $00, $00
+PlaneMap_AynPortrait:	binclude "general/portraits/mappings/Ayn.bin"
+	even
+
+PlaneMap_RyanPortrait:	binclude "general/portraits/mappings/Ryan.bin"
+	even
+
+PlaneMap_AdanPortrait:	binclude "general/portraits/mappings/Adan.bin"
+	even
+
+PlaneMap_MaiaPortrait:	binclude "general/portraits/mappings/Maia.bin"
+	even
+
+PlaneMap_OlderAynPortrait:	binclude "general/portraits/mappings/Older Ayn.bin"
+	even
+
+PlaneMap_OlderRhysPortrait:	binclude "general/portraits/mappings/Older Rhys.bin"
+	even
+
+PlaneMap_OlderLylePortrait:	binclude "general/portraits/mappings/Older Lyle.bin"
+	even
+
+PlaneMap_OlderNialPortrait:	binclude "general/portraits/mappings/Older Nial.bin"
+	even
+
+PlaneMap_RhysPortrait:	binclude "general/portraits/mappings/Rhys.bin"
+	even
+
+PlaneMap_AronPortrait:	binclude "general/portraits/mappings/Aron.bin"
+	even
+
+PlaneMap_MieuPortrait:	binclude "general/portraits/mappings/Mieu.bin"
+	even
+
+PlaneMap_MiunPortrait:	binclude "general/portraits/mappings/Miun.bin"
+	even
+
+PlaneMap_CrysPortrait:	binclude "general/portraits/mappings/Crys.bin"
+	even
+
+PlaneMap_GwynPortrait:	binclude "general/portraits/mappings/Gwyn.bin"
+	even
+
+PlaneMap_LayaPortrait:	binclude "general/portraits/mappings/Laya.bin"
+	even
+
+PlaneMap_LylePortrait:	binclude "general/portraits/mappings/Lyle.bin"
+	even
+
+PlaneMap_TheaPortrait:	binclude "general/portraits/mappings/Thea.bin"
+	even
+
+PlaneMap_NialPortrait:	binclude "general/portraits/mappings/Nial.bin"
+	even
+
+PlaneMap_SariPortrait:	binclude "general/portraits/mappings/Sari.bin"
+	even
+
+PlaneMap_LenaPortrait:	binclude "general/portraits/mappings/Lena.bin"
+	even
+
+PlaneMap_LunePortrait:	binclude "general/portraits/mappings/Lune.bin"
+	even
+
+PlaneMap_AlairPortrait:	binclude "general/portraits/mappings/Alair.bin"
+	even
+
+PlaneMap_WarriorKaraPortrait:	binclude "general/portraits/mappings/Warrior Kara.bin"
+	even
+
+PlaneMap_PrincessKaraPortrait:	binclude "general/portraits/mappings/Princess Kara.bin"
+	even
+
+PlaneMap_SirenPortrait:	binclude "general/portraits/mappings/Siren.bin"
+	even
+
+PlaneMap_SeanPortrait:	binclude "general/portraits/mappings/Sean.bin"
+	even
+
+PlaneMap_WrenPortrait:	binclude "general/portraits/mappings/Wren.bin"
+	even
 	
 
 	dc.b	$00, $64, $83, $70, $01, $02, $03, $84, $11, $50, $85, $40
