@@ -17004,7 +17004,7 @@ loc_B908:
 	move.l	d0, (a2)+
 	move.w	d0, (a2)+
 	move.w	#$98BC, (a2)+
-	lea	(loc_3DB88).l, a0
+	lea	(StorePortraitPlaneMapOffs).l, a0
 	move.w	(scene_id).w, d0
 	subi.w	#SceneID_GameSelect, d0
 	adda.w	d0, a0
@@ -75932,17 +75932,19 @@ loc_3DB7C:
 	even
 
 ; ============================================
-loc_3DB88:	dc.w	loc_3DB98-loc_3DB88
-loc_3DB8A:	dc.w	loc_3DBCC-loc_3DB8A
-loc_3DB8C:	dc.w	loc_3DC00-loc_3DB8C
-loc_3DB8E:	dc.w	loc_3DC34-loc_3DB8E
-loc_3DB90:	dc.w	loc_3DC68-loc_3DB90
-loc_3DB92:	dc.w	loc_3DC9C-loc_3DB92
-loc_3DB94:	dc.w	loc_3DCD0-loc_3DB94
+StorePortraitPlaneMapOffs:
+
+loc_3DB88:	dc.w	PlaneMap_GameSelectPortrait-loc_3DB88
+loc_3DB8A:	dc.w	PlaneMap_WeaponStorePortrait-loc_3DB8A
+loc_3DB8C:	dc.w	PlaneMap_ArmorStorePortrait-loc_3DB8C
+loc_3DB8E:	dc.w	PlaneMap_NursePortrait-loc_3DB8E
+loc_3DB90:	dc.w	PlaneMap_PriestPortrait-loc_3DB90
+loc_3DB92:	dc.w	PlaneMap_FortuneTellerPortrait-loc_3DB92
+loc_3DB94:	dc.w	PlaneMap_InnPortrait-loc_3DB94
 loc_3DB96:	dc.w	loc_3DD34-loc_3DB96
 ; ============================================
 
-loc_3DB98:
+PlaneMap_GameSelectPortrait:
 	dc.b	$00, $00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0A, $0B, $0C, $0D, $0E ;0x0 (0x0003DB88-0x0003DCD0, Entry count: 0x00000148) [Unknown data]
 	dc.b	$0F, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $1A, $1B, $1C, $1D, $1E
 	dc.b	$1F, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $2A, $2B, $2C, $2D, $2E ;0x20
@@ -75950,7 +75952,7 @@ loc_3DB98:
 
 	align_
 
-loc_3DBCC:
+PlaneMap_WeaponStorePortrait:
 	dc.b	$00
 	dc.b	$00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0A, $0B, $0C, $0D, $0E, $0F
 	dc.b	$10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $1A ;0x40
@@ -75959,7 +75961,7 @@ loc_3DBCC:
 
 	even
 
-loc_3DC00:
+PlaneMap_ArmorStorePortrait:
 	dc.b	$00
 	dc.b	$00, $01, $02, $03, $04, $05, $06 ;0x60
 	dc.b	$07, $08, $09, $0A, $0B, $0C, $0D, $0E, $0F, $10, $11, $12, $13, $14, $15, $16
@@ -75968,7 +75970,7 @@ loc_3DC00:
 
 	align_
 
-loc_3DC34:
+PlaneMap_NursePortrait:
 	dc.b	$00
 	dc.b	$00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0A, $0B, $0C, $0D, $07, $0E, $0F, $10, $11 ;0xA0
 	dc.b	$12, $13, $07, $14, $15, $16, $17, $18, $19, $07, $1A, $1B, $1C, $1D, $1E, $1F
@@ -75976,7 +75978,7 @@ loc_3DC34:
 
 	even
 
-loc_3DC68:
+PlaneMap_PriestPortrait:
 	dc.b	$00
 	dc.b	$00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0A, $0B, $0C, $0D, $0E, $0F
 	dc.b	$10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $1A, $1B, $1C, $1D, $1E ;0xE0
@@ -75985,7 +75987,7 @@ loc_3DC68:
 
 	even
 
-loc_3DC9C:
+PlaneMap_FortuneTellerPortrait:
 	dc.b	$00
 	dc.b	$00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0A ;0x100
 	dc.b	$0B, $0C, $0D, $0E, $0F, $10, $11, $12, $13, $14, $15, $16, $16, $17, $18, $19
@@ -75994,7 +75996,7 @@ loc_3DC9C:
 
 	align_
 
-loc_3DCD0:
+PlaneMap_InnPortrait:
 	dc.w	$FFFF
 	dc.w	$8101, $8102, $8103, $8104, $8903, $8902, $8901, $8105, $8106, $8107, $8108, $8907, $8906, $8905, $8109, $810A
 	dc.w	$810B, $810C, $890B, $890A, $8909, $810D, $810E, $810F, $8110, $890F, $890E, $890D, $8111, $8112, $8113 ;0x0 (0x0003DCD0-0x0003DD34, Entry count: 0x00000064)
