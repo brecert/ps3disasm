@@ -52209,9 +52209,9 @@ SceneGraphics_LayaWorld:
 	dc.l	loc_9D768
 	dc.l	chunk_table
 
-	dc.w	(Pal_LandenWorldMap_End-Pal_LandenWorldMap)/2
+	dc.w	(Pal_WorldNormal_End-Pal_WorldNormal)/2
 	dc.w	8
-	dc.l	Pal_LandenWorldMap
+	dc.l	Pal_WorldNormal
 	dc.l	0
 
 	dc.w	$10
@@ -52347,9 +52347,9 @@ SceneGraphics_LandenWorld:
 	dc.l	loc_9D768
 	dc.l	chunk_table
 
-	dc.w	(Pal_LandenWorldMap_End-Pal_LandenWorldMap)/2
+	dc.w	(Pal_WorldNormal_End-Pal_WorldNormal)/2
 	dc.w	8
-	dc.l	Pal_LandenWorldMap
+	dc.l	Pal_WorldNormal
 	dc.l	0
 
 	dc.w	$10
@@ -52395,9 +52395,9 @@ SceneGraphics_AridiaWorld:
 	dc.l	loc_9D768
 	dc.l	chunk_table
 
-	dc.w	(Pal_AridiaWorldMap_End-Pal_AridiaWorldMap)/2
+	dc.w	(Pal_WorldDesert_End-Pal_WorldDesert)/2
 	dc.w	8
-	dc.l	Pal_AridiaWorldMap
+	dc.l	Pal_WorldDesert
 	dc.l	0
 
 	dc.w	$10
@@ -52438,9 +52438,9 @@ SceneGraphics_AquaticaWorldFrozen:
 	dc.l	loc_9D768
 	dc.l	chunk_table
 
-	dc.w	(Pal_FrigidiaWorldMap_End-Pal_FrigidiaWorldMap)/2
+	dc.w	(Pal_WorldIce_End-Pal_WorldIce)/2
 	dc.w	8
-	dc.l	Pal_FrigidiaWorldMap
+	dc.l	Pal_WorldIce
 	dc.l	0
 
 	dc.w	$10
@@ -52481,9 +52481,9 @@ SceneGraphics_DraconiaSpaceship:
 	dc.l	loc_9D768
 	dc.l	chunk_table
 
-	dc.w	(Pal_LandenWorldMap_End-Pal_LandenWorldMap)/2
+	dc.w	(Pal_WorldNormal_End-Pal_WorldNormal)/2
 	dc.w	8
-	dc.l	Pal_LandenWorldMap
+	dc.l	Pal_WorldNormal
 	dc.l	0
 
 	dc.w	$10
@@ -52572,9 +52572,9 @@ SceneGraphics_TerminusWorld:
 	dc.l	loc_9D768
 	dc.l	chunk_table
 
-	dc.w	(Pal_LandenWorldMap_End-Pal_LandenWorldMap)/2
+	dc.w	(Pal_WorldNormal_End-Pal_WorldNormal)/2
 	dc.w	8
-	dc.l	Pal_LandenWorldMap
+	dc.l	Pal_WorldNormal
 	dc.l	0
 
 	dc.w	$10
@@ -52615,9 +52615,9 @@ SceneGraphics_FrigidiaWorld:
 	dc.l	loc_9D768
 	dc.l	chunk_table
 
-	dc.w	(Pal_FrigidiaWorldMap_End-Pal_FrigidiaWorldMap)/2
+	dc.w	(Pal_WorldIce_End-Pal_WorldIce)/2
 	dc.w	8
-	dc.l	Pal_FrigidiaWorldMap
+	dc.l	Pal_WorldIce
 	dc.l	0
 
 	dc.w	$10
@@ -52663,9 +52663,9 @@ SceneGraphics_ElysiumWorld:
 	dc.l	loc_9D768
 	dc.l	chunk_table
 
-	dc.w	(Pal_LandenWorldMap_End-Pal_LandenWorldMap)/2
+	dc.w	(Pal_WorldNormal_End-Pal_WorldNormal)/2
 	dc.w	8
-	dc.l	Pal_LandenWorldMap
+	dc.l	Pal_WorldNormal
 	dc.l	0
 
 	dc.w	$10
@@ -52706,9 +52706,9 @@ SceneGraphics_AquaticaWorld:
 	dc.l	loc_9D768
 	dc.l	chunk_table
 
-	dc.w	(Pal_LandenWorldMap_End-Pal_LandenWorldMap)/2
+	dc.w	(Pal_WorldNormal_End-Pal_WorldNormal)/2
 	dc.w	8
-	dc.l	Pal_LandenWorldMap
+	dc.l	Pal_WorldNormal
 	dc.l	0
 
 	dc.w	$10
@@ -52759,9 +52759,9 @@ SceneGraphics_Landen:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -52812,9 +52812,9 @@ SceneGraphics_Yaata:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -52865,9 +52865,9 @@ SceneGraphics_Ilan:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -52918,9 +52918,9 @@ SceneGraphics_RyselFrozen:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_RyselFrozen_End-Pal_RyselFrozen)/2
+	dc.w	(Pal_TownIce_End-Pal_TownIce)/2
 	dc.w	8
-	dc.l	Pal_RyselFrozen
+	dc.l	Pal_TownIce
 	dc.l	0
 
 	dc.w	$10
@@ -52971,9 +52971,9 @@ SceneGraphics_Hazatak:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53024,9 +53024,9 @@ SceneGraphics_Agoe:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53077,9 +53077,9 @@ SceneGraphics_Shusoran:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53130,9 +53130,9 @@ SceneGraphics_Cille:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53183,9 +53183,9 @@ SceneGraphics_RyselNormal:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53226,9 +53226,9 @@ SceneGraphics_TechnaSpaceship:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53279,9 +53279,9 @@ SceneGraphics_AynTechna:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53332,9 +53332,9 @@ SceneGraphics_Endora:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53385,9 +53385,9 @@ SceneGraphics_Lensol:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53438,9 +53438,9 @@ SceneGraphics_Mystoke:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53491,9 +53491,9 @@ SceneGraphics_SouthDivisia:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53544,9 +53544,9 @@ SceneGraphics_NorthDivisia:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53602,9 +53602,9 @@ SceneGraphics_Aerone:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53655,9 +53655,9 @@ SceneGraphics_NewMota:
 	dc.l	loc_9FA44
 	dc.l	chunk_table
 
-	dc.w	(Pal_VillageGroundRoof_End-Pal_VillageGroundRoof)/2
+	dc.w	(Pal_Towns_End-Pal_Towns)/2
 	dc.w	8
-	dc.l	Pal_VillageGroundRoof
+	dc.l	Pal_Towns
 	dc.l	0
 
 	dc.w	$10
@@ -53809,9 +53809,9 @@ SceneGraphics_LandenTechStore:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_TechDistributorSprite_End-Pal_TechDistributorSprite)/2
@@ -53862,9 +53862,9 @@ SceneGraphics_ShusoranSupplyStore:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_ItemSellerSprite_End-Pal_ItemSellerSprite)/2
@@ -53915,9 +53915,9 @@ SceneGraphics_LandenArmorStore:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_ArmorShop_End-Pal_ArmorShop)/2
@@ -53968,9 +53968,9 @@ SceneGraphics_YaataTechStore:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_TechDistributorSprite_End-Pal_TechDistributorSprite)/2
@@ -54021,9 +54021,9 @@ SceneGraphics_LandenWeaponStore:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_WeaponDealerSprite_End-Pal_WeaponDealerSprite)/2
@@ -54074,9 +54074,9 @@ SceneGraphics_LandenChurch:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_PriestSprite_End-Pal_PriestSprite)/2
@@ -54127,9 +54127,9 @@ SceneGraphics_HazatakTopLeftHouse:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_PriestSprite_End-Pal_PriestSprite)/2
@@ -54180,9 +54180,9 @@ SceneGraphics_TechnaArmorStore:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_ArmorShop_End-Pal_ArmorShop)/2
@@ -54233,9 +54233,9 @@ SceneGraphics_LandenSupplyStore:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_ItemSellerSprite_End-Pal_ItemSellerSprite)/2
@@ -54286,9 +54286,9 @@ SceneGraphics_AgoeTechStore:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_TechDistributorSprite_End-Pal_TechDistributorSprite)/2
@@ -54339,9 +54339,9 @@ SceneGraphics_LandenFortuneTeller:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_FortuneTellerSprite_End-Pal_FortuneTellerSprite)/2
@@ -54392,9 +54392,9 @@ SceneGraphics_LandenInn:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_InnkeeperSprite_End-Pal_InnkeeperSprite)/2
@@ -54445,9 +54445,9 @@ SceneGraphics_YaataArmorStore:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_ArmorShop_End-Pal_ArmorShop)/2
@@ -54498,9 +54498,9 @@ SceneGraphics_LandenTopRightHouse:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 
 	dc.w	$10
@@ -54546,9 +54546,9 @@ SceneGraphics_LandenTopRightHouse2:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 
 	dc.w	$10
@@ -54594,9 +54594,9 @@ SceneGraphics_YaataBottomLeftHouse:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 
 	dc.w	$10
@@ -54642,9 +54642,9 @@ SceneGraphics_LandenHouse1F:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 
 	dc.w	$10
@@ -54690,9 +54690,9 @@ SceneGraphics_Church1F:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 	
 	dc.w	(Pal_NurseSprite_End-Pal_NurseSprite)/2
@@ -54743,9 +54743,9 @@ SceneGraphics_LandenSupplyStore1F:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 
 	dc.w	$10
@@ -54791,9 +54791,9 @@ SceneGraphics_LandenInn1F:
 	dc.l	loc_B3D8C
 	dc.l	chunk_table
 
-	dc.w	(Pal_InsideHouseAndShop_End-Pal_InsideHouseAndShop)/2
+	dc.w	(Pal_Houses_End-Pal_Houses)/2
 	dc.w	8
-	dc.l	Pal_InsideHouseAndShop
+	dc.l	Pal_Houses
 	dc.l	0
 
 	dc.w	$10
@@ -57847,9 +57847,9 @@ SceneGraphics_EndGameMegido:
 	dc.l	Pal_RhysPortrait
 	dc.l	0
 	
-	dc.w	(Pal_ThisCityIsTooEvil_End-Pal_ThisCityIsTooEvil)/2
+	dc.w	(Pal_MegidoUsed_End-Pal_MegidoUsed)/2
 	dc.w	8
-	dc.l	Pal_ThisCityIsTooEvil
+	dc.l	Pal_MegidoUsed
 	dc.l	$60
 	
 	dc.w	0
@@ -58181,18 +58181,10 @@ EnemyPaletteTable:
 	dc.l	$00000000, $00AE0660, $068C046A, $00000E60, $00000660, $06600EEE, $08880444, $06600660
 ; ====================================================================================================
 
-Pal_Castles:
-	dc.w	$0000, $0CEE, $0844, $0466, $0000, $08AA, $0466, $0244, $0020, $0080, $0060, $0040, $026A, $0046, $04E0, $06AC
-	dc.w	$0000, $000C, $0404, $0444, $0CEE, $0688, $0466, $08AA, $0268, $0046, $048A, $0000, $06AE, $0206, $004E, $0660
-	dc.w	$0260, $0000, $0EEE, $0888, $0444, $08CE, $068C, $0E60, $0A40, $020C, $0228, $00C2, $0080, $026A, $0046, $0E00
-	dc.w	$0000, $0000, $00EA, $00A0, $0000, $0EEE, $0888, $0444, $08CE, $068C, $002E, $0008, $00EE, $0088, $0000, $0EE0
+Pal_Castles:	binclude "general/maps/palettes/Castles.bin"
 Pal_Castles_End:
 
-Pal_GenerationsOfDoomFont:
-	dc.w	$0000, $0600, $0400, $0000, $0000, $0000, $0000, $0000, $0000, $0000, $0000, $0A62, $0600, $0000, $0000, $0000
-	dc.w	$0000, $000C, $0404, $0444, $00A0, $00A0, $00A0, $00A0, $0000, $00A0, $00A0, $00A0, $00A0, $00A0, $00A0, $00A0
-	dc.w	$0000, $0EEE, $0000, $0000, $0000, $0000, $0000, $0000, $0000, $0000, $0000, $08CC, $00AC, $006A, $0048, $0024
-	dc.w	$0000, $0000, $0000, $0000, $0000, $0000, $0000, $0000, $0000, $0660, $0660, $0EEE, $0888, $0444, $0660, $0E00
+Pal_GenerationsOfDoomFont:	binclude "scene/title/palettes/Generations of Doom.bin"
 Pal_GenerationsOfDoomFont_End:
 
 loc_32916:
@@ -58202,19 +58194,11 @@ loc_32916:
 	dc.w	$0000, $0000, $00AE, $0660, $068C, $046A, $0000, $0E60, $0000, $0660, $0660, $0EEE, $0888, $0444, $0660, $0660
 loc_32916_End:
 
-Pal_InsideHouseAndShop:
-	dc.w	$0000, $0CEE, $0844, $0466, $0AEE, $0ACE, $0268, $048A, $06AC, $0000, $0024, $0246, $0468, $068A, $08AC, $0000
-	dc.w	$0000, $000C, $0404, $0444, $0000, $0022, $0244, $0466, $0688, $08AA, $0ACC, $0000, $0000, $0000, $0000, $0000
-	dc.w	$0260, $0000, $0EEE, $0888, $0444, $08CE, $068C, $0E60, $0A40, $020C, $0228, $00C2, $0080, $026A, $0046, $0E00
-	dc.w	$0000, $0000, $0EEE, $0888, $0000, $0EEE, $0888, $0444, $08CE, $068C, $000C, $0006, $0EE0, $0E00, $0088, $00EE
-Pal_InsideHouseAndShop_End:
+Pal_Houses:	binclude "general/maps/palettes/Houses.bin"
+Pal_Houses_End:
 
-Pal_VillageGroundRoof:
-	dc.w	$0000, $0CEE, $0844, $0466, $0EC4, $0EE0, $0EEA, $0EEE, $0222, $0AEE, $0ACC, $08AA, $0688, $0466, $0244, $0CA0
-	dc.w	$0000, $000C, $0404, $0444, $0024, $0246, $0468, $068A, $08AC, $0222, $0020, $0042, $0064, $0286, $04A8, $0222
-	dc.w	$0260, $0000, $0EEE, $0888, $0444, $08CE, $068C, $0E60, $0A40, $020C, $0228, $00C2, $0080, $026A, $0046, $0E00
-	dc.w	$0000, $0000, $0EEE, $0888, $0000, $0EEE, $0888, $0444, $08CE, $068C, $000C, $0006, $0EE0, $0E00, $0088, $00EE
-Pal_VillageGroundRoof_End:
+Pal_Towns:	binclude "general/maps/palettes/Towns.bin"
+Pal_Towns_End:
 
 loc_32A96:
 	dc.w	$0000, $0CEE, $0844, $0466, $08AE, $068C, $046A, $0248, $0026, $0004, $0E00, $0E0E, $0EE0, $02EE, $0000, $000E
@@ -58230,84 +58214,28 @@ loc_32B16:
 	dc.w	$0000, $0000, $0000, $0000, $0EEE, $0028, $048C, $00AE, $0000, $000E, $0AAA, $0000, $0000, $0000, $0000, $0000
 loc_32B16_End:
 
-Pal_LandenWorldMap:
-	dc.w	$0000, $0CEE, $0844, $0466, $0688, $0466, $0244, $0022, $0C64, $0A64, $0A44, $0842, $0822, $08AA, $0CA8, $0000
-	dc.w	$0000, $000C, $0404, $0444, $068A, $0468, $0246, $0024, $0002, $0486, $0264, $0042, $0020, $06A8, $08AA, $08AC
-	dc.w	$0260, $0000, $0EEE, $0888, $0444, $08CE, $068C, $0E60, $0A40, $020C, $0228, $00C2, $0080, $026A, $0046, $0E00
-	dc.w	$0000, $0000, $0000, $0000, $0EEE, $06AA, $0266, $0044, $0022, $0000, $0AAA, $0000, $000E, $0000, $0000, $0000
-Pal_LandenWorldMap_End:
+Pal_WorldNormal:	binclude "general/maps/palettes/World normal.bin"
+Pal_WorldNormal_End:
 
-Pal_AridiaWorldMap:
-	dc.w	$0000, $0CEE, $0844, $0466, $0688, $0466, $0244, $0022, $0C64, $0A64, $0A44, $0842, $0822, $08AA, $0CA8, $0000
-	dc.w	$0000, $000C, $0404, $0444, $068A, $0468, $0246, $0024, $0002, $06AA, $0488, $0266, $0020, $08CC, $08AA, $08AC
-	dc.w	$0260, $0000, $0EEE, $0888, $0444, $08CE, $068C, $0E60, $0A40, $020C, $0228, $00C2, $0080, $026A, $0046, $0E00
-	dc.w	$0260, $0000, $0EEE, $0888, $0444, $08CE, $068C, $0E60, $0A40, $020C, $0228, $00C2, $0080, $026A, $0046, $0E00
-Pal_AridiaWorldMap_End:
+Pal_WorldDesert:	binclude "general/maps/palettes/World desert.bin"
+Pal_WorldDesert_End:
 
-Pal_RyselFrozen:
-	dc.b	$00, $00, $0C, $EE, $08, $44, $04, $66, $0A, $88, $0A, $AA, $0C, $CA, $00, $00
-	dc.b	$02, $22, $0E, $EE, $0C, $CC, $0A, $AA, $06, $88, $04, $66, $02, $44, $02, $22 ;0x0 (0x00032C96-0x00032D16, Entry count: 0x00000080)
-	dc.b	$00, $00, $00, $0C, $04, $04, $04, $44, $0A, $88, $0A, $AA, $0C, $CA, $0E, $CC
-	dc.b	$0E, $EE, $08, $86, $0A, $AA, $0C, $CA, $0C, $CC, $0E, $EE, $0E, $EE, $AA, $80 ;0x20
-	dc.b	$02, $60, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $0E, $60
-	dc.b	$0A, $40, $02, $0C, $02, $28, $00, $C2, $00, $80, $02, $6A, $00, $46, $0E, $00 ;0x40
-	dc.b	$00, $00, $00, $00, $00, $EA, $00, $A0, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $00, $2E, $00, $08, $00, $EE, $00, $88, $00, $00, $0E, $E0 ;0x60
-Pal_RyselFrozen_End:
+Pal_TownIce:	binclude "general/maps/palettes/Town ice.bin"
+Pal_TownIce_End:
 
-Pal_CastleDungeons:
-	dc.b	$00, $00, $0C, $EE, $08, $44, $04, $66, $02, $20, $09, $A6, $04, $62, $02, $40
-	dc.b	$00, $00, $0A, $A6, $06, $62, $04, $42, $0A, $AA, $04, $44, $0E, $EE, $00, $00 ;0x0 (0x00032D16-0x00032D96, Entry count: 0x00000080)
-	dc.b	$00, $00, $00, $0C, $04, $04, $04, $44, $02, $20, $09, $A6, $04, $62, $02, $40
-	dc.b	$00, $00, $0A, $A6, $06, $62, $04, $42, $0A, $AA, $04, $44, $0E, $EE, $00, $00 ;0x20
-	dc.b	$02, $60, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $0E, $60
-	dc.b	$0A, $40, $02, $0C, $02, $28, $00, $C2, $00, $80, $02, $6A, $00, $46, $0E, $00 ;0x40
-	dc.b	$00, $00, $00, $00, $00, $EA, $00, $A0, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $00, $2E, $00, $08, $00, $EE, $00, $88, $00, $00, $0E, $E0 ;0x60
+Pal_CastleDungeons:	binclude "general/maps/palettes/Dungeons.bin"
 Pal_CastleDungeons_End:
 
-Pal_FrigidiaWorldMap:
-	dc.b	$00, $00, $0C, $EE, $08, $44, $04, $66, $0E, $CC, $0C, $CA, $06, $88, $04, $66
-	dc.b	$0C, $A8, $0C, $CA, $0E, $EE, $0E, $CA, $0C, $A8, $0E, $EE, $0E, $EE, $00, $00 ;0x0 (0x00032D96-0x00032E16, Entry count: 0x00000080)
-	dc.b	$00, $00, $00, $0C, $04, $04, $04, $44, $0E, $CC, $0C, $CA, $08, $88, $04, $66
-	dc.b	$04, $44, $0E, $CC, $0A, $AA, $06, $86, $04, $64, $0E, $EE, $0E, $EE, $0E, $EE ;0x20
-	dc.b	$02, $60, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $0E, $60
-	dc.b	$0A, $40, $02, $0C, $02, $28, $00, $C2, $00, $80, $02, $6A, $00, $46, $0E, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $0E, $EE, $06, $AA, $02, $66, $00, $44
-	dc.b	$00, $22, $00, $00, $0A, $AA, $00, $00, $00, $0E, $00, $00, $00, $00, $00, $00 ;0x60
-Pal_FrigidiaWorldMap_End:
+Pal_WorldIce:	binclude "general/maps/palettes/World ice.bin"
+Pal_WorldIce_End:
 
-Pal_LayanCastle:
-	dc.b	$00, $00, $0C, $EE, $08, $44, $04, $66, $00, $00, $08, $AA, $04, $66, $02, $44
-	dc.b	$00, $20, $00, $84, $00, $64, $00, $42, $02, $6A, $00, $46, $04, $E8, $06, $AC
-	dc.b	$00, $00, $00, $0C, $04, $04, $04, $44, $0C, $EE, $04, $68, $02, $46, $04, $8A
-	dc.b	$06, $64, $04, $42, $08, $86, $00, $00, $0C, $CA, $02, $20, $0A, $60, $00, $00
-	dc.b	$02, $60, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $0E, $60
-	dc.b	$0A, $40, $02, $0C, $02, $28, $00, $C2, $00, $80, $02, $6A, $00, $46, $0E, $00
-	dc.b	$00, $00, $00, $00, $00, $EA, $00, $A0, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $00, $2E, $00, $08, $00, $EE, $00, $88, $00, $00, $0E, $E0
+Pal_LayanCastle:	binclude "general/maps/palettes/Layan castles.bin"
 Pal_LayanCastle_End:
 
-Pal_Tunnels:
-	dc.b	$00, $00, $0C, $EE, $08, $44, $04, $66, $06, $64, $08, $86, $0A, $A8, $0C, $CA
-	dc.b	$0E, $EC, $02, $20, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $0C, $04, $04, $04, $44, $06, $A2, $04, $80, $02, $40, $0A, $A2
-	dc.b	$08, $80, $06, $60, $02, $40, $00, $20, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$02, $60, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $0E, $60
-	dc.b	$0A, $40, $02, $0C, $02, $28, $00, $C2, $00, $80, $02, $6A, $00, $46, $0E, $00
-	dc.b	$00, $00, $00, $00, $00, $EA, $00, $A0, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $00, $2E, $00, $08, $00, $EE, $00, $88, $00, $00, $0E, $E0
+Pal_Tunnels:	binclude "general/maps/palettes/Tunnels.bin"
 Pal_Tunnels_End:
 
-Pal_Intro:
-	dc.b	$00, $00, $0C, $EE, $08, $44, $04, $66, $00, $00, $00, $00, $00, $00, $0E, $EE
-	dc.b	$00, $00, $00, $00, $0A, $CC, $08, $AA, $06, $88, $04, $66, $02, $44, $00, $22
-	dc.b	$08, $60, $0E, $EE, $08, $AE, $04, $6A, $00, $26, $00, $00, $0C, $E0, $0E, $80
-	dc.b	$08, $20, $0E, $6E, $08, $08, $04, $04, $00, $AE, $00, $6A, $00, $26, $00, $00
-	dc.b	$00, $00, $0A, $CC, $08, $AA, $06, $88, $0E, $C8, $02, $44, $00, $22, $0E, $EE
-	dc.b	$08, $8A, $06, $68, $04, $46, $02, $24, $00, $02, $00, $E0, $00, $80, $00, $40
-	dc.b	$00, $00, $00, $20, $00, $00, $00, $64, $02, $86, $04, $A8, $06, $CA, $08, $EC
-	dc.b	$00, $02, $00, $24, $00, $46, $02, $68, $04, $8A, $06, $AC, $08, $CE, $00, $42 ;0x60
+Pal_Intro:	binclude "scene/intro/palettes/Intro.bin"
 Pal_Intro_End:
 
 Pal_MoonsMovingStars:
@@ -58475,15 +58403,7 @@ Pal_UnderseaPalace:
 	dc.b	$00, $22, $00, $00, $0A, $AA, $00, $00, $00, $0E, $00, $00, $00, $00, $00, $00
 Pal_UnderseaPalace_End:
 
-Pal_Dahlia:
-	dc.b	$00, $00, $0C, $EE, $08, $44, $04, $66, $06, $88, $04, $66, $02, $44, $00, $22
-	dc.b	$0C, $84, $00, $00, $00, $00, $00, $00, $00, $00, $08, $AA, $00, $00, $0A, $CC ;0x0 (0x00033716-0x00033796, Entry count: 0x00000080)
-	dc.b	$00, $00, $00, $0C, $04, $04, $04, $44, $0A, $A4, $08, $82, $0C, $C4, $06, $60
-	dc.b	$00, $00, $0A, $AA, $08, $88, $06, $66, $04, $44, $0C, $CC, $00, $00, $00, $00 ;0x20
-	dc.b	$02, $60, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $0E, $60
-	dc.b	$0A, $40, $02, $0C, $02, $28, $00, $C2, $00, $80, $02, $6A, $00, $46, $0E, $00 ;0x40
-	dc.b	$00, $00, $00, $00, $00, $EA, $00, $A0, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $00, $2E, $00, $08, $00, $EE, $00, $88, $00, $00, $0E, $E0 ;0x60
+Pal_Dahlia:	binclude "general/maps/palettes/Dahlia.bin"
 Pal_Dahlia_End:
 
 Pal_MonitorScreen:
@@ -70712,21 +70632,13 @@ Pal_InnkeeperSprite:
 Pal_InnkeeperSprite_End:
 
 Pal_Party:
-	dc.b	$00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $0C, $A0
-	dc.b	$0A, $40, $02, $4E, $02, $28, $00, $E2, $00, $80, $02, $6A, $00, $46, $00, $00 ;0x20
-	dc.b	$00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $00, $68
-	dc.b	$00, $24, $02, $4E, $02, $28, $0E, $E8, $0A, $60, $04, $C0, $00, $40, $00, $00 ;0x40
-	dc.b	$00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $00, $28
-	dc.b	$00, $02, $02, $4E, $02, $28, $04, $EE, $00, $46, $02, $A0, $00, $40, $00, $00 ;0x60
-	dc.b	$00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $0C, $A0
-	dc.b	$0A, $40, $02, $4E, $02, $28, $04, $CA, $00, $64, $0E, $4A, $08, $24, $00, $00 ;0x80
-	dc.b	$00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $00, $AA
-	dc.b	$00, $22, $02, $4E, $02, $28, $04, $CA, $00, $64, $02, $6A, $00, $46, $00, $00 ;0xA0
-	dc.b	$00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $08, $EC
-	dc.b	$00, $86, $02, $4E, $02, $28, $04, $CA, $00, $64, $02, $6A, $00, $46, $00, $00 ;0xC0
-	dc.b	$00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $08, $EC
-	dc.b	$00, $86, $02, $4E, $02, $28, $04, $CA, $00, $64, $02, $6A, $00, $46, $00, $00 ;0xE0
-
+	binclude	"general/objects/palettes/Rhys party.bin"
+	binclude	"general/objects/palettes/Ayn party.bin"
+	binclude	"general/objects/palettes/Nial party.bin"
+	binclude	"general/objects/palettes/Sean party.bin"
+	binclude	"general/objects/palettes/Crys party.bin"
+	binclude	"general/objects/palettes/Adan party.bin"
+	binclude	"general/objects/palettes/Aron party.bin"
 
 Pal_SeanIntroThroneRoomBG:
 	dc.b	$00, $00, $0E, $EC, $0C, $EA, $0A, $C7, $08, $A6, $06, $84, $04, $62, $A2, $40
@@ -70796,25 +70708,14 @@ Pal_LegendsOfThePastBG:
 	dc.b	$04, $00, $06, $20, $08, $40, $0A, $62, $0C, $84, $0C, $A6, $0E, $C8, $0E, $EA ;0x0 (0x0003A450-0x0003A470, Entry count: 0x00000020)
 Pal_LegendsOfThePastBG_End:
 
-Pal_DarkForceBattle:
-	dc.b	$00, $02, $0E, $EE, $04, $44, $04, $44, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00 ;0x0 (0x0003A470-0x0003A4F0, Entry count: 0x00000080)
-	dc.b	$0A, $64, $0A, $6E, $04, $44, $04, $44, $0E, $EE, $0E, $AA, $0C, $88, $0A, $66
-	dc.b	$08, $44, $06, $22, $04, $00, $02, $00, $00, $0E, $00, $08, $00, $AE, $00, $48 ;0x20
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $0E, $EE, $0E, $AA, $0C, $88, $0A, $66
-	dc.b	$08, $44, $06, $22, $04, $00, $02, $00, $00, $AE, $00, $6A, $00, $26, $00, $04 ;0x40
-	dc.b	$00, $02, $08, $0E, $04, $0A, $00, $06, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00 ;0x60
+Pal_DarkForceBattle:	binclude "scene/battle/palettes/Dark Force.bin"
 Pal_DarkForceBattle_End:
 
-Pal_BlackWhiteMarriage:
-	dc.w	$0000, $0000, $0000, $0000, $0000, $0EEE, $0CCC, $0AAA, $0888, $0666, $0444, $0222, $0000, $0000, $0000, $0000
+Pal_BlackWhiteMarriage:	binclude	"scene/wedding/palettes/Wedding.bin"
 Pal_BlackWhiteMarriage_End:
 
-Pal_ThisCityIsTooEvil:
-	dc.b	$7F, $FF, $00, $00, $00, $02, $00, $06, $00, $0A, $00, $AE, $00, $EE, $0A, $EE
-	dc.b	$7F, $FF, $7F, $FF, $7F, $FF, $7F, $FF, $7F, $FF, $7F, $FF, $7F, $FF, $0E, $EE ;0x0 (0x0003A510-0x0003A530, Entry count: 0x00000020)
-Pal_ThisCityIsTooEvil_End:
+Pal_MegidoUsed:	binclude	"scene/ending/palettes/Megido used.bin"
+Pal_MegidoUsed_End:
 
 Pal_EndingMegidoBG:
 	dc.b	$7F, $FF, $7F, $FF, $7F, $FF, $08, $AA, $06, $88, $04, $66, $02, $44, $00, $22
