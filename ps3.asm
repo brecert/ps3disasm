@@ -70393,202 +70393,94 @@ Tech_Poison:
 	
 	even
 
-Pal_RhysPortrait:
-	dc.b	$0A, $64, $0E, $EE, $04, $44, $04, $44, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $02, $48, $02, $06, $0E, $E0, $0E, $60, $08, $20, $00, $00 ;0x0 (0x00039A30-0x00039A50, Entry count: 0x00000020)
+Pal_RhysPortrait:	binclude "general/portraits/palettes/Rhys.bin"
 Pal_RhysPortrait_End:
 
-Pal_MieuWrenPortrait:
-	dc.b	$0A, $64, $0A, $6E, $04, $44, $04, $44, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $06, $AC, $04, $6C, $02, $24, $08, $4E, $00, $0E, $0A, $40, $00, $00 ;0x0 (0x00039A50-0x00039A70, Entry count: 0x00000020)
+Pal_MieuWrenPortrait:	binclude "general/portraits/palettes/Mieu Wren.bin"
 Pal_MieuWrenPortrait_End:
 
-Pal_LylePortrait:
-	dc.b	$0A, $64, $0E, $C4, $04, $44, $0C, $CC, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $02, $48, $02, $06, $00, $E2, $00, $80, $00, $40, $00, $00 ;0x0 (0x00039A70-0x00039A90, Entry count: 0x00000020)
+Pal_LylePortrait:	binclude "general/portraits/palettes/Lyle.bin"
 Pal_LylePortrait_End:
 
-Pal_LenaPortrait:
-	dc.b	$0A, $64, $0A, $6E, $04, $44, $04, $44, $00, $00, $0E, $EE, $0A, $AA, $04, $44
-	dc.b	$0A, $CE, $08, $AE, $04, $6C, $02, $06, $00, $8C, $00, $46, $00, $24, $00, $00 ;0x0 (0x00039A90-0x00039AB0, Entry count: 0x00000020)
+Pal_LenaPortrait:	binclude "general/portraits/palettes/Lena.bin"
 Pal_LenaPortrait_End:
 
-Pal_MaiaPortrait:
-	dc.b	$0A, $64, $0E, $C4, $04, $44, $0C, $CC, $00, $00, $0E, $EE, $08, $88, $0C, $EE
-	dc.b	$0A, $CE, $06, $8E, $04, $28, $0E, $E0, $0E, $80, $08, $20, $08, $0E, $00, $00 ;0x0 (0x00039AB0-0x00039AD0, Entry count: 0x00000020)
+Pal_MaiaPortrait:	binclude "general/portraits/palettes/Maia.bin"
 Pal_MaiaPortrait_End:
 
-Pal_PrincessKaraPortraitAron:
-	dc.b	$0A, $64, $0E, $C4, $04, $44, $0C, $CC, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $8C, $00, $28, $06, $EA, $00, $86, $0E, $26, $0E, $E0, $00, $00 ;0x0 (0x00039AD0-0x00039AF0, Entry count: 0x00000020)
+Pal_PrincessKaraPortraitAron:	binclude "general/portraits/palettes/Princess Kara Aron gen.bin"
 Pal_PrincessKaraPortraitAron_End:
 
-Pal_AronPortrait:
-	dc.b	$0A, $64, $0E, $EE, $04, $44, $04, $44, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $06, $8C, $02, $28, $06, $EA, $00, $86, $08, $20, $0E, $86, $00, $00 ;0x0 (0x00039AF0-0x00039B10, Entry count: 0x00000020)
+Pal_AronPortrait:	binclude "general/portraits/palettes/Aron.bin"
 Pal_AronPortrait_End:
 
-Pal_GwynPortrait:
-	dc.b	$0A, $64, $0E, $C4, $04, $44, $0C, $CC, $00, $00, $0E, $EE, $08, $88, $0A, $CE
-	dc.b	$06, $8E, $04, $4C, $00, $04, $0A, $EE, $06, $CE, $02, $6A, $00, $2E, $00, $00 ;0x0 (0x00039B10-0x00039B30, Entry count: 0x00000020)
+Pal_GwynPortrait:	binclude "general/portraits/palettes/Gwyn.bin"
 Pal_GwynPortrait_End:
 
-Pal_AdanPortrait:
-	dc.b	$0A, $64, $0E, $EE, $04, $44, $04, $44, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $EE, $08, $AE, $04, $6C, $02, $06, $06, $CE, $02, $6A, $00, $0E, $00, $00 ;0x0 (0x00039B30-0x00039B50, Entry count: 0x00000020)
+Pal_AdanPortrait:	binclude "general/portraits/palettes/Adan.bin"
 Pal_AdanPortrait_End:
 
-Pal_CrysPortrait:
-	dc.b	$0A, $64, $0E, $EE, $04, $44, $04, $44, $00, $00, $0E, $EE, $0A, $AA, $04, $44
-	dc.b	$08, $CE, $06, $8E, $02, $48, $00, $04, $06, $EE, $00, $88, $00, $44, $00, $00 ;0x0 (0x00039B50-0x00039B70, Entry count: 0x00000020)
+Pal_CrysPortrait:	binclude "general/portraits/palettes/Crys.bin"
 Pal_CrysPortrait_End:
 
-Pal_SeanPortrait:
-	dc.b	$0A, $64, $0E, $EE, $04, $44, $04, $44, $00, $00, $0E, $EE, $0A, $AA, $04, $44
-	dc.b	$0A, $EE, $08, $AE, $04, $6C, $02, $08, $00, $E2, $00, $80, $00, $40, $00, $00 ;0x0 (0x00039B70-0x00039B90, Entry count: 0x00000020)
+Pal_SeanPortrait:	binclude "general/portraits/palettes/Sean.bin"
 Pal_SeanPortrait_End:
 
-Pal_NialPortrait:
-	dc.b	$0A, $64, $0E, $EE, $04, $44, $04, $44, $00, $00, $0E, $EE, $08, $8A, $04, $46
-	dc.b	$0A, $CE, $06, $8C, $02, $28, $00, $8C, $00, $46, $00, $24, $00, $0E, $00, $00 ;0x0 (0x00039B90-0x00039BB0, Entry count: 0x00000020)
+Pal_NialPortrait:	binclude "general/portraits/palettes/Nial.bin"
 Pal_NialPortrait_End:
 
-Pal_SariPortrait:
-	dc.b	$0A, $64, $0A, $6E, $04, $44, $04, $44, $00, $00, $0E, $EE, $0A, $AA, $04, $44
-	dc.b	$0A, $CE, $08, $AE, $04, $6C, $02, $28, $00, $8C, $00, $46, $00, $24, $00, $00 ;0x0 (0x00039BB0-0x00039BD0, Entry count: 0x00000020)
+Pal_SariPortrait:	binclude "general/portraits/palettes/Sari.bin"
 Pal_SariPortrait_End:
 
-Pal_TheaPortrait:
-	dc.b	$0A, $64, $0E, $C4, $04, $44, $0C, $CC, $00, $00, $0E, $EE, $08, $88, $0C, $EE
-	dc.b	$0A, $CE, $08, $8C, $04, $28, $06, $EA, $02, $A6, $00, $60, $00, $0E, $00, $00 ;0x0 (0x00039BD0-0x00039BF0, Entry count: 0x00000020)
+Pal_TheaPortrait:	binclude "general/portraits/palettes/Thea.bin"
 Pal_TheaPortrait_End:
 
-Pal_LayaPortraitFifth:
-	dc.b	$0A, $64, $0A, $6E, $04, $44, $04, $44, $00, $00, $0E, $EE, $08, $88, $00, $0E
-	dc.b	$0A, $CE, $08, $AE, $00, $26, $0A, $EE, $06, $CE, $02, $6A, $0E, $00, $00, $00 ;0x0 (0x00039BF0-0x00039C10, Entry count: 0x00000020)
+Pal_LayaPortraitFifth:	binclude "general/portraits/palettes/Laya fifth slot.bin"
 Pal_LayaPortraitFifth_End:
 
-Pal_WarriorKaraPortrait:
-	dc.b	$0A, $64, $0A, $6E, $04, $44, $04, $44, $0E, $EE, $04, $C8, $00, $64, $00, $00
-	dc.b	$0E, $6A, $0A, $26, $04, $02, $0A, $CE, $06, $8E, $00, $26, $00, $0E, $00, $00 ;0x0 (0x00039C10-0x00039C30, Entry count: 0x00000020)
+Pal_WarriorKaraPortrait:	binclude "general/portraits/palettes/Warrior Kara.bin"
 Pal_WarriorKaraPortrait_End:
 
-Pal_LayaPortraitFourth:
-	dc.b	$0A, $64, $0E, $C4, $04, $44, $0C, $CC, $00, $00, $0E, $EE, $08, $88, $00, $0E
-	dc.b	$0A, $CE, $08, $AE, $00, $26, $0A, $EE, $06, $CE, $02, $6A, $0E, $00, $00, $00 ;0x0 (0x00039C30-0x00039C50, Entry count: 0x00000020)
+Pal_LayaPortraitFourth:	binclude "general/portraits/palettes/Laya fourth slot.bin"
 Pal_LayaPortraitFourth_End:
 
-Pal_PrincessKaraPortraitAdan:
-	dc.b	$0A, $64, $0A, $6E, $04, $44, $04, $44, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $8C, $00, $28, $06, $EA, $00, $86, $0E, $26, $0E, $E0, $00, $00 ;0x0 (0x00039C50-0x00039C70, Entry count: 0x00000020)
+Pal_PrincessKaraPortraitAdan:	binclude "general/portraits/palettes/Princess Kara Adan gen.bin"
 Pal_PrincessKaraPortraitAdan_End:
 
-Pal_AlairPortrait:
-	dc.b	$0A, $64, $0E, $C4, $04, $44, $0C, $CC, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $8C, $00, $28, $06, $EA, $00, $86, $08, $20, $08, $80, $00, $00 ;0x0 (0x00039C70-0x00039C90, Entry count: 0x00000020)
+Pal_AlairPortrait:	binclude "general/portraits/palettes/Alair.bin"
 Pal_AlairPortrait_End:
 
-Pal_AynPortrait:
-	dc.b	$0A, $64, $0E, $EE, $04, $44, $04, $44, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $AE, $04, $6C, $02, $28, $0E, $E0, $0E, $60, $08, $20, $00, $00 ;0x0 (0x00039C90-0x00039CB0, Entry count: 0x00000020)
+Pal_AynPortrait:	binclude "general/portraits/palettes/Ayn.bin"
 Pal_AynPortrait_End:
 
-Pal_RyanPortrait:
-	dc.b	$0A, $64, $0E, $C4, $04, $44, $0C, $CC, $00, $00, $00, $00, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $02, $48, $02, $06, $00, $E2, $00, $80, $00, $40, $00, $00 ;0x0 (0x00039CB0-0x00039CD0, Entry count: 0x00000020)
+Pal_RyanPortrait:	binclude "general/portraits/palettes/Ryan.bin"
 Pal_RyanPortrait_End:
 
-Pal_LunePortrait:
-	dc.b	$0A, $64, $0E, $C4, $04, $44, $0C, $CC, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $06, $8C, $02, $28, $06, $EA, $00, $86, $08, $20, $0E, $86, $00, $00 ;0x0 (0x00039CD0-0x00039CF0, Entry count: 0x00000020)
+Pal_LunePortrait:	binclude "general/portraits/palettes/Lune.bin"
 Pal_LunePortrait_End:
 
-Pal_GameSelectItemShop:
-	dc.b	$02, $44, $0C, $EE, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $AE, $04, $6C, $02, $06, $08, $0E, $06, $C8, $04, $0A, $04, $82 ;0x0 (0x00039CF0-0x00039D70, Entry count: 0x00000080)
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $AE, $04, $6C, $02, $06, $08, $0E, $06, $C8, $04, $0A, $04, $82 ;0x20
-	dc.b	$02, $44, $04, $AC, $04, $42, $00, $00, $00, $CE, $00, $6A, $00, $26, $0E, $A0
-	dc.b	$0A, $60, $06, $20, $0A, $6E, $06, $2A, $02, $06, $00, $C0, $00, $80, $00, $40 ;0x40
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0C, $EE, $00, $60, $00, $00
-	dc.b	$08, $CE, $06, $8C, $04, $44, $00, $00, $00, $00, $00, $A2, $00, $80, $00, $E0 ;0x60
+Pal_GameSelectItemShop:	binclude "general/portraits/palettes/Item store.bin"
 Pal_GameSelectItemShop_End:
 
-Pal_WeaponDealerPortrait:
-	dc.b	$02, $44, $0C, $EE, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $00, $00, $00, $00, $02, $48, $00, $00, $00, $0E ;0x0 (0x00039D70-0x00039DF0, Entry count: 0x00000080)
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $00, $00, $00, $00, $02, $48, $00, $00, $00, $0E ;0x20
-	dc.b	$02, $44, $04, $AC, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $8C, $00, $28, $00, $6B, $00, $02, $0A, $AA, $00, $EE, $00, $00 ;0x40
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $00, $6E, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $00, $00, $00, $00, $00, $0E, $00, $08, $04, $6A, $08, $CE ;0x60
+Pal_WeaponDealerPortrait:	binclude "general/portraits/palettes/Weapon dealer.bin"
 Pal_WeaponDealerPortrait_End:
 
-Pal_ArmorerPortrait:
-	dc.b	$02, $44, $0C, $EE, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $04, $00, $0E, $04, $02, $48, $0E, $C8, $00, $00 ;0x0 (0x00039DF0-0x00039E70, Entry count: 0x00000080)
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $04, $00, $0E, $04, $02, $48, $0E, $C8, $00, $00 ;0x20
-	dc.b	$02, $44, $04, $AC, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $8C, $00, $28, $00, $6B, $00, $02, $0A, $AA, $00, $EE, $00, $00 ;0x40
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $0E, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $00, $00, $00, $00, $08, $88, $04, $44, $0E, $00, $0E, $E0 ;0x60
+Pal_ArmorerPortrait:	binclude "general/portraits/palettes/Armorer.bin"
 Pal_ArmorerPortrait_End:
 
-Pal_NursePortrait:
-	dc.b	$02, $44, $0C, $EE, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $AE, $04, $6C, $02, $06, $08, $0E, $06, $C8, $04, $0A, $04, $82
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $AE, $04, $6C, $02, $06, $08, $0E, $06, $C8, $04, $0A, $04, $82
-	dc.b	$02, $44, $04, $AC, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $8C, $00, $28, $00, $6B, $00, $02, $0A, $AA, $00, $EE, $00, $00
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $00, $00
-	dc.b	$08, $CE, $06, $8C, $00, $E2, $00, $80, $00, $00, $00, $A2, $0E, $00, $0E, $E0
+Pal_NursePortrait:	binclude "general/portraits/palettes/Nurse.bin"
 Pal_NursePortrait_End:
 
-Pal_PriestPortrait:
-	dc.b	$02, $44, $0C, $EE, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $04, $00, $0E, $04, $02, $48, $0E, $C8, $00, $00
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $04, $00, $0E, $04, $02, $48, $0E, $C8, $00, $00
-	dc.b	$02, $44, $04, $AC, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $8C, $00, $28, $00, $6B, $00, $02, $0A, $AA, $00, $EE, $00, $00
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $08, $88, $08, $88, $04, $44
-	dc.b	$00, $00, $06, $8C, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $04, $44
+Pal_PriestPortrait:	binclude "general/portraits/palettes/Priest.bin"
 Pal_PriestPortrait_End:
 
-Pal_TechDistributorPortrait:
-	dc.b	$02, $44, $0C, $EE, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $04, $00, $0E, $04, $02, $48, $0E, $C8, $00, $0E
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $04, $00, $0E, $04, $02, $48, $0E, $C8, $00, $0E
-	dc.b	$00, $00, $0E, $EE, $08, $88, $02, $22, $00, $CE, $00, $6A, $00, $26, $0E, $A0
-	dc.b	$0A, $60, $06, $20, $0A, $6E, $06, $2A, $02, $06, $00, $C0, $00, $80, $00, $40
-	dc.b	$02, $44, $04, $AC, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $04, $00, $0E, $04, $02, $48, $0E, $C8, $00, $0E
+Pal_TechDistributorPortrait:	binclude "general/portraits/palettes/Tech distributor.bin"
 Pal_TechDistributorPortrait_End:
 
-Pal_FortuneTellerPortrait:
-	dc.b	$02, $44, $0C, $EE, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $04, $00, $0E, $04, $00, $00, $0E, $C8, $00, $00
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$00, $06, $08, $CE, $04, $6C, $04, $00, $0E, $04, $00, $00, $0E, $C8, $00, $00
-	dc.b	$02, $44, $04, $AC, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $8C, $00, $28, $00, $6B, $00, $02, $0A, $AA, $00, $EE, $00, $00
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $00, $08, $88, $00, $00
-	dc.b	$00, $00, $06, $8C, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $04, $44
+Pal_FortuneTellerPortrait:	binclude "general/portraits/palettes/Fortune teller.bin"
 Pal_FortuneTellerPortrait_End:
 
-Pal_InnkeeperPortrait:
-	dc.b	$02, $44, $0C, $EE, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $AE, $04, $6C, $02, $06, $08, $0E, $06, $C8, $04, $0A, $00, $00
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $AE, $04, $6C, $02, $06, $08, $0E, $06, $C8, $04, $0A, $00, $00
-	dc.b	$02, $44, $04, $AC, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $8C, $00, $28, $00, $6B, $00, $02, $0A, $AA, $00, $EE, $00, $00
-	dc.b	$02, $44, $0A, $6E, $04, $42, $00, $00, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$0A, $CE, $08, $8C, $00, $28, $00, $6B, $00, $02, $0A, $AA, $00, $EE, $00, $00
+Pal_InnkeeperPortrait:	binclude "general/portraits/palettes/Innkeeper.bin"
 Pal_InnkeeperPortrait_End:
 
 Pal_ItemSellerSprite:
@@ -75836,73 +75728,34 @@ loc_3DB7C:
 StorePortraitPlaneMapOffs:
 
 loc_3DB88:	dc.w	PlaneMap_GameSelectPortrait-loc_3DB88
-loc_3DB8A:	dc.w	PlaneMap_WeaponStorePortrait-loc_3DB8A
-loc_3DB8C:	dc.w	PlaneMap_ArmorStorePortrait-loc_3DB8C
+loc_3DB8A:	dc.w	PlaneMap_WeaponDealerPortrait-loc_3DB8A
+loc_3DB8C:	dc.w	PlaneMap_ArmorerPortrait-loc_3DB8C
 loc_3DB8E:	dc.w	PlaneMap_NursePortrait-loc_3DB8E
 loc_3DB90:	dc.w	PlaneMap_PriestPortrait-loc_3DB90
 loc_3DB92:	dc.w	PlaneMap_FortuneTellerPortrait-loc_3DB92
-loc_3DB94:	dc.w	PlaneMap_InnPortrait-loc_3DB94
+loc_3DB94:	dc.w	PlaneMap_InnkeeperPortrait-loc_3DB94
 loc_3DB96:	dc.w	loc_3DD34-loc_3DB96
 ; ============================================
 
-PlaneMap_GameSelectPortrait:
-	dc.b	$00, $00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0A, $0B, $0C, $0D, $0E ;0x0 (0x0003DB88-0x0003DCD0, Entry count: 0x00000148) [Unknown data]
-	dc.b	$0F, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $1A, $1B, $1C, $1D, $1E
-	dc.b	$1F, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $2A, $2B, $2C, $2D, $2E ;0x20
-	dc.b	$2F, $30, $31
-
+PlaneMap_GameSelectPortrait:	binclude "general/portraits/mappings/uncompressed/Game select.bin"
 	align_
 
-PlaneMap_WeaponStorePortrait:
-	dc.b	$00
-	dc.b	$00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0A, $0B, $0C, $0D, $0E, $0F
-	dc.b	$10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $1A ;0x40
-	dc.b	$1B, $1C, $1D, $1E, $1F, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $2A
-	dc.b	$2B, $2C, $2D, $2E, $2F, $30, $31
-
+PlaneMap_WeaponDealerPortrait:	binclude "general/portraits/mappings/uncompressed/Weapon dealer.bin"
 	even
 
-PlaneMap_ArmorStorePortrait:
-	dc.b	$00
-	dc.b	$00, $01, $02, $03, $04, $05, $06 ;0x60
-	dc.b	$07, $08, $09, $0A, $0B, $0C, $0D, $0E, $0F, $10, $11, $12, $13, $14, $15, $16
-	dc.b	$17, $18, $19, $1A, $1B, $1C, $1D, $1E, $1F, $20, $21, $22, $23, $24, $25, $26 ;0x80
-	dc.b	$27, $28, $29, $2A, $2B, $2C, $2D, $2E, $2F, $30, $31
-
+PlaneMap_ArmorerPortrait:	binclude "general/portraits/mappings/uncompressed/Armorer.bin"
 	align_
 
-PlaneMap_NursePortrait:
-	dc.b	$00
-	dc.b	$00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0A, $0B, $0C, $0D, $07, $0E, $0F, $10, $11 ;0xA0
-	dc.b	$12, $13, $07, $14, $15, $16, $17, $18, $19, $07, $1A, $1B, $1C, $1D, $1E, $1F
-	dc.b	$20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $2A, $2B, $2C, $2D, $2E
-
+PlaneMap_NursePortrait:	binclude "general/portraits/mappings/uncompressed/Nurse.bin"
 	even
 
-PlaneMap_PriestPortrait:
-	dc.b	$00
-	dc.b	$00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0A, $0B, $0C, $0D, $0E, $0F
-	dc.b	$10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $1A, $1B, $1C, $1D, $1E ;0xE0
-	dc.b	$1F, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $2A, $2B, $2C, $2D, $2E
-	dc.b	$2F, $30, $31
-
+PlaneMap_PriestPortrait:	binclude "general/portraits/mappings/uncompressed/Priest.bin"
 	even
 
-PlaneMap_FortuneTellerPortrait:
-	dc.b	$00
-	dc.b	$00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0A ;0x100
-	dc.b	$0B, $0C, $0D, $0E, $0F, $10, $11, $12, $13, $14, $15, $16, $16, $17, $18, $19
-	dc.b	$1A, $1B, $1C, $1D, $1E, $1F, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29 ;0x120
-	dc.b	$2A, $2B, $2C, $2D, $2E, $2F, $30
-
+PlaneMap_FortuneTellerPortrait:	binclude "general/portraits/mappings/uncompressed/Fortune teller.bin"
 	align_
 
-PlaneMap_InnPortrait:
-	dc.w	$FFFF
-	dc.w	$8101, $8102, $8103, $8104, $8903, $8902, $8901, $8105, $8106, $8107, $8108, $8907, $8906, $8905, $8109, $810A
-	dc.w	$810B, $810C, $890B, $890A, $8909, $810D, $810E, $810F, $8110, $890F, $890E, $890D, $8111, $8112, $8113 ;0x0 (0x0003DCD0-0x0003DD34, Entry count: 0x00000064)
-	dc.w	$8114, $8115, $8116, $8117, $8118, $8119, $811A, $811B, $811C, $811D, $811E, $811F, $8120, $8121, $8122, $8123, $8124, $8125 ;0x20
-
+PlaneMap_InnkeeperPortrait:	binclude "general/portraits/mappings/uncompressed/Innkeeper.bin"
 	even
 
 loc_3DD34:
@@ -108180,85 +108033,85 @@ ArtComp_SeanPortrait:	binclude "general/portraits/art/Sean.bin"
 ArtComp_WrenPortrait:	binclude "general/portraits/art/Wren.bin"
 	even
 
-PlaneMap_AynPortrait:	binclude "general/portraits/mappings/Ayn.bin"
+PlaneMap_AynPortrait:	binclude "general/portraits/mappings/compressed/Ayn.bin"
 	even
 
-PlaneMap_RyanPortrait:	binclude "general/portraits/mappings/Ryan.bin"
+PlaneMap_RyanPortrait:	binclude "general/portraits/mappings/compressed/Ryan.bin"
 	even
 
-PlaneMap_AdanPortrait:	binclude "general/portraits/mappings/Adan.bin"
+PlaneMap_AdanPortrait:	binclude "general/portraits/mappings/compressed/Adan.bin"
 	even
 
-PlaneMap_MaiaPortrait:	binclude "general/portraits/mappings/Maia.bin"
+PlaneMap_MaiaPortrait:	binclude "general/portraits/mappings/compressed/Maia.bin"
 	even
 
-PlaneMap_OlderAynPortrait:	binclude "general/portraits/mappings/Older Ayn.bin"
+PlaneMap_OlderAynPortrait:	binclude "general/portraits/mappings/compressed/Older Ayn.bin"
 	even
 
-PlaneMap_OlderRhysPortrait:	binclude "general/portraits/mappings/Older Rhys.bin"
+PlaneMap_OlderRhysPortrait:	binclude "general/portraits/mappings/compressed/Older Rhys.bin"
 	even
 
-PlaneMap_OlderLylePortrait:	binclude "general/portraits/mappings/Older Lyle.bin"
+PlaneMap_OlderLylePortrait:	binclude "general/portraits/mappings/compressed/Older Lyle.bin"
 	even
 
-PlaneMap_OlderNialPortrait:	binclude "general/portraits/mappings/Older Nial.bin"
+PlaneMap_OlderNialPortrait:	binclude "general/portraits/mappings/compressed/Older Nial.bin"
 	even
 
-PlaneMap_RhysPortrait:	binclude "general/portraits/mappings/Rhys.bin"
+PlaneMap_RhysPortrait:	binclude "general/portraits/mappings/compressed/Rhys.bin"
 	even
 
-PlaneMap_AronPortrait:	binclude "general/portraits/mappings/Aron.bin"
+PlaneMap_AronPortrait:	binclude "general/portraits/mappings/compressed/Aron.bin"
 	even
 
-PlaneMap_MieuPortrait:	binclude "general/portraits/mappings/Mieu.bin"
+PlaneMap_MieuPortrait:	binclude "general/portraits/mappings/compressed/Mieu.bin"
 	even
 
-PlaneMap_MiunPortrait:	binclude "general/portraits/mappings/Miun.bin"
+PlaneMap_MiunPortrait:	binclude "general/portraits/mappings/compressed/Miun.bin"
 	even
 
-PlaneMap_CrysPortrait:	binclude "general/portraits/mappings/Crys.bin"
+PlaneMap_CrysPortrait:	binclude "general/portraits/mappings/compressed/Crys.bin"
 	even
 
-PlaneMap_GwynPortrait:	binclude "general/portraits/mappings/Gwyn.bin"
+PlaneMap_GwynPortrait:	binclude "general/portraits/mappings/compressed/Gwyn.bin"
 	even
 
-PlaneMap_LayaPortrait:	binclude "general/portraits/mappings/Laya.bin"
+PlaneMap_LayaPortrait:	binclude "general/portraits/mappings/compressed/Laya.bin"
 	even
 
-PlaneMap_LylePortrait:	binclude "general/portraits/mappings/Lyle.bin"
+PlaneMap_LylePortrait:	binclude "general/portraits/mappings/compressed/Lyle.bin"
 	even
 
-PlaneMap_TheaPortrait:	binclude "general/portraits/mappings/Thea.bin"
+PlaneMap_TheaPortrait:	binclude "general/portraits/mappings/compressed/Thea.bin"
 	even
 
-PlaneMap_NialPortrait:	binclude "general/portraits/mappings/Nial.bin"
+PlaneMap_NialPortrait:	binclude "general/portraits/mappings/compressed/Nial.bin"
 	even
 
-PlaneMap_SariPortrait:	binclude "general/portraits/mappings/Sari.bin"
+PlaneMap_SariPortrait:	binclude "general/portraits/mappings/compressed/Sari.bin"
 	even
 
-PlaneMap_LenaPortrait:	binclude "general/portraits/mappings/Lena.bin"
+PlaneMap_LenaPortrait:	binclude "general/portraits/mappings/compressed/Lena.bin"
 	even
 
-PlaneMap_LunePortrait:	binclude "general/portraits/mappings/Lune.bin"
+PlaneMap_LunePortrait:	binclude "general/portraits/mappings/compressed/Lune.bin"
 	even
 
-PlaneMap_AlairPortrait:	binclude "general/portraits/mappings/Alair.bin"
+PlaneMap_AlairPortrait:	binclude "general/portraits/mappings/compressed/Alair.bin"
 	even
 
-PlaneMap_WarriorKaraPortrait:	binclude "general/portraits/mappings/Warrior Kara.bin"
+PlaneMap_WarriorKaraPortrait:	binclude "general/portraits/mappings/compressed/Warrior Kara.bin"
 	even
 
-PlaneMap_PrincessKaraPortrait:	binclude "general/portraits/mappings/Princess Kara.bin"
+PlaneMap_PrincessKaraPortrait:	binclude "general/portraits/mappings/compressed/Princess Kara.bin"
 	even
 
-PlaneMap_SirenPortrait:	binclude "general/portraits/mappings/Siren.bin"
+PlaneMap_SirenPortrait:	binclude "general/portraits/mappings/compressed/Siren.bin"
 	even
 
-PlaneMap_SeanPortrait:	binclude "general/portraits/mappings/Sean.bin"
+PlaneMap_SeanPortrait:	binclude "general/portraits/mappings/compressed/Sean.bin"
 	even
 
-PlaneMap_WrenPortrait:	binclude "general/portraits/mappings/Wren.bin"
+PlaneMap_WrenPortrait:	binclude "general/portraits/mappings/compressed/Wren.bin"
 	even
 	
 
