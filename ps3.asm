@@ -51281,9 +51281,9 @@ SceneGraphics_LandenIslandCave:
 	dc.l	ArtComp_TreasureChest
 	dc.l	$8000
 
-	dc.w	(Pal_RedGoldCaves_End-Pal_RedGoldCaves)/2
+	dc.w	(Pal_RedCaves_End-Pal_RedCaves)/2
 	dc.w	8
-	dc.l	Pal_RedGoldCaves
+	dc.l	Pal_RedCaves
 	dc.l	0
 
 	dc.w	$10
@@ -51329,9 +51329,9 @@ SceneGraphics_WrenCave:
 	dc.l	ArtComp_TreasureChest
 	dc.l	$8000
 
-	dc.w	(Pal_RedGoldCaves_End-Pal_RedGoldCaves)/2
+	dc.w	(Pal_RedCaves_End-Pal_RedCaves)/2
 	dc.w	8
-	dc.l	Pal_RedGoldCaves
+	dc.l	Pal_RedCaves
 	dc.l	0
 
 	dc.w	$10
@@ -58238,37 +58238,13 @@ Pal_Tunnels_End:
 Pal_Intro:	binclude "scene/intro/palettes/Intro.bin"
 Pal_Intro_End:
 
-Pal_MoonsMovingStars:
-	dc.b	$02, $00, $0C, $EE, $08, $44, $04, $66, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $0C, $CC, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $06, $00, $0E, $00, $0E, $44, $0E, $88, $0E, $EE
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $04, $04, $08, $08, $0A, $4A, $0A, $6A, $0E, $EE
+Pal_MoonsMovingStars:	binclude "scene/two moons/palettes/Two Moons.bin"
 Pal_MoonsMovingStars_End:
 
-Pal_RedGoldCaves:
-	dc.b	$00, $00, $0C, $EE, $08, $44, $04, $66, $00, $00, $0A, $EE, $06, $AA, $02, $66
-	dc.b	$00, $22, $00, $02, $00, $04, $00, $08, $00, $0A, $00, $0E, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $0C, $04, $04, $04, $44, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$02, $60, $00, $00, $0E, $EE, $08, $88, $04, $44, $08, $CE, $06, $8C, $0E, $60
-	dc.b	$0A, $40, $02, $0C, $02, $28, $00, $C2, $00, $80, $02, $6A, $00, $46, $0E, $00
-	dc.b	$00, $00, $00, $00, $00, $EA, $00, $A0, $00, $00, $0E, $EE, $08, $88, $04, $44
-	dc.b	$08, $CE, $06, $8C, $00, $2E, $00, $08, $00, $EE, $00, $88, $00, $00, $0E, $E0
-Pal_RedGoldCaves_End:
+Pal_RedCaves:	binclude "general/maps/palettes/Red caves.bin"
+Pal_RedCaves_End:
 
-Pal_NewMotaHistory:
-	dc.b	$02, $00, $0C, $EE, $08, $44, $04, $66, $00, $00, $0E, $EE, $0C, $AA, $08, $66
-	dc.b	$06, $44, $04, $22, $02, $00, $06, $C4, $02, $80, $00, $48, $00, $AE, $00, $6A
-	dc.b	$00, $00, $0C, $CC, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$02, $00, $02, $20, $04, $40, $06, $60, $08, $82, $0A, $A4, $0C, $C4, $0C, $CC
-	dc.b	$00, $88, $00, $AA, $02, $C4, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $EE, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
-	dc.b	$00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00, $00
+Pal_NewMotaHistory:	binclude "scene/new mota story/palettes/New Mota story.bin"
 Pal_NewMotaHistory_End:
 
 Pal_SeanEnding:
