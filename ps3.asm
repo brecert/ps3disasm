@@ -8330,7 +8330,7 @@ loc_613C:
 	move.b	#$93, d1
 	move.w	d1, vdp_control_port
 	lea	(loc_3D8E6).l, a0
-	jsr	(loc_FC9A).l
+	jsr	(Win_LoadAttributes).l
 	clr.w	$7C(a6)
 	move.w	$42(a6), $7E(a6)
 	clr.b	$C(a6)
@@ -12918,7 +12918,7 @@ MenuItem_NoUse:
 	lea	(loc_1F9D9).l, a0	; display "can't" message
 	lea	$FFFF2320, a1
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	move.w	#$20, $2(a6)
 	move.w	#$31E, $3C(a6)
 	move.w	#8, $44(a6)
@@ -12990,7 +12990,7 @@ loc_8C90:
 	lea	$FFFF2420, a1
 	move.w	#$28, $2(a6)
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	move.w	#$41E, $3C(a6)
 	move.w	#8, $44(a6)
 	clr.b	$C(a6)
@@ -13024,7 +13024,7 @@ loc_8CEA:
 	lea	(loc_1F9CB).l, a0
 	lea	$FFFF2520, a1
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	move.w	#$20, $2(a6)
 	move.w	#$51E, $3C(a6)
 	move.w	#8, $44(a6)
@@ -13243,7 +13243,7 @@ MenuTech_CannotUse:
 	lea	$FFFF249E, a1
 	moveq	#0, d0
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	move.w	#$48, $2(a6)
 	clr.b	$C(a6)
 	bra.w	loc_FC18
@@ -13255,7 +13255,7 @@ MenuTech_CannotUseLoop:
 	lea	(loc_1F9CA).l, a0
 	lea	$FFFF249E, a1
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	move.w	#4, $2(a6)
 	clr.b	$C(a6)
 	move.w	loc_1F5CA, d0
@@ -14000,7 +14000,7 @@ loc_984A:
 	lea	(loc_1F9C4).l, a0
 	lea	$FFFF249E, a1
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	addq.w	#4, $2(a6)
 	clr.b	$C(a6)
 	bra.w	loc_FC18
@@ -14118,7 +14118,7 @@ loc_99A6:
 	lea	(loc_1F9CA).l, a0
 	lea	$FFFF249E, a1
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	move.w	#$C, $2(a6)
 	clr.b	$C(a6)
 	move.w	loc_1F5CA, d0
@@ -14205,7 +14205,7 @@ loc_9AAE:
 	lea	(loc_1F9CA).l, a0
 	lea	$FFFF249E, a1
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	move.b	#6, $C(a6)
 	bsr.w	loc_10A94
 	bra.w	loc_8834
@@ -14624,7 +14624,7 @@ loc_9F72:
 	lea	(InventoryNameData).l, a0
 	adda.w	$2(a3), a0
 	movem.l	a2/A1/D7, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d7/A1/A2
 	adda.w	#$100, a1
 	dbf	d7, loc_9F60
@@ -14670,7 +14670,7 @@ loc_9FEC:
 	lea	(loc_A0E4).l, a0
 	lea	$FFFF2736, a1
 	moveq	#0, d0
-	jmp	(loc_10038).l
+	jmp	(SetupWindow).l
 loc_A010:
 	tst.b	(event_flags+EventFlag_AncientWordRevealed).w
 	beq.s	loc_A032
@@ -14679,7 +14679,7 @@ loc_A010:
 	lea	(loc_A0EB).l, a0
 	lea	$FFFF20B6, a1
 	moveq	#0, d0
-	jmp	(loc_10038).l
+	jmp	(SetupWindow).l
 loc_A032:
 	rts
 loc_A034:
@@ -14722,7 +14722,7 @@ loc_A086:
 	adda.w	(a3,d2.w), a1
 	move.w	#$8000, d0
 	movem.l	a4/A2/D7/D2, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d2/D7/A2/A4
 	addq.w	#2, d2
 	cmpi.w	#$E, d2
@@ -14748,7 +14748,7 @@ loc_A0D6:
 	adda.w	(a0)+, a1
 loc_A0DE:
 	move.w	(a0)+, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 
 	if revision=0
 ; ===================================
@@ -14834,8 +14834,8 @@ loc_A1A2:
 	bclr	#7, (global_status_flags_4).w	; disable secondary objects update during script mode
 	rts
 loc_A1B4:
-	lea	loc_A44A(pc), a0
-	bsr.w	loc_FC9A
+	lea	Win_DialogueData(pc), a0
+	bsr.w	Win_LoadAttributes
 	clr.w	$7C(a6)
 	move.w	$42(a6), $7E(a6)
 	move.w	($FFFFD216).w, d0
@@ -14899,9 +14899,9 @@ loc_A236:
 	else
 	lea	($FFFF9D26).w, a1
 	endif
-	move.w	#$8000, d0
+	move.w	#$8000, d0	; art tile (priority bit set)
 	bclr	#5, $1(a6)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	addq.w	#4, (game_general_routine).w
 	move.w	#0, $34(a6)
 	move.w	#0, $36(a6)
@@ -15029,7 +15029,7 @@ loc_A368:
 	lea	($FFFF9B1E).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	if revision=0
 	lea	($FFFF9A80).l, a0
 	else
@@ -15117,7 +15117,7 @@ loc_A43C:
 	bra.w	loc_FC58
 
 ; =======================================
-loc_A44A:
+Win_DialogueData:
 	dc.w	7, $14, $34, 6, $18, 2
 ; =======================================
 
@@ -15372,7 +15372,7 @@ loc_A574:
 loc_A804:
 	lea	(Win_ShopSystemMsg).l, a0
 	addq.w	#4, (game_general_routine).w
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bra.w	loc_B8BA
 loc_A816:
 	if revision=0
@@ -15385,7 +15385,7 @@ loc_A816:
 loc_A822:
 	lea	(Win_YesNoBuySell).l, a0
 	addq.w	#4, (game_general_routine).w
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bra.w	loc_B8BA
 loc_A834:
 	if revision=0
@@ -15398,7 +15398,7 @@ loc_A834:
 loc_A840:
 	lea	(Win_Meseta).l, a0
 	addq.w	#4, (game_general_routine).w
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bra.w	loc_B8BA
 loc_A852:
 	if revision=0
@@ -15410,7 +15410,7 @@ loc_A852:
 	bra.w	loc_FD3E
 loc_A85E:
 	lea	(Win_YesNoBuySell).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	addq.w	#4, (game_general_routine).w
 	clr.w	$C(a6)
@@ -15506,10 +15506,10 @@ loc_A996:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_A9A2:
 	lea	(Win_ShopInventory).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFFA100).l, a0
 	else
@@ -15536,7 +15536,7 @@ loc_A9C6:
 	move.w	#$8000, d0
 	movem.l	d7/a1-a2, -(sp)
 	move.l	a3, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movea.l	(sp)+, a3
 	lea	$3A(a1), a0
 	moveq	#0, d0
@@ -15661,7 +15661,7 @@ loc_AB42:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_AB58:
 	lea	(char_stats).w, a0
 	lea	(char_inventory).w, a1
@@ -15732,7 +15732,7 @@ loc_ABF8:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_AC0E:
 	bsr.w	loc_A822
 	lea	(loc_3DF7D).l, a0
@@ -15742,7 +15742,7 @@ loc_AC0E:
 	lea	($FFFF9BC6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_AC24:
 	clr.w	$28(a6)
 loc_AC28:
@@ -15776,7 +15776,7 @@ loc_AC64:
 loc_AC70:
 	lea	(Win_ShopInventory).l, a0
 loc_AC76:
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFFA100).l, a0
 	else
@@ -15791,7 +15791,7 @@ loc_AC76:
 	rts
 loc_AC98:
 	lea	(Win_ShopPartyList).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9C80).l, a0
 	else
@@ -15819,7 +15819,7 @@ loc_ACC0:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_ACE4:
 	bsr.w	loc_A822
 	lea	(loc_3DEDF).l, a0
@@ -15829,7 +15829,7 @@ loc_ACE4:
 	lea	($FFFF9BC6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_ACFA:
 	move.w	#$18, (game_general_routine).w
 	rts
@@ -15837,7 +15837,7 @@ loc_AD02:
 	bra.w	loc_B6E8
 loc_AD06:
 	lea	(Win_ShopPartyList).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9C80).l, a0
 	else
@@ -15856,7 +15856,7 @@ loc_AD34:
 	adda.w	#$80, a2
 	movea.l	(a3)+, a1
 	movem.l	a3/A2/D7, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d7/A2/A3
 	dbf	d7, loc_AD32
 	rts
@@ -15968,12 +15968,12 @@ loc_AE6A:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_AE80:
 	move.w	#$F4, (game_general_routine).w
 loc_AE86:
 	lea	(Win_ShopCharInventory1).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9D10).l, a0
 	else
@@ -16036,7 +16036,7 @@ loc_AF04:
 	lea	(InventoryNameData).l, a0
 	adda.w	$2(a3), a0
 	movem.l	a2/A1/D7/D6, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d6/D7/A1/A2
 	adda.w	#$38, a1
 	subq.w	#1, d6
@@ -16046,7 +16046,7 @@ loc_AF2A:
 	bcs.s	loc_AF46
 	lea	(loc_3E004).l, a0
 	movem.l	a1/D6, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d6/A1
 	adda.w	#$38, a1
 	bra.s	loc_AF2A
@@ -16182,7 +16182,7 @@ loc_B092:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_B0B4:
 	moveq	#0, d0
 	move.b	$22(a6), d0
@@ -16272,7 +16272,7 @@ loc_B15A:
 	rts
 loc_B198:
 	lea	(Win_ShopCharInventory1).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9D10).l, a0
 	else
@@ -16290,7 +16290,7 @@ loc_B1C0:
 	rts
 loc_B1C8:
 	lea	(Win_ShopCharInventory2).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9E60).l, a0
 	else
@@ -16342,7 +16342,7 @@ loc_B23A:
 	lea	(InventoryNameData).l, a0
 	adda.w	$2(a3), a0
 	movem.l	a2/A1/D7/D6, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d6/D7/A1/A2
 	adda.w	#$38, a1
 	subq.w	#1, d6
@@ -16352,7 +16352,7 @@ loc_B260:
 	bcs.s	loc_B27C
 	lea	(loc_3E004).l, a0
 	movem.l	a1/D6, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d6/A1
 	adda.w	#$38, a1
 	bra.s	loc_B260
@@ -16490,7 +16490,7 @@ loc_B3EC:
 	bra.w	loc_FC58
 loc_B40A:
 	lea	(Win_ShopCharInventory3).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9FB0).l, a0
 	else
@@ -16537,7 +16537,7 @@ loc_B472:
 	lea	(InventoryNameData).l, a0
 	adda.w	$2(a3), a0
 	movem.l	a2/A1/D7/D6, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d6/D7/A1/A2
 	adda.w	#$38, a1
 	subq.w	#1, d6
@@ -16547,7 +16547,7 @@ loc_B498:
 	bcs.s	loc_B4B4
 	lea	(loc_3E004).l, a0
 	movem.l	a1/D6, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d6/A1
 	adda.w	#$38, a1
 	bra.s	loc_B498
@@ -16676,7 +16676,7 @@ loc_B602:
 	bra.w	loc_FC58
 loc_B620:
 	lea	(Win_ShopCharInventory3).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9FB0).l, a0
 	else
@@ -16700,7 +16700,7 @@ loc_B650:
 	move.w	#$278, (game_general_routine).w
 loc_B656:
 	lea	(Win_ShopCharInventory2).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9E60).l, a0
 	else
@@ -16735,7 +16735,7 @@ loc_B696:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_B6AC:
 	tst.b	(joypad_held_1).w
 	bne.s	loc_B6B4
@@ -16775,7 +16775,7 @@ loc_B6FE:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_B714:
 	move.b	(joypad_pressed_1).w, d0
 	andi.b	#Button_B_Mask|Button_C_Mask|Button_A_Mask, d0
@@ -16796,7 +16796,7 @@ loc_B732:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_B748:
 	move.w	#$40, (game_general_routine).w
 	rts
@@ -16809,7 +16809,7 @@ loc_B750:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_B766:
 	moveq	#0, d0
 	move.b	$22(a6), d0
@@ -16841,7 +16841,7 @@ loc_B78E:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_B7BC:
 	move.b	(joypad_pressed_1).w, d0
 	andi.b	#Button_B_Mask|Button_C_Mask|Button_A_Mask, d0
@@ -17044,7 +17044,7 @@ loc_B97C:
 	dbf	d0, loc_B97C
 loc_B992:
 	lea	(Win_ShopSystemMsg).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9A80).l, a0
 	else
@@ -17063,9 +17063,9 @@ loc_B992:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	lea	(Win_YesNoBuySell).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9BB8).l, a0
 	else
@@ -17079,9 +17079,9 @@ loc_B992:
 	lea	($FFFF9BC6).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	lea	(Win_Meseta).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9C00).l, a0
 	else
@@ -17095,7 +17095,7 @@ loc_B992:
 	lea	($FFFF9C22).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	if revision=0
 	lea	($FFFF9C4A).l, a0
 	else
@@ -17277,7 +17277,7 @@ loc_BBBA:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_BBD8:
 	move.l	(money_owned).w, d0
 	subi.l	#$A, d0
@@ -17296,7 +17296,7 @@ loc_BBF2:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_BC08:
 	bsr.w	loc_C33C
 	lea	(loc_3E255).l, a0
@@ -17306,7 +17306,7 @@ loc_BC08:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_BC1E:
 	lea	(char_stats).w, a0
 	moveq	#0, d0
@@ -17332,7 +17332,7 @@ loc_BC4C:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_BC62:
 	bsr.w	loc_C33C
 	lea	(loc_3E29F).l, a0
@@ -17342,10 +17342,10 @@ loc_BC62:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_BC78:
 	lea	(Win_ShopInventory).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFFA100).l, a0
 	else
@@ -17376,7 +17376,7 @@ loc_BCB4:
 	adda.w	(a3), a0
 	move.w	#$8000, d0
 	movem.l	d5-d7/a1-a4, -(sp)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d5-d7/a1-a4
 	addq.b	#1, d6
 	adda.w	#$48, a1
@@ -17508,7 +17508,7 @@ loc_BE3A:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 Store_Church:
 	bsr.w	WaitVBlankAndGamePause
 	move.w	(game_general_routine).w, d0
@@ -17561,7 +17561,7 @@ loc_BEEA:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_BF08:
 	lea	(char_stats).w, a0
 	moveq	#0, d0
@@ -17586,7 +17586,7 @@ loc_BF34:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_BF4A:
 	bsr.w	loc_A804
 	lea	(loc_3E1E2).l, a0
@@ -17596,7 +17596,7 @@ loc_BF4A:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_BF60:
 	move.l	(money_owned).w, d0
 	subi.l	#$32, d0
@@ -17670,7 +17670,7 @@ loc_C03E:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C05C:
 	move.b	(joypad_pressed_1).w, d0
 	btst	#Button_B, d0
@@ -17764,7 +17764,7 @@ loc_C14E:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C164:
 	bsr.w	loc_A804
 	lea	(loc_3E13D).l, a0
@@ -17774,7 +17774,7 @@ loc_C164:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C17A:
 	moveq	#0, d0
 	move.b	$22(a6), d0
@@ -17807,7 +17807,7 @@ loc_C1BA:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C1D0:
 	bsr.w	loc_A804
 	lea	(loc_3E15C).l, a0
@@ -17817,7 +17817,7 @@ loc_C1D0:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C1E6:
 	lea	(char_stats).w, a0
 	moveq	#0, d0
@@ -17836,7 +17836,7 @@ loc_C200:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 Store_Inn:
 	bsr.w	WaitVBlankAndGamePause
 	move.w	(game_general_routine).w, d0
@@ -17932,7 +17932,7 @@ loc_C33C:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C366:
 	move.l	(money_owned).w, d0
 	moveq	#0, d1
@@ -17960,7 +17960,7 @@ loc_C396:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C3AA:
 	cbsr	loc_C33C
 	lea	(loc_3E0F5).l, a0
@@ -17970,7 +17970,7 @@ loc_C3AA:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C3BE:
 	moveq	#0, d0
 	move.b	$22(a6), d0
@@ -18015,7 +18015,7 @@ loc_C41C:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C432:
 	bsr.w	loc_C33C
 	lea	(loc_3E2C5).l, a0
@@ -18025,10 +18025,10 @@ loc_C432:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C448:
 	lea	(Win_SaveGame).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9C80).l, a0
 	else
@@ -18037,7 +18037,7 @@ loc_C448:
 	bsr.w	loc_FCE2
 	jsr	(loc_11B88).l
 	lea	(Win_SaveGame).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	moveq	#0, d0
 	jsr	(loc_14984).l
@@ -18056,7 +18056,7 @@ loc_C490:
 	lea	($FFFF9C9E).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	moveq	#1, d0
 	jsr	(loc_14984).l
 	bcs.s	loc_C4B8
@@ -18075,7 +18075,7 @@ loc_C4BE:
 	lea	($FFFF9CD6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C4CE:
 	clr.w	$C(a6)
 	addq.w	#4, (game_general_routine).w
@@ -18118,7 +18118,7 @@ loc_C51E:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C542:
 	cmpi.w	#8, $1C(a6)
 	bne.s	loc_C552
@@ -18152,7 +18152,7 @@ loc_C58E:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C5A2:
 	move.b	(joypad_pressed_1).w, d7
 	andi.b	#Button_C_Mask|Button_A_Mask, d7
@@ -18203,7 +18203,7 @@ loc_C62C:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C64A:
 	moveq	#0, d0
 	move.b	$22(a6), d0
@@ -18236,7 +18236,7 @@ loc_C68A:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C6A0:
 	move.b	(joypad_pressed_1).w, d0
 	andi.b	#Button_B_Mask|Button_C_Mask|Button_A_Mask, d0
@@ -18276,7 +18276,7 @@ loc_C6F6:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_C714:
 	lea	$FFFF21B2, a0
 	move.l	(money_owned).w, d0
@@ -18476,7 +18476,7 @@ loc_C938:
 	move.l	#$801F801F, -$4(a1)
 	move.l	d6, $7C(a1)
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d6/a0-a1
 	lea	$10(a0), a0
 	lea	$100(a1), a1
@@ -18844,7 +18844,7 @@ MainGame_Battle:
 	move.w	(scene_id).w, $18(a6)
 	bclr	#1, ($FFFFD00A).w	; disable auto-battle
 	lea	(loc_3D8E6).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	clr.w	$7C(a6)
 	move.w	$42(a6), $7E(a6)
 	move.b	(sound_queue).w, (sound_queue_saved).w
@@ -19165,7 +19165,7 @@ Battle_WriteCharStats:
 	move.w	#$8000, d0
 	move.w	#4, $44(a6)
 	move.w	#$80, $42(a6)
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, d0/a4
 	lea	$FFFF2B0E, a0
 	adda.w	d0, a0
@@ -20467,7 +20467,7 @@ loc_DDDA:
 	lea	($FFFF9D70).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 loc_DE76:
 	tst.b	$65(a6)
 	beq.s	loc_DE8E
@@ -20478,7 +20478,7 @@ loc_DE76:
 	lea	($FFFF9CE8).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 loc_DE8E:
 	move.w	#$C, $44(a6)
 	tst.b	$63(a6)
@@ -20490,7 +20490,7 @@ loc_DE8E:
 	lea	($FFFF9D86).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 loc_DEAC:
 	tst.b	$67(a6)
 	beq.s	loc_DEC4
@@ -20501,7 +20501,7 @@ loc_DEAC:
 	lea	($FFFF9CFE).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 loc_DEC4:
 	addq.w	#4, (game_general_routine).w
 	move.w	#0, $34(a6)
@@ -20509,7 +20509,7 @@ loc_DEC4:
 	move.w	#$20, $38(a6)
 	move.w	#$22, $3A(a6)
 	lea	(loc_3D8E6).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	move.w	$42(a6), d0
 	move.b	d0, $D(a6)
@@ -23087,11 +23087,11 @@ loc_FC8C:
 	cadd.w	#$80, d6
 	dbf	d7, loc_FC66
 	rts
-loc_FC9A:
-	move.w	(a0)+, $8(a6)
-	move.w	(a0)+, $A(a6)
+Win_LoadAttributes:
+	move.w	(a0)+, $8(a6)	; x pos
+	move.w	(a0)+, $A(a6)	; y pos
 	move.w	(a0)+, d0
-	move.w	d0, $42(a6)
+	move.w	d0, $42(a6)		; width
 	move.w	d0, $30(a6)
 	move.w	#$80, d1
 	move.w	d1, $7E(a6)
@@ -23101,9 +23101,9 @@ loc_FC9A:
 	move.w	d0, $3A(a6)
 	subq.w	#2, d0
 	move.w	d0, $38(a6)
-	move.w	(a0)+, $46(a6)
+	move.w	(a0)+, $46(a6)	; height
 	move.w	(a0)+, d0
-	move.w	d0, $44(a6)
+	move.w	d0, $44(a6)		; max characters per line
 	move.w	(a0), $48(a6)
 	clr.w	$32(a6)
 	clr.w	$34(a6)
@@ -23342,7 +23342,7 @@ loc_FF0A:
 	bsr.w	loc_FF68
 	movem.l	(sp)+, a0-a1
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movea.l	$78(a6), a0
 	lea	(LoadDataInVRAMWithOffset).l, a2
 	bra.w	loc_FC4E
@@ -23362,13 +23362,13 @@ loc_FF4E:
 	bsr.w	loc_FF68
 	movem.l	(sp)+, a0-a1
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_FF5E:
 	movem.l	a0-a1, -(sp)
 	lea	loc_1021A(pc), a0
 	bra.s	loc_FF4E
 loc_FF68:
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	move.w	$42(a6), d0
 	move.b	d0, $D(a6)
@@ -23464,17 +23464,23 @@ loc_10036:
 	rts
 
 
-loc_10038:
-	move.w	$42(a6), d2
-	lea	loc_10226(pc), a3
+; -----------------------------------------------------------------
+; d0 = art tile
+; a0 = script
+; a1 = destination buffer
+; a6 = window variables memory
+; -----------------------------------------------------------------
+SetupWindow:
+	move.w	$42(a6), d2	; get window width
+	lea	WindowBlankLineTiles(pc), a3
 loc_10040:
 	lea	(a1), a2
 	move.w	$44(a6), d4
-loc_10046:
+WinSetup_Loop:
 	moveq	#0, d3
 loc_10048:
 	moveq	#0, d1
-	move.b	(a0)+, d1
+	move.b	(a0)+, d1	; get character
 	tst.w	d4
 	bpl.s	loc_1005C
 	if revision=0
@@ -23502,7 +23508,8 @@ loc_10072:
 	else
 	cmpi.b	#$E0, d1
 	endif
-	bcs.w	loc_101EE
+	bcs.w	Win_NormalCharacter
+
 	ext.w	d1
 	neg.w	d1
 	jmp	CtrlCodeJmpTbl-4(pc,d1.w)
@@ -23567,7 +23574,7 @@ loc_100F6:
 	move.b	d6, d1
 	andi.w	#$F, d1
 	dbf	d7, loc_100F6
-	bra.w	loc_10046
+	bra.w	WinSetup_Loop
 loc_10112:
 	tst.w	d4
 	bpl.s	loc_10122
@@ -23680,19 +23687,21 @@ loc_101D6:
 	bset	#7, $1(a6)
 	move.b	(a0)+, d1
 	addq.w	#6, d3
-	bra.s	loc_101EE
+	bra.s	Win_NormalCharacter
 loc_101E2:
 	bset	#6, $1(a6)
 	move.b	(a0)+, d1
 	addi.w	#$C, d3
-loc_101EE:
-	move.w	(a3,d3.w), d3
+
+
+Win_NormalCharacter:
+	move.w	(a3,d3.w), d3	; get blank tile
 	or.w	d0, d3
 	or.w	d0, d1
-	move.w	d1, (a2,d2.w)
-	move.w	d3, (a2)+
+	move.w	d1, (a2,d2.w)	; put character in the next line
+	move.w	d3, (a2)+		; put blank tile above character
 	subq.w	#1, d4
-	bra.w	loc_10046
+	bra.w	WinSetup_Loop
 
 ; =======================================
 loc_10202:
@@ -23721,7 +23730,7 @@ loc_1021A:
 ; =======================================
 
 ; =======================================
-loc_10226:
+WindowBlankLineTiles:
 	dc.w	$1F
 	dc.w	$0819
 	dc.w	$1A
@@ -24472,7 +24481,7 @@ loc_10A88:
 	bra.w	loc_FC30
 loc_10A94:
 	lea	(loc_1F566).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	lea	(loc_1F592).l, a0
 	lea	(loc_1F5CE).l, a1
@@ -24486,7 +24495,7 @@ loc_10A94:
 	lea	($FFFF9A82).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	tst.w	(party_members_num).w	; do we have only 1 character?
 	beq.s	+				; if so, don't display "switch" option
 	lea	(loc_1F6EB).l, a0
@@ -24496,7 +24505,7 @@ loc_10A94:
 	lea	($FFFF9B22).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 +
 	movem.l	(sp)+, a0-a1
 	lea	(char_stats).w, a4
@@ -24541,7 +24550,7 @@ loc_10B22:
 	bsr.w	loc_10C42
 	clr.w	(game_general_routine).w
 	lea	(loc_1F572).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	rts
 loc_10B66:
@@ -24609,7 +24618,7 @@ loc_10BEC:
 	lea	$27(a4), a0
 	lea	$28(a2), a1
 	move.w	#$8000, d0
-	bsr.w	loc_10038
+	bsr.w	SetupWindow
 	movem.l	(sp)+, a2/a4
 	movem.l	a2/a4, -(sp)
 	lea	$46(a2), a0
@@ -25443,7 +25452,7 @@ loc_114EA:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_11502:
 	moveq	#0, d0
 	move.w	d0, $60(a6)
@@ -25470,7 +25479,7 @@ loc_1152A:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_11554:
 	move.w	$60(a6), d0
 	jmp	loc_1155C(pc,d0.w)
@@ -25520,7 +25529,7 @@ loc_115CA:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_115EA:
 	addq.w	#1, $1A(a6)
 	move.w	$60(a6), $5E(a6)
@@ -25555,7 +25564,7 @@ loc_11636:
 loc_1163C:
 	addq.w	#4, (game_general_routine).w
 	lea	(Win_SystemOption).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	lea	(loc_3E402).l, a0
 	if revision=0
@@ -25564,7 +25573,7 @@ loc_1163C:
 	lea	($FFFFA126).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_11660:
 	moveq	#8, d5
 	move.b	(joypad_pressed_1).w, d7
@@ -25629,7 +25638,7 @@ loc_116F4:
 
 loc_116FA:
 	lea	(Win_SystemOption).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	addq.w	#4, (game_general_routine).w
 	move.w	$42(a6), d0
@@ -25653,12 +25662,12 @@ loc_11736:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_1174E:
 	bsr.w	loc_11B88
 	addq.w	#4, (game_general_routine).w
 	lea	(Win_FileSelect).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	lea	(loc_3E443).l, a0
 	if revision=0
@@ -25667,7 +25676,7 @@ loc_1174E:
 	lea	($FFFF9C9E).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_11776:
 	lea	$FFFF2518, a2
 	bra.s	loc_11784
@@ -25728,7 +25737,7 @@ loc_11818:
 loc_11820:
 	lea	(Win_FileSelect).l, a0
 loc_11826:
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	addq.w	#4, (game_general_routine).w
 	move.w	$42(a6), d0
@@ -25752,7 +25761,7 @@ loc_11850:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_11874:
 	move.b	(joypad_pressed_1).w, d7
 	moveq	#0, d0
@@ -25827,7 +25836,7 @@ loc_11926:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_11960:
 	move.w	#$6C, (game_general_routine).w
 	rts
@@ -25846,7 +25855,7 @@ loc_1197C:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_11994:
 	tst.b	$22(a6)
 	beq.s	loc_119A2
@@ -25872,7 +25881,7 @@ loc_119C6:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_119DE:
 	cmpi.w	#8, $1C(a6)
 	bcs.s	loc_119EE
@@ -25894,11 +25903,11 @@ loc_11A04:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_11A1C:
 	addq.w	#4, (game_general_routine).w
 	lea	(Win_MessageSpeed).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	bsr.w	loc_B8BA
 	lea	(loc_3E54A).l, a0
 	if revision=0
@@ -25907,7 +25916,7 @@ loc_11A1C:
 	lea	($FFFF9E9E).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_11A40:
 	moveq	#0, d0
 	move.b	(battle_msg_timer_saved).w, d1
@@ -25969,7 +25978,7 @@ loc_11AE0:
 	jsr	(loc_FBDE).l
 	jsr	(loc_FC30).l
 	lea	(Win_ShopSystemMsg).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9A80).l, a0
 	else
@@ -25977,7 +25986,7 @@ loc_11AE0:
 	endif
 	bsr.w	loc_FCE2
 	lea	(Win_YesNoBuySell).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9BB8).l, a0
 	else
@@ -25985,7 +25994,7 @@ loc_11AE0:
 	endif
 	bsr.w	loc_FCE2
 	lea	(Win_SystemOption).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFFA100).l, a0
 	else
@@ -25993,7 +26002,7 @@ loc_11AE0:
 	endif
 	bsr.w	loc_FCE2
 	lea	(Win_FileSelect).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9C80).l, a0
 	else
@@ -26001,7 +26010,7 @@ loc_11AE0:
 	endif
 	bsr.w	loc_FCE2
 	lea	(Win_MessageSpeed).l, a0
-	bsr.w	loc_FC9A
+	bsr.w	Win_LoadAttributes
 	if revision=0
 	lea	($FFFF9E60).l, a0
 	else
@@ -33648,7 +33657,7 @@ loc_17A78:
 loc_17B28:
 	lea	(loc_3DB70).l, a0
 	addq.w	#4, (game_general_routine).w
-	jsr	(loc_FC9A).l
+	jsr	(Win_LoadAttributes).l
 	jsr	(loc_B8BA).l
 	lea	(loc_17EA6).l, a0
 	move.w	(generation_index).w, d0
@@ -33661,7 +33670,7 @@ loc_17B28:
 	lea	($FFFF9AB6).w, a1
 	endif
 	move.w	#$8000, d0
-	bra.w	loc_10038
+	bra.w	SetupWindow
 loc_17B5A:
 	jmp	(loc_A816).l
 loc_17B60:
@@ -33785,7 +33794,7 @@ loc_17CE2:
 loc_17D16:
 	jsr	(loc_FBDE).l
 	lea	(loc_3DB70).l, a0
-	jsr	(loc_FC9A).l
+	jsr	(Win_LoadAttributes).l
 	if revision=0
 	lea	($FFFF9A80).l, a0
 	else
@@ -33793,7 +33802,7 @@ loc_17D16:
 	endif
 	jsr	(loc_FCE2).l
 	lea	(loc_3DB7C).l, a0
-	jsr	(loc_FC9A).l
+	jsr	(Win_LoadAttributes).l
 	if revision=0
 	lea	($FFFF9BB8).l, a0
 	else
@@ -75620,7 +75629,7 @@ loc_3DAC8:
 ;	word 2 - y position
 ;	word 3 - width
 ;	word 4 - height (use even numbers)
-;	word 5 - ???
+;	word 5 - characters per line
 ;	word 6 - ???
 ; -------------------
 ; Notes:
