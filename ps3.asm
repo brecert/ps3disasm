@@ -14901,7 +14901,7 @@ loc_A236:
 	endif
 	move.w	#$8000, d0	; art tile (priority bit set)
 	bclr	#5, $1(a6)
-	bsr.w	SetupWindow
+	jsr	(SetupWindow_VWF).l
 	addq.w	#4, (game_general_routine).w
 	move.w	#0, $34(a6)
 	move.w	#0, $36(a6)
@@ -89140,7 +89140,7 @@ loc_65C54:
 	else
 	align $1000
 
-Art_Font:	binclude "general/font/Font uncompressed.bin"
+Art_Font:	binclude "general/font/Font uncompressed VWF.bin"
 Art_Font_End:
 
 
@@ -113102,6 +113102,353 @@ loc_BFE34:
 	dc.b	$FF, $00, $00 ;0x0 (0x000BFFFD-0x000C0000, Entry count: 0x00000003) [Unknown data]
 
 	even
+
+; -----------------------------------------------------------------
+; V A R I A B L E    W I D T H    F O N T
+; -----------------------------------------------------------------
+; d0 = art tile
+; a0 = script
+; a1 = destination buffer
+; a6 = window variables memory
+; -----------------------------------------------------------------
+SetupWindow_VWF:
+	lea	(VWF_tile_buffer).l, a3
+	moveq	#0, d2
+	moveq	#7, d7
+-
+	move.l	d2, (a3)+
+	dbf	d7, -
+	clr.l	(VWF_mem_block).w
+	move.w	$42(a6), d2	; get window width
+	lea	(WindowBlankLineTiles).l, a3
+loc_10040_VWF:
+	lea	(a1), a2
+	move.w	$44(a6), d4
+WinSetup_Loop_VWF:
+	moveq	#0, d3
+loc_10048_VWF:
+	moveq	#0, d1
+	move.b	(a0)+, d1	; get character
+	tst.w	d4
+	bpl.s	loc_1005C_VWF
+	rts
+
+loc_1005C_VWF:
+	bclr	#7, $1(a6)
+	beq.s	loc_10068_VWF
+	addq.w	#2, d3
+	bra.s	loc_10072_VWF
+loc_10068_VWF:
+	bclr	#6, $1(a6)
+	beq.s	loc_10072_VWF
+	addq.w	#4, d3
+loc_10072_VWF:
+	cmpi.b	#$E0, d1
+	bcs.w	Win_NormalCharacter_VWF
+
+	ext.w	d1
+	neg.w	d1
+	jmp	CtrlCodeJmpTbl_VWF-4(pc,d1.w)
+
+; ===============================
+CtrlCodeJmpTbl_VWF:
+	bra.w	loc_10158_VWF	; $FC
+	bra.w	loc_10194_VWF	; $F8
+	bra.w	loc_101D6_VWF	; $F4
+	bra.w	loc_101E2_VWF	; $F0
+	bra.w	loc_10112_VWF	; $EC
+	bra.w	loc_1009E_VWF	; $E8
+	bra.w	loc_100BC_VWF	; $E4
+; ===============================
+
+
+loc_1009E_VWF:		; $E0
+	moveq	#0, d1
+	move.b	(a0)+, d1
+	movem.l	a0, -(sp)
+	lea	(char_name_saved).w, a0
+	adda.w	d1, a0
+	movea.l	(a0), a0
+	bset	#4, $1(a6)
+	bsr.s	loc_10048_VWF
+	movem.l	(sp)+, a0
+	bra.s	loc_10048_VWF
+loc_100BC_VWF:
+	moveq	#0, d1
+	move.b	(a0)+, d1
+	lea	(misc_name_saved_2).w, a4
+	adda.w	d1, a4
+	move.w	d0, d6
+	move.l	(a4), d0
+	bne.s	loc_100D4_VWF
+	move.w	d6, d0
+	moveq	#0, d1
+	moveq	#0, d7
+	bra.s	loc_100F0_VWF
+loc_100D4_VWF:
+	movem.l	d2-d6/a0, -(sp)
+	jsr	(loc_FA16).l
+	movem.l	(sp)+, d2-d6/a0
+	exg	d0, d6
+	moveq	#8, d7
+loc_100E4_VWF:
+	subq.w	#1, d7
+	rol.l	#4, d6
+	move.b	d6, d1
+	andi.w	#$F, d1
+	beq.s	loc_100E4_VWF
+loc_100F0_VWF:
+	move.w	(a3,d3.w), d3
+	or.w	d0, d3
+loc_100F6_VWF:
+	addq.w	#1, d1
+	or.w	d0, d1
+	move.w	d1, (a2,d2.w)
+	move.w	d3, (a2)+
+	subq.w	#1, d4
+	rol.l	#4, d6
+	move.b	d6, d1
+	andi.w	#$F, d1
+	dbf	d7, loc_100F6_VWF
+	bra.w	WinSetup_Loop_VWF
+loc_10112_VWF:
+	tst.w	d4
+	bpl.s	loc_10122_VWF
+	rts
+
+loc_10122_VWF:
+	btst	#4, $1(a6)
+	bne.s	loc_10156_VWF
+	bset	#5, $1(a6)
+	move.l	a0, $3E(a6)
+	tst.w	d4
+	beq.s	loc_10156_VWF
+	moveq	#$1F, d1
+	or.w	d0, d1
+	move.w	(a3,d3.w), d3
+	or.w	d0, d3
+	move.w	d1, (a2,d2.w)
+	move.w	d3, (a2)+
+	subq.w	#1, d4
+	beq.s	loc_10156_VWF
+loc_1014C_VWF:
+	move.w	d1, (a2,d2.w)
+	move.w	d1, (a2)+
+	subq.w	#1, d4
+	bne.s	loc_1014C_VWF
+loc_10156_VWF:
+	rts
+loc_10158_VWF:
+	tst.w	d4
+	bpl.s	loc_10168_VWF
+	rts
+
+loc_10168_VWF:
+	bclr	#4, $1(a6)
+	bne.s	loc_10192_VWF
+	moveq	#$1F, d1
+	or.w	d0, d1
+	tst.w	d4
+	ble.s	loc_10192_VWF
+	move.w	(a3,d3.w), d3
+	or.w	d0, d3
+	move.w	d1, (a2,d2.w)
+	move.w	d3, (a2)+
+	subq.w	#1, d4
+	ble.s	loc_10192_VWF
+loc_10188_VWF:
+	move.w	d1, (a2,d2.w)
+	move.w	d1, (a2)+
+	subq.w	#1, d4
+	bgt.b	loc_10188_VWF
+loc_10192_VWF:
+	rts
+loc_10194_VWF:
+	tst.w	d4
+	bpl.s	loc_101A4_VWF
+	rts
+
+loc_101A4_VWF:
+	btst	#4, $1(a6)
+	bne.s	loc_10192_VWF
+	moveq	#$1F, d1
+	or.w	d0, d1
+	tst.w	d4
+	ble.s	loc_101CE_VWF
+	move.w	(a3,d3.w), d3
+	or.w	d0, d3
+	move.w	d1, (a2,d2.w)
+	move.w	d3, (a2)+
+	subq.w	#1, d4
+	ble.s	loc_101CE_VWF
+loc_101C4_VWF:
+	move.w	d1, (a2,d2.w)
+	move.w	d1, (a2)+
+	subq.w	#1, d4
+	bgt.b	loc_101C4_VWF
+loc_101CE_VWF:
+	adda.w	d2, a1
+	adda.w	d2, a1
+	bra.w	loc_10040_VWF
+loc_101D6_VWF:
+	bset	#7, $1(a6)
+	move.b	(a0)+, d1
+	addq.w	#6, d3
+	bra.s	Win_NormalCharacter_VWF
+loc_101E2_VWF:
+	bset	#6, $1(a6)
+	move.b	(a0)+, d1
+	addi.w	#$C, d3
+
+Win_NormalCharacter_VWF:
+	move.l	d0, -(sp)
+	move.b	d1, (VWF_saved_char).w
+	lea	VWFWidthTable(pc), a4
+	move.b	(a4,d1.w), (VWF_char_width).w
+	moveq	#0, d0
+	lea	(Art_Font).l, a4
+	lea	(VWF_tile_buffer).l, a5
+	lsl.w	#5, d1
+	adda.w	d1, a4
+	moveq	#7, d7
+-
+	move.l	(a4)+, d5	; get pattern
+	move.l	(a5), d6	; get previous tile pattern
+	move.b	(VWF_remaining_size).w, d0
+	bne.s	+
+	moveq	#0, d6
+	bra.s	++
++
+	lsr.l	d0, d6	; zero out the new pixels
+	lsr.l	d0, d6
+	lsr.l	d0, d6
+	lsr.l	d0, d6
+	lsl.l	d0, d6	; put previous pixels back in their original position.
+	lsl.l	d0, d6
+	lsl.l	d0, d6
+	lsl.l	d0, d6
++
+	move.b	(VWF_tile_size).w, d0
+	beq.s	+
+	lsr.l	d0, d5
+	lsr.l	d0, d5
+	lsr.l	d0, d5
+	lsr.l	d0, d5
++
+	or.l	d6, d5
+	move.l	d5, (a5)+
+	dbf	d7, -
+	move.l	(sp)+, d0
+	
+	tst.b	(VWF_tile_size).w
+	beq.s	+
+	; if we've already started a tile, go back in the mapping buffer so we still reference the same tile
+	subq.w	#2, a2
+	addq.b	#1, d4
++
+	move.l	d3, -(sp)
+	bsr.w	VWF_WriteTile
+	bsr.w	VWF_WriteRAM
+	move.l	(sp)+, d3
+	move.b	(VWF_tile_size).w, (VWF_saved_tile_size).w
+	move.b	(VWF_remaining_size).w, (VWF_saved_remaining_size).w
+	move.b	(VWF_char_width).w, d5
+	add.b	d5, (VWF_tile_size).w
+	move.b	(VWF_tile_size).w, d5
+	cmpi.b	#8, d5
+	bcc.s	VWF_Rollover
+	; tile size < 8...find remaining size for the next character
+	subq.b	#8, d5
+	neg.b	d5
+	move.b	d5, (VWF_remaining_size).w
+	bra.s	VWF_NextCharacter
+
+VWF_Rollover:
+	addq.b	#1, (VWF_tile_offset).w
+	andi.b	#$3F, (VWF_tile_offset).w
+	subq.b	#8, d5
+	move.b	d5, (VWF_tile_size).w
+	beq.s	+
+	subq.b	#8, d5
+	neg.b	d5
++
+	move.b	d5, (VWF_remaining_size).w
+	beq.s	VWF_NextCharacter
+	
+	move.l	d0, -(sp)
+	moveq	#0, d1
+	move.b	(VWF_saved_char).w, d1
+	moveq	#0, d0
+	lea	(Art_Font).l, a4
+	lea	(VWF_tile_buffer).l, a5
+	lsl.w	#5, d1
+	adda.w	d1, a4
+	moveq	#7, d7
+-
+	move.l	(a4)+, d5	; get pattern
+	move.l	#$22222222, d6	; background color
+	move.b	(VWF_saved_tile_size).w, d0
+	lsr.l	d0, d6
+	lsr.l	d0, d6
+	lsr.l	d0, d6
+	lsr.l	d0, d6
+	move.b	(VWF_saved_remaining_size).w, d0
+	lsl.l	d0, d5
+	lsl.l	d0, d5
+	lsl.l	d0, d5
+	lsl.l	d0, d5
+	or.l	d6, d5
+	move.l	d5, (a5)+
+	dbf	d7, -
+	move.l	(sp)+, d0
+	
+	bsr.s	VWF_WriteTile
+	bsr.s	VWF_WriteRAM
+	
+VWF_NextCharacter:
+	bra.w	WinSetup_Loop_VWF
+
+VWF_WriteTile:
+	lea	(VWF_tile_buffer).l, a4
+	lea	(vdp_data_port).l, a5
+	move.w	#$1800, d1
+	moveq	#0, d5
+	move.b	(VWF_tile_offset).w, d5
+	lsl.w	#5, d5
+	add.w	d5, d1
+	lsl.l	#2, d1
+	lsr.w	#2, d1
+	ori.w	#$4000, d1
+	swap	d1
+	move.l	d1, $4(a5)
+	move.l	(a4)+, (a5)
+	move.l	(a4)+, (a5)
+	move.l	(a4)+, (a5)
+	move.l	(a4)+, (a5)
+	move.l	(a4)+, (a5)
+	move.l	(a4)+, (a5)
+	move.l	(a4)+, (a5)
+	move.l	(a4)+, (a5)
+	rts
+
+VWF_WriteRAM:
+	move.w	(a3,d3.w), d3	; get blank tile
+	or.w	d0, d3
+	move.w	#$C0, d1
+	moveq	#0, d5
+	move.b	(VWF_tile_offset).w, d5
+	add.w	d5, d1
+	or.w	d0, d1
+	move.w	d1, (a2,d2.w)	; put character in the next line
+	move.w	d3, (a2)+		; put blank tile above character
+	subq.w	#1, d4
+	rts
+
+VWFWidthTable:	binclude "general/font/VWF width table.bin"
+	even
+; -----------------------------------------------------------------
+; V A R I A B L E    W I D T H    F O N T    E N D
+; -----------------------------------------------------------------	
 
 EndOfRom:
 	END

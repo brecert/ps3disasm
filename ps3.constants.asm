@@ -1183,6 +1183,8 @@ map_layout_fg = ramaddr($FFFF2000)	; layout for plane A
 map_layout_bg = ramaddr($FFFF3200)	; layout for plane B
 chunk_table = ramaddr($FFFF4400)	; 34 bytes per chunk; the first word holds collision data; the next 16 words are plane mappings definitions
 
+VWF_tile_buffer = ramaddr($FFFF65E0)
+
 nem_code_table = ramaddr($FFFFAA80)
 
 treasure_chest_flags = ramaddr($FFFFBCA0)		; The offset of the items is the same as the index of the TreasureChestData table
@@ -1321,6 +1323,15 @@ misc_name_saved_3 =  ramaddr($FFFFD4A4)
 misc_name_saved_4 =  ramaddr($FFFFD4A8)
 misc_name_saved_5 =  ramaddr($FFFFD4AC)
 	endif
+
+VWF_mem_block = ramaddr($FFFFD680)
+VWF_char_width = ramaddr($FFFFD680)	; byte
+VWF_tile_offset = ramaddr($FFFFD681)	; byte
+VWF_tile_size = ramaddr($FFFFD682)	; byte
+VWF_remaining_size = ramaddr($FFFFD683)	; byte
+VWF_saved_char = ramaddr($FFFFD684)	; byte
+VWF_saved_tile_size = ramaddr($FFFFD685)	; byte
+VWF_saved_remaining_size = ramaddr($FFFFD686)	; byte
 
 sprite_table_input = ramaddr($FFFFD800)
 
