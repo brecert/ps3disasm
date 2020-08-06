@@ -113112,6 +113112,7 @@ loc_BFE34:
 ; a6 = window variables memory
 ; -----------------------------------------------------------------
 SetupWindow_VWF:
+	movem.l	a4-a5, -(sp)
 	lea	(VWF_tile_buffer).l, a3
 	moveq	#0, d2
 	moveq	#7, d7
@@ -113131,6 +113132,7 @@ loc_10048_VWF:
 	move.b	(a0)+, d1	; get character
 	tst.w	d4
 	bpl.s	loc_1005C_VWF
+	movem.l	(sp)+, a4-a5
 	rts
 
 loc_1005C_VWF:
@@ -113214,6 +113216,7 @@ loc_100F6_VWF:
 loc_10112_VWF:
 	tst.w	d4
 	bpl.s	loc_10122_VWF
+	movem.l	(sp)+, a4-a5
 	rts
 
 loc_10122_VWF:
@@ -113237,10 +113240,12 @@ loc_1014C_VWF:
 	subq.w	#1, d4
 	bne.s	loc_1014C_VWF
 loc_10156_VWF:
+	movem.l	(sp)+, a4-a5
 	rts
 loc_10158_VWF:
 	tst.w	d4
 	bpl.s	loc_10168_VWF
+	movem.l	(sp)+, a4-a5
 	rts
 
 loc_10168_VWF:
@@ -113262,10 +113267,12 @@ loc_10188_VWF:
 	subq.w	#1, d4
 	bgt.b	loc_10188_VWF
 loc_10192_VWF:
+	movem.l	(sp)+, a4-a5
 	rts
 loc_10194_VWF:
 	tst.w	d4
 	bpl.s	loc_101A4_VWF
+	movem.l	(sp)+, a4-a5
 	rts
 
 loc_101A4_VWF:
@@ -113340,12 +113347,6 @@ Win_NormalCharacter_VWF:
 	dbf	d7, -
 	move.l	(sp)+, d0
 	
-	tst.b	(VWF_tile_size).w
-	beq.s	+
-	; if we've already started a tile, go back in the mapping buffer so we still reference the same tile
-	subq.w	#2, a2
-	addq.b	#1, d4
-+
 	move.l	d3, -(sp)
 	bsr.w	VWF_WriteTile
 	bsr.w	VWF_WriteRAM
@@ -113361,9 +113362,11 @@ Win_NormalCharacter_VWF:
 	subq.b	#8, d5
 	neg.b	d5
 	move.b	d5, (VWF_remaining_size).w
-	bra.s	VWF_NextCharacter
+	bra.s	VWF_CheckNextCharacter
 
 VWF_Rollover:
+	addq.w	#2, a2
+	subq.w	#1, d4
 	addq.b	#1, (VWF_tile_offset).w
 	andi.b	#$3F, (VWF_tile_offset).w
 	subq.b	#8, d5
@@ -113404,6 +113407,20 @@ VWF_Rollover:
 	
 	bsr.s	VWF_WriteTile
 	bsr.s	VWF_WriteRAM
+
+VWF_CheckNextCharacter:
+	cmpi.b	#$E4, (a0)
+	beq.s	+
+	cmpi.b	#$F8, (a0)
+	beq.s	+
+	cmpi.b	#$FC, (a0)
+	bne.s	VWF_NextCharacter
++
+	addq.w	#2, a2
+	subq.w	#1, d4
+	addq.b	#1, (VWF_tile_offset).w
+	andi.b	#$3F, (VWF_tile_offset).w
+	clr.w	(VWF_tile_size).w
 	
 VWF_NextCharacter:
 	bra.w	WinSetup_Loop_VWF
@@ -113440,8 +113457,7 @@ VWF_WriteRAM:
 	add.w	d5, d1
 	or.w	d0, d1
 	move.w	d1, (a2,d2.w)	; put character in the next line
-	move.w	d3, (a2)+		; put blank tile above character
-	subq.w	#1, d4
+	move.w	d3, (a2)		; put blank tile above character
 	rts
 
 VWFWidthTable:	binclude "general/font/VWF width table.bin"
