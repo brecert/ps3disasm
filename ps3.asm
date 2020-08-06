@@ -15029,7 +15029,7 @@ loc_A368:
 	lea	($FFFF9B1E).w, a1
 	endif
 	move.w	#$8000, d0
-	bsr.w	SetupWindow
+	jsr	(SetupWindow_VWF).l
 	if revision=0
 	lea	($FFFF9A80).l, a0
 	else
@@ -113119,7 +113119,7 @@ SetupWindow_VWF:
 -
 	move.l	d2, (a3)+
 	dbf	d7, -
-	clr.l	(VWF_mem_block).w
+	clr.w	(VWF_tile_size).w
 	move.w	$42(a6), d2	; get window width
 	lea	(WindowBlankLineTiles).l, a3
 loc_10040_VWF:
@@ -113130,10 +113130,10 @@ WinSetup_Loop_VWF:
 loc_10048_VWF:
 	moveq	#0, d1
 	move.b	(a0)+, d1	; get character
-	tst.w	d4
-	bpl.s	loc_1005C_VWF
-	movem.l	(sp)+, a4-a5
-	rts
+	;tst.w	d4
+	;bpl.s	loc_1005C_VWF
+	;movem.l	(sp)+, a4-a5
+	;rts
 
 loc_1005C_VWF:
 	bclr	#7, $1(a6)
@@ -113214,14 +113214,14 @@ loc_100F6_VWF:
 	dbf	d7, loc_100F6_VWF
 	bra.w	WinSetup_Loop_VWF
 loc_10112_VWF:
-	tst.w	d4
-	bpl.s	loc_10122_VWF
-	movem.l	(sp)+, a4-a5
-	rts
+	;tst.w	d4
+	;bpl.s	loc_10122_VWF
+	;movem.l	(sp)+, a4-a5
+	;rts
 
-loc_10122_VWF:
+;loc_10122_VWF:
 	btst	#4, $1(a6)
-	bne.s	loc_10156_VWF
+	bne.s	VWF_ECReturn
 	bset	#5, $1(a6)
 	move.l	a0, $3E(a6)
 	tst.w	d4
@@ -113241,16 +113241,17 @@ loc_1014C_VWF:
 	bne.s	loc_1014C_VWF
 loc_10156_VWF:
 	movem.l	(sp)+, a4-a5
+VWF_ECReturn:
 	rts
 loc_10158_VWF:
-	tst.w	d4
-	bpl.s	loc_10168_VWF
-	movem.l	(sp)+, a4-a5
-	rts
+	;tst.w	d4
+	;bpl.s	loc_10168_VWF
+	;movem.l	(sp)+, a4-a5
+	;rts
 
-loc_10168_VWF:
+;loc_10168_VWF:
 	bclr	#4, $1(a6)
-	bne.s	loc_10192_VWF
+	bne.s	VWF_FCReturn
 	moveq	#$1F, d1
 	or.w	d0, d1
 	tst.w	d4
@@ -113268,16 +113269,17 @@ loc_10188_VWF:
 	bgt.b	loc_10188_VWF
 loc_10192_VWF:
 	movem.l	(sp)+, a4-a5
+VWF_FCReturn:
 	rts
 loc_10194_VWF:
-	tst.w	d4
-	bpl.s	loc_101A4_VWF
-	movem.l	(sp)+, a4-a5
-	rts
+	;tst.w	d4
+	;bpl.s	loc_101A4_VWF
+	;movem.l	(sp)+, a4-a5
+	;rts
 
-loc_101A4_VWF:
+;loc_101A4_VWF:
 	btst	#4, $1(a6)
-	bne.s	loc_10192_VWF
+	bne.s	VWF_FCReturn
 	moveq	#$1F, d1
 	or.w	d0, d1
 	tst.w	d4
@@ -113410,6 +113412,8 @@ VWF_Rollover:
 
 VWF_CheckNextCharacter:
 	cmpi.b	#$E4, (a0)
+	beq.s	+
+	cmpi.b	#$EC, (a0)
 	beq.s	+
 	cmpi.b	#$F8, (a0)
 	beq.s	+
