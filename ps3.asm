@@ -113174,6 +113174,7 @@ loc_1009E_VWF:		; $E0
 	bset	#4, $1(a6)
 	bsr.s	loc_10048_VWF
 	movem.l	(sp)+, a0
+	bsr.w	VWF_CheckNextCharacter
 	bra.s	loc_10048_VWF
 loc_100BC_VWF:
 	moveq	#0, d1
@@ -113200,18 +113201,15 @@ loc_100E4_VWF:
 	andi.w	#$F, d1
 	beq.s	loc_100E4_VWF
 loc_100F0_VWF:
-	move.w	(a3,d3.w), d3
-	or.w	d0, d3
-loc_100F6_VWF:
 	addq.w	#1, d1
-	or.w	d0, d1
-	move.w	d1, (a2,d2.w)
-	move.w	d3, (a2)+
-	subq.w	#1, d4
+	movem.l	d6-d7, -(sp)
+	bsr.w	VWF_ProcessTile
+	movem.l	(sp)+, d6-d7
 	rol.l	#4, d6
 	move.b	d6, d1
 	andi.w	#$F, d1
-	dbf	d7, loc_100F6_VWF
+	dbf	d7, loc_100F0_VWF
+	bsr.w	VWF_CheckNextCharacter
 	bra.w	WinSetup_Loop_VWF
 loc_10112_VWF:
 	;tst.w	d4
@@ -113310,6 +113308,11 @@ loc_101E2_VWF:
 	addi.w	#$C, d3
 
 Win_NormalCharacter_VWF:
+	bsr.s	VWF_ProcessTile
+	bsr.w	VWF_CheckNextCharacter
+	bra.w	WinSetup_Loop_VWF
+
+VWF_ProcessTile:
 	move.l	d0, -(sp)
 	move.b	d1, (VWF_saved_char).w
 	lea	VWFWidthTable(pc), a4
@@ -113349,24 +113352,25 @@ Win_NormalCharacter_VWF:
 	dbf	d7, -
 	move.l	(sp)+, d0
 	
-	move.l	d3, -(sp)
+	move.w	d3, -(sp)
 	bsr.w	VWF_WriteTile
 	bsr.w	VWF_WriteRAM
-	move.l	(sp)+, d3
+	move.w	(sp)+, d3
 	move.b	(VWF_tile_size).w, (VWF_saved_tile_size).w
 	move.b	(VWF_remaining_size).w, (VWF_saved_remaining_size).w
 	move.b	(VWF_char_width).w, d5
 	add.b	d5, (VWF_tile_size).w
 	move.b	(VWF_tile_size).w, d5
 	cmpi.b	#8, d5
-	bcc.s	VWF_Rollover
+	bcc.s	+
 	; tile size < 8...find remaining size for the next character
 	subq.b	#8, d5
 	neg.b	d5
 	move.b	d5, (VWF_remaining_size).w
-	bra.s	VWF_CheckNextCharacter
+-
+	rts
 
-VWF_Rollover:
++
 	addq.w	#2, a2
 	subq.w	#1, d4
 	addq.b	#1, (VWF_tile_offset).w
@@ -113378,7 +113382,7 @@ VWF_Rollover:
 	neg.b	d5
 +
 	move.b	d5, (VWF_remaining_size).w
-	beq.s	VWF_NextCharacter
+	beq.s	-
 	
 	move.l	d0, -(sp)
 	moveq	#0, d1
@@ -113407,27 +113411,31 @@ VWF_Rollover:
 	dbf	d7, -
 	move.l	(sp)+, d0
 	
+	move.w	d3, -(sp)
 	bsr.s	VWF_WriteTile
 	bsr.s	VWF_WriteRAM
+	move.w	(sp)+, d3
+	rts
 
 VWF_CheckNextCharacter:
-	cmpi.b	#$E4, (a0)
-	beq.s	+
+	btst	#4, $1(a6)
+	bne.s	++
+	tst.b	(VWF_tile_size).w
+	beq.s	++
 	cmpi.b	#$EC, (a0)
 	beq.s	+
 	cmpi.b	#$F8, (a0)
 	beq.s	+
 	cmpi.b	#$FC, (a0)
-	bne.s	VWF_NextCharacter
+	bne.s	++
 +
 	addq.w	#2, a2
 	subq.w	#1, d4
 	addq.b	#1, (VWF_tile_offset).w
 	andi.b	#$3F, (VWF_tile_offset).w
 	clr.w	(VWF_tile_size).w
-	
-VWF_NextCharacter:
-	bra.w	WinSetup_Loop_VWF
++
+	rts
 
 VWF_WriteTile:
 	lea	(VWF_tile_buffer).l, a4
