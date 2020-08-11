@@ -113438,26 +113438,17 @@ VWF_CheckNextCharacter:
 	rts
 
 VWF_WriteTile:
-	lea	(VWF_tile_buffer).l, a4
-	lea	(vdp_data_port).l, a5
-	move.w	#$1800, d1
+	movem.l	d0/d2/a0-a1, -(sp)
+	lea	(VWF_tile_buffer).l, a0
+	move.w	#$1800, d0
 	moveq	#0, d5
 	move.b	(VWF_tile_offset).w, d5
 	lsl.w	#5, d5
-	add.w	d5, d1
-	lsl.l	#2, d1
-	lsr.w	#2, d1
-	ori.w	#$4000, d1
-	swap	d1
-	move.l	d1, $4(a5)
-	move.l	(a4)+, (a5)
-	move.l	(a4)+, (a5)
-	move.l	(a4)+, (a5)
-	move.l	(a4)+, (a5)
-	move.l	(a4)+, (a5)
-	move.l	(a4)+, (a5)
-	move.l	(a4)+, (a5)
-	move.l	(a4)+, (a5)
+	add.w	d5, d0
+	moveq	#0, d1
+	move.w	#$20, d1
+	jsr	(LoadDataInVRAMWithOffset).l
+	movem.l	(sp)+, d0/d2/a0-a1
 	rts
 
 VWF_WriteRAM:
