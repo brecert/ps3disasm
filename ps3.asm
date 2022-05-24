@@ -22,13 +22,9 @@
 ;
 ; - Zuccace for providing a build script for Linux users.
 
-bugfixes = 0			; if 1, include bug fixes
-enable_run = 0			; if 1, you can run while holding the B button
-revision = 1			; 0 = Japanese; 1 = English; 2 = Portuguese
-cross_patch = 0			; Set this to 1 to remove the red cross sign from the nurse's coat, just like
-						; the Virtual Console version
-
-
+; Note that the variables have to be set up first
+; because they're used for some macro definitions
+	include "ps3.options.asm"
 	cpu 68000
 	include "ps3.macrosetup.asm"
 
@@ -75737,7 +75733,7 @@ PlaneMap_NursePortrait:	binclude "general/portraits/mappings/uncompressed/Nurse.
 PlaneMap_PriestPortrait:	binclude "general/portraits/mappings/uncompressed/Priest.bin"
 	even
 
-PlaneMap_FortuneTellerPortrait:	binclude "general/portraits/mappings/uncompressed/Fortune teller.bin"
+PlaneMap_FortuneTellerPortrait:	binclude "general/portraits/mappings/uncompressed/Fortune Teller.bin"
 	align_
 
 PlaneMap_InnkeeperPortrait:	binclude "general/portraits/mappings/uncompressed/Innkeeper.bin"
